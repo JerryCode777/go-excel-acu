@@ -4,80 +4,163 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Go application that processes construction unit cost analysis (ACU) data from JSON files and generates formatted Excel reports. The project reads construction project partidas (work items) with their associated labor, materials, and equipment costs, then creates comprehensive Excel workbooks with detailed cost breakdowns and summary sheets.
+**GoExcel v2.0** - A scalable Go application that processes construction unit cost analysis (ACU) data with PostgreSQL backend and generates formatted Excel reports. The project reads construction project partidas (work items) with their associated labor, materials, equipment, and subcontract costs, then creates comprehensive Excel workbooks with detailed cost breakdowns and summary sheets.
+
+### Key Features v2.0
+- PostgreSQL database for data persistence
+- Scalable project structure with separate packages
+- Support for subcontracts (previously missing)
+- Migration from JSON to database
+- API-ready structure for future React integration
+- Backward compatibility with legacy JSON mode
 
 ## Commands
 
-### Build and Run
+### Setup (First Time)
 ```bash
-# Build the application
-go build -o goexcel main.go
+# Run setup script
+./setup.sh
 
-# Run with default JSON file (partidas.json)
-./goexcel
+# Or manual setup:
+make build          # Compile application
+make setup-dirs     # Create necessary directories
+```
 
-# Run with custom JSON file
-./goexcel path/to/your/partidas.json
+### Database Operations
+```bash
+# Migrate JSON data to PostgreSQL
+./bin/goexcel migrate partidas.json
 
-# Direct run without building
-go run main.go
-go run main.go path/to/your/partidas.json
+# List available projects
+./bin/goexcel
+
+# Generate Excel from database
+./bin/goexcel generate <project_id>
+```
+
+### Legacy Mode (JSON only)
+```bash
+# Use original functionality (no database)
+./bin/goexcel legacy partidas.json
+./bin/goexcel legacy  # uses partidas.json by default
 ```
 
 ### Development
 ```bash
-# Format code
-go fmt ./...
+# Using Makefile
+make build         # Compile application
+make run-legacy    # Run in legacy mode
+make run-migrate   # Migrate JSON to DB
+make test          # Run tests
+make clean         # Clean build artifacts
+make fmt           # Format code
 
-# Run tests (if any exist)
-go test ./...
-
-# Get dependencies
+# Direct Go commands
+go build -o bin/goexcel cmd/goexcel/main.go
+go run cmd/goexcel/main.go legacy partidas.json
 go mod tidy
 ```
 
-## Architecture
+## Architecture v2.0
 
-### Core Data Structures
+### Project Structure
+```
+goexcel/
+├── cmd/goexcel/              # Main application entry point
+├── config/                   # Configuration management
+├── database/                 # SQL schemas and migrations
+├── internal/
+│   ├── database/            # DB connection and repositories
+│   ├── models/              # Data structures and DTOs
+│   ├── services/            # Business logic
+│   └── handlers/            # HTTP handlers (future API)
+├── pkg/                     # Reusable packages
+└── main.go                  # Legacy compatibility
+```
 
-- **Recurso**: Represents individual resources (labor, materials, equipment) with code, description, unit, quantity, price, and optional cuadrilla
-- **Partida**: Represents work items containing arrays of Recurso for mano_obra (labor), materiales (materials), and equipos (equipment)
+### Core Data Models
 
-### Main Application Flow
+- **Proyecto**: Project information with metadata
+- **Partida**: Work items belonging to projects  
+- **Recurso**: Individual resources (labor, materials, equipment, subcontracts)
+- **PartidaRecurso**: Many-to-many relationship between partidas and recursos
+- **TipoRecurso**: Resource type classification (mano_obra, materiales, equipos, subcontratos)
 
-1. **Input Processing**: Reads JSON file specified as command line argument or defaults to `partidas.json`
-2. **Data Parsing**: Unmarshals JSON into array of Partida structs with validation
-3. **Excel Generation**: Creates formatted Excel workbook with:
-   - Main "ACUs" sheet with detailed cost breakdowns per partida
-   - "Resumen" summary sheet with consolidated costs
-   - Professional formatting with styled headers, borders, and number formatting
-4. **Output**: Saves as `ACUs_Consolidado.xlsx`
+### Application Modes
 
-### Key Functions
+1. **Database Mode** (New): 
+   - PostgreSQL backend for data persistence
+   - Project-based organization
+   - Full CRUD operations support
+   
+2. **Legacy Mode**: 
+   - Direct JSON file processing (backward compatibility)
+   - Single Excel output
+   - No database required
 
-- `main()`: Entry point handling file I/O and orchestrating the process
-- `generarExcel()`: Main Excel generation with formatting and sheet creation
-- `agregarRecursos()`: Adds resource rows to Excel with proper styling
-- `crearResumen()`: Generates summary sheet with totals
-- `calcularTotal()`: Calculates totals for resource arrays
+### Main Application Flow (Database Mode)
+
+1. **Migration**: Import existing JSON data into PostgreSQL
+2. **Project Management**: Organize partidas by projects
+3. **Data Processing**: Read from database with proper relationships
+4. **Excel Generation**: Create formatted reports with all resource types including subcontracts
+5. **Analysis Storage**: Save analysis metadata for historical tracking
+
+### Key Components
+
+- `database.DB`: PostgreSQL connection with migration support
+- `repositories.*`: Data access layer for each entity
+- `services.ExcelService`: Excel generation with database integration  
+- `config.Config`: Environment-based configuration management
 
 ### Dependencies
 
-- `github.com/xuri/excelize/v2`: Excel file generation and manipulation
-- Standard library: `encoding/json`, `fmt`, `os` for file operations
+- `github.com/xuri/excelize/v2`: Excel file generation
+- `github.com/lib/pq`: PostgreSQL driver
+- `github.com/joho/godotenv`: Environment variable management
+- `github.com/google/uuid`: UUID generation for primary keys
 
 ## Input Data Format
 
-The application expects JSON files with arrays of partidas containing:
+### JSON Format (Legacy and Migration)
+The application supports JSON files with arrays of partidas containing:
 - Labor resources (mano_obra)
 - Material resources (materiales) 
 - Equipment resources (equipos)
-- Each resource includes code, description, unit, quantity, and price
+- **Subcontract resources (subcontratos)** ⭐ NEW in v2.0
+- Each resource includes code, description, unit, quantity, price, and optional cuadrilla
+
+### Database Schema
+- Normalized PostgreSQL schema with proper relationships
+- UUID primary keys for all entities
+- Automatic cost calculations via triggers
+- Historical analysis tracking
 
 ## Output
 
 Generates Excel files with:
-- Detailed cost analysis sheets per partida
-- Summary sheets with consolidated costs
+- Detailed cost analysis sheets per partida with **subcontract support** ⭐
+- Enhanced "Resumen" summary sheet with subcontract column ⭐
 - Professional formatting suitable for construction documentation
-- Automatic calculations and totals
+- Automatic calculations and totals including subcontracts
+- Project-based organization and metadata
+
+## Environment Setup
+
+Required environment variables in `.env`:
+```bash
+DB_HOST=localhost
+DB_PORT=5432
+DB_USER=goexcel_user
+DB_PASSWORD=your_password
+DB_NAME=goexcel_db
+DB_SSLMODE=disable
+```
+
+## Testing
+
+```bash
+make test                    # Run all tests
+go test ./...               # Direct test execution  
+make lint                   # Run linter (requires golangci-lint)
+```
