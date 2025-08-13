@@ -1,197 +1,396 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 	"github.com/xuri/excelize/v2"
 )
 
+// Estructura para recursos individuales
+type Recurso struct {
+	Codigo      string  `json:"codigo"`
+	Descripcion string  `json:"descripcion"`
+	Unidad      string  `json:"unidad"`
+	Cuadrilla   float64 `json:"cuadrilla,omitempty"`
+	Cantidad    float64 `json:"cantidad"`
+	Precio      float64 `json:"precio"`
+}
+
+// Estructura para partidas
+type Partida struct {
+	Codigo      string    `json:"codigo"`
+	Descripcion string    `json:"descripcion"`
+	Unidad      string    `json:"unidad"`
+	Rendimiento float64   `json:"rendimiento"`
+	ManoObra    []Recurso `json:"mano_obra"`
+	Materiales  []Recurso `json:"materiales"`
+	Equipos     []Recurso `json:"equipos"`
+}
+
 func main() {
+	// Leer archivo JSON desde argumentos o usar por defecto
+	archivoJSON := "partidas.json"
+	if len(os.Args) > 1 {
+		archivoJSON = os.Args[1]
+	}
+	
+	fmt.Printf("📖 Leyendo archivo: %s\n", archivoJSON)
+	
+	// Verificar si el archivo existe
+	if _, err := os.Stat(archivoJSON); os.IsNotExist(err) {
+		fmt.Printf("❌ El archivo %s no existe\n", archivoJSON)
+		return
+	}
+	
+	// Leer y procesar JSON
+	data, err := os.ReadFile(archivoJSON)
+	if err != nil {
+		fmt.Printf("❌ Error leyendo archivo: %v\n", err)
+		return
+	}
+
+	var partidas []Partida
+	if err := json.Unmarshal(data, &partidas); err != nil {
+		fmt.Printf("❌ Error parseando JSON: %v\n", err)
+		return
+	}
+
+	if len(partidas) == 0 {
+		fmt.Println("❌ No se encontraron partidas en el archivo")
+		return
+	}
+
+	// Generar Excel
+	nombreExcel := "ACUs_Consolidado.xlsx"
+	if err := generarExcel(partidas, nombreExcel); err != nil {
+		fmt.Printf("❌ Error generando Excel: %v\n", err)
+		return
+	}
+
+	fmt.Printf("✅ Archivo generado: %s\n", nombreExcel)
+	fmt.Printf("📊 %d partidas procesadas\n", len(partidas))
+}
+
+func generarExcel(partidas []Partida, nombreArchivo string) error {
 	f := excelize.NewFile()
-	sheet := "ACU"
+	defer f.Close()
+	
+	sheet := "ACUs"
 	f.SetSheetName("Sheet1", sheet)
-
-	// Configurar anchos de columnas
-	f.SetColWidth(sheet, "A", "A", 12)  // Código
-	f.SetColWidth(sheet, "B", "B", 45)  // Descripción Recurso
-	f.SetColWidth(sheet, "C", "C", 10)  // Unidad
-	f.SetColWidth(sheet, "D", "D", 12)  // Cuadrilla
-	f.SetColWidth(sheet, "E", "E", 12)  // Cantidad
-	f.SetColWidth(sheet, "F", "F", 15)  // Precio S/.
-	f.SetColWidth(sheet, "G", "G", 15)  // Parcial S/.
-
-	// Encabezado principal de la partida
-	f.MergeCell(sheet, "A1", "G1")
-	f.SetCellValue(sheet, "A1", "Partida        01.02                    MURO PARAPETO DE SOGA LADRILLO SILICO CALCAREO KK CON CEMENTO-ARENA (RVG)")
 	
+	// Crear hoja de resumen
+	sheetResumen := "Resumen"
+	f.NewSheet(sheetResumen)
+	
+	// Configurar columnas
+	f.SetColWidth(sheet, "A", "A", 12)
+	f.SetColWidth(sheet, "B", "B", 45)
+	f.SetColWidth(sheet, "C", "C", 10)
+	f.SetColWidth(sheet, "D", "D", 12)
+	f.SetColWidth(sheet, "E", "E", 12)
+	f.SetColWidth(sheet, "F", "F", 15)
+	f.SetColWidth(sheet, "G", "G", 15)
+
+	// Estilos
 	headerStyle, _ := f.NewStyle(&excelize.Style{
-		Font: &excelize.Font{Bold: true, Size: 11},
-		Border: []excelize.Border{
-			{Type: "left", Color: "000000", Style: 1},
-			{Type: "right", Color: "000000", Style: 1},
-			{Type: "top", Color: "000000", Style: 1},
-			{Type: "bottom", Color: "000000", Style: 1},
-		},
-	})
-	f.SetCellStyle(sheet, "A1", "G1", headerStyle)
-
-	// Información de rendimiento y costo
-	f.MergeCell(sheet, "A2", "G2")
-	f.SetCellValue(sheet, "A2", "Rendimiento        m2/DIA        MO. 9.8000                    EQ.  9.8000                                        Costo unitario directo por : m2                    33.65")
-	f.SetCellStyle(sheet, "A2", "G2", headerStyle)
-
-	// Cabeceras de la tabla
-	headers := []string{"Código", "Descripción Recurso", "Unidad", "Cuadrilla", "Cantidad", "Precio S/.", "Parcial S/."}
-	subHeader := []string{"", "Mano de Obra", "", "", "", "", ""}
-	
-	columnStyle, _ := f.NewStyle(&excelize.Style{
-		Font: &excelize.Font{Bold: true, Size: 10},
+		Font: &excelize.Font{Bold: true, Size: 12, Color: "#FFFFFF"},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#4F81BD"}, Pattern: 1},
 		Alignment: &excelize.Alignment{Horizontal: "center", Vertical: "center"},
 		Border: []excelize.Border{
-			{Type: "left", Color: "000000", Style: 1},
-			{Type: "right", Color: "000000", Style: 1},
-			{Type: "top", Color: "000000", Style: 1},
-			{Type: "bottom", Color: "000000", Style: 1},
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
 		},
 	})
 
-	// Establecer cabeceras principales
-	for i, header := range headers {
-		cell := fmt.Sprintf("%c3", 'A'+i)
-		f.SetCellValue(sheet, cell, header)
-		f.SetCellStyle(sheet, cell, cell, columnStyle)
-	}
+	partidaStyle, _ := f.NewStyle(&excelize.Style{
+		Font: &excelize.Font{Bold: true, Size: 11, Color: "#FFFFFF"},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#305496"}, Pattern: 1},
+		Alignment: &excelize.Alignment{Horizontal: "left", Vertical: "center"},
+		Border: []excelize.Border{
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
+		},
+	})
 
-	// Establecer subcabecera para Mano de Obra
-	for i, subH := range subHeader {
-		cell := fmt.Sprintf("%c4", 'A'+i)
-		f.SetCellValue(sheet, cell, subH)
-		f.SetCellStyle(sheet, cell, cell, columnStyle)
-	}
+	sectionStyle, _ := f.NewStyle(&excelize.Style{
+		Font: &excelize.Font{Bold: true, Size: 10},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#D9E2F3"}, Pattern: 1},
+		Alignment: &excelize.Alignment{Horizontal: "center", Vertical: "center"},
+		Border: []excelize.Border{
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
+		},
+	})
 
-	// Estilo para datos
 	dataStyle, _ := f.NewStyle(&excelize.Style{
 		Font: &excelize.Font{Size: 10},
 		Alignment: &excelize.Alignment{Horizontal: "left", Vertical: "center"},
 		Border: []excelize.Border{
-			{Type: "left", Color: "000000", Style: 1},
-			{Type: "right", Color: "000000", Style: 1},
-			{Type: "top", Color: "000000", Style: 1},
-			{Type: "bottom", Color: "000000", Style: 1},
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
 		},
 	})
 
 	numberStyle, _ := f.NewStyle(&excelize.Style{
 		Font: &excelize.Font{Size: 10},
+		NumFmt: 4, // Formato con 2 decimales
 		Alignment: &excelize.Alignment{Horizontal: "right", Vertical: "center"},
 		Border: []excelize.Border{
-			{Type: "left", Color: "000000", Style: 1},
-			{Type: "right", Color: "000000", Style: 1},
-			{Type: "top", Color: "000000", Style: 1},
-			{Type: "bottom", Color: "000000", Style: 1},
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
 		},
-		NumFmt: 4, // Formato numérico con 2 decimales
 	})
 
-	row := 5
-	
-	// MANO DE OBRA
-	manoObra := []map[string]interface{}{
-		{"codigo": "0147010001", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0816, "precio": 15.00, "parcial": 1.22},
-		{"codigo": "0147010002", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.8163, "precio": 14.97, "parcial": 12.22},
-		{"codigo": "0147010004", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 0.7500, "cantidad": 0.6122, "precio": 11.73, "parcial": 7.18},
+	totalStyle, _ := f.NewStyle(&excelize.Style{
+		Font: &excelize.Font{Bold: true, Size: 11, Color: "#FFFFFF"},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#70AD47"}, Pattern: 1},
+		NumFmt: 4,
+		Alignment: &excelize.Alignment{Horizontal: "center", Vertical: "center"},
+		Border: []excelize.Border{
+			{Type: "left", Color: "#000000", Style: 1},
+			{Type: "right", Color: "#000000", Style: 1},
+			{Type: "top", Color: "#000000", Style: 1},
+			{Type: "bottom", Color: "#000000", Style: 1},
+		},
+	})
+
+	// Título principal
+	f.MergeCell(sheet, "A1", "G1")
+	f.SetCellValue(sheet, "A1", "ANÁLISIS DE COSTOS UNITARIOS - CONSOLIDADO")
+	f.SetCellStyle(sheet, "A1", "G1", headerStyle)
+
+	row := 3
+	var datosResumen []map[string]interface{}
+
+	// Procesar cada partida
+	for i, partida := range partidas {
+		fmt.Printf("Procesando partida %d/%d: %s\n", i+1, len(partidas), partida.Codigo)
+		
+		// Validar partida
+		if partida.Codigo == "" || partida.Descripcion == "" {
+			fmt.Printf("⚠️  Saltando partida %d: datos incompletos\n", i+1)
+			continue
+		}
+
+		// Calcular totales
+		totalMO := calcularTotal(partida.ManoObra)
+		totalMat := calcularTotal(partida.Materiales)
+		totalEq := calcularTotal(partida.Equipos)
+		costoTotal := totalMO + totalMat + totalEq
+
+		// Guardar para resumen
+		datosResumen = append(datosResumen, map[string]interface{}{
+			"codigo":      partida.Codigo,
+			"descripcion": partida.Descripcion,
+			"unidad":      partida.Unidad,
+			"rendimiento": partida.Rendimiento,
+			"costo_mo":    totalMO,
+			"costo_mat":   totalMat,
+			"costo_eq":    totalEq,
+			"costo_total": costoTotal,
+		})
+
+		// Encabezado de partida
+		f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
+		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), 
+			fmt.Sprintf("PARTIDA %s - %s", partida.Codigo, partida.Descripcion))
+		f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), partidaStyle)
+		row++
+
+		// Info de la partida
+		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "Unidad:")
+		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), partida.Unidad)
+		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), "Rendimiento:")
+		f.SetCellValue(sheet, fmt.Sprintf("D%d", row), partida.Rendimiento)
+		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), "Costo Total:")
+		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), costoTotal)
+		f.SetCellStyle(sheet, fmt.Sprintf("F%d", row), fmt.Sprintf("F%d", row), totalStyle)
+		row++
+
+		// Cabeceras de tabla
+		headers := []string{"Código", "Descripción", "Unidad", "Cuadrilla", "Cantidad", "Precio S/", "Parcial S/"}
+		for j, header := range headers {
+			f.SetCellValue(sheet, fmt.Sprintf("%c%d", 'A'+j, row), header)
+			f.SetCellStyle(sheet, fmt.Sprintf("%c%d", 'A'+j, row), fmt.Sprintf("%c%d", 'A'+j, row), sectionStyle)
+		}
+		row++
+
+		// Mano de obra
+		if len(partida.ManoObra) > 0 {
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "MANO DE OBRA")
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+			
+			row = agregarRecursos(f, sheet, partida.ManoObra, row, dataStyle, numberStyle)
+			
+			// Subtotal MO
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "SUBTOTAL MANO DE OBRA")
+			f.SetCellValue(sheet, fmt.Sprintf("G%d", row), totalMO)
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+		}
+
+		// Materiales
+		if len(partida.Materiales) > 0 {
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "MATERIALES")
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+			
+			row = agregarRecursos(f, sheet, partida.Materiales, row, dataStyle, numberStyle)
+			
+			// Subtotal Materiales
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "SUBTOTAL MATERIALES")
+			f.SetCellValue(sheet, fmt.Sprintf("G%d", row), totalMat)
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+		}
+
+		// Equipos
+		if len(partida.Equipos) > 0 {
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "EQUIPOS")
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+			
+			row = agregarRecursos(f, sheet, partida.Equipos, row, dataStyle, numberStyle)
+			
+			// Subtotal Equipos
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "SUBTOTAL EQUIPOS")
+			f.SetCellValue(sheet, fmt.Sprintf("G%d", row), totalEq)
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+		}
+
+		// Costo total de la partida
+		f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
+		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("COSTO TOTAL - PARTIDA %s", partida.Codigo))
+		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), costoTotal)
+		f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), totalStyle)
+		row += 3 // Espaciado entre partidas
 	}
 
-	for _, item := range manoObra {
-		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), item["codigo"])
-		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), item["descripcion"])
-		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), item["unidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("D%d", row), item["cuadrilla"])
-		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), item["cantidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), item["precio"])
-		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), item["parcial"])
+	// Crear hoja resumen
+	crearResumen(f, sheetResumen, datosResumen)
+
+	return f.SaveAs(nombreArchivo)
+}
+
+func agregarRecursos(f *excelize.File, sheet string, recursos []Recurso, startRow int, dataStyle, numberStyle int) int {
+	row := startRow
+	for _, recurso := range recursos {
+		// Validar recurso
+		if recurso.Codigo == "" || recurso.Descripcion == "" {
+			continue
+		}
 		
+		parcial := recurso.Cantidad * recurso.Precio
+		
+		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), recurso.Codigo)
+		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), recurso.Descripcion)
+		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), recurso.Unidad)
+		
+		// Cuadrilla solo si es mayor a 0
+		if recurso.Cuadrilla > 0 {
+			f.SetCellValue(sheet, fmt.Sprintf("D%d", row), recurso.Cuadrilla)
+		} else {
+			f.SetCellValue(sheet, fmt.Sprintf("D%d", row), "-")
+		}
+		
+		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), recurso.Cantidad)
+		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), recurso.Precio)
+		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), parcial)
+		
+		// Aplicar estilos
 		f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("C%d", row), dataStyle)
 		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("G%d", row), numberStyle)
 		row++
 	}
+	return row
+}
 
-	// Subtotal Mano de Obra
-	f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
-	f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "")
-	f.SetCellValue(sheet, fmt.Sprintf("G%d", row), 20.62)
-	f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), columnStyle)
-	row++
-
-	// MATERIALES
-	f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
-	f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "Materiales")
-	f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), columnStyle)
-	row++
-
-	materiales := []map[string]interface{}{
-		{"codigo": "0202010005", "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"", "unidad": "kg", "cuadrilla": "", "cantidad": 0.0200, "precio": 4.20, "parcial": 0.08},
-		{"codigo": "0205010004", "descripcion": "ARENA GRUESA", "unidad": "m3", "cuadrilla": "", "cantidad": 0.0300, "precio": 25.50, "parcial": 0.77},
-		{"codigo": "0217510002", "descripcion": "BLOQUE SILICO ESTANDARD 14 X 25 X 9 cm", "unidad": "u", "cuadrilla": "", "cantidad": 38.0000, "precio": 0.21, "parcial": 7.98},
-		{"codigo": "0221000001", "descripcion": "CEMENTO PORTLAND TIPO I (42.5 kg)", "unidad": "bls", "cuadrilla": "", "cantidad": 0.1100, "precio": 15.55, "parcial": 1.71},
-		{"codigo": "0239050000", "descripcion": "AGUA", "unidad": "m3", "cuadrilla": "", "cantidad": 0.0080, "precio": 1.83, "parcial": 0.01},
-		{"codigo": "0243040000", "descripcion": "MADERA TORNILLO", "unidad": "p2", "cuadrilla": "", "cantidad": 0.5800, "precio": 3.20, "parcial": 1.86},
+func crearResumen(f *excelize.File, sheet string, datos []map[string]interface{}) {
+	if len(datos) == 0 {
+		return
 	}
 
-	for _, item := range materiales {
-		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), item["codigo"])
-		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), item["descripcion"])
-		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), item["unidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("D%d", row), item["cuadrilla"])
-		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), item["cantidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), item["precio"])
-		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), item["parcial"])
+	// Configurar columnas para resumen
+	f.SetColWidth(sheet, "A", "A", 12)
+	f.SetColWidth(sheet, "B", "B", 45)
+	f.SetColWidth(sheet, "C", "C", 10)
+	f.SetColWidth(sheet, "D", "D", 12)
+	f.SetColWidth(sheet, "E", "E", 15)
+	f.SetColWidth(sheet, "F", "F", 15)
+	f.SetColWidth(sheet, "G", "G", 15)
+	f.SetColWidth(sheet, "H", "H", 15)
+
+	// Estilos para resumen
+	titleStyle, _ := f.NewStyle(&excelize.Style{
+		Font: &excelize.Font{Bold: true, Size: 14, Color: "#FFFFFF"},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#2F5597"}, Pattern: 1},
+		Alignment: &excelize.Alignment{Horizontal: "center", Vertical: "center"},
+	})
+
+	headerStyle, _ := f.NewStyle(&excelize.Style{
+		Font: &excelize.Font{Bold: true, Size: 11, Color: "#FFFFFF"},
+		Fill: excelize.Fill{Type: "pattern", Color: []string{"#4F81BD"}, Pattern: 1},
+		Alignment: &excelize.Alignment{Horizontal: "center", Vertical: "center"},
+	})
+
+	numberStyle, _ := f.NewStyle(&excelize.Style{
+		NumFmt: 4,
+		Alignment: &excelize.Alignment{Horizontal: "right", Vertical: "center"},
+	})
+
+	// Título
+	f.MergeCell(sheet, "A1", "H1")
+	f.SetCellValue(sheet, "A1", "RESUMEN DE COSTOS UNITARIOS")
+	f.SetCellStyle(sheet, "A1", "H1", titleStyle)
+
+	// Cabeceras
+	headers := []string{"Código", "Descripción", "Unidad", "Rendimiento", "Mano Obra", "Materiales", "Equipos", "Costo Total"}
+	for i, header := range headers {
+		f.SetCellValue(sheet, fmt.Sprintf("%c3", 'A'+i), header)
+		f.SetCellStyle(sheet, fmt.Sprintf("%c3", 'A'+i), fmt.Sprintf("%c3", 'A'+i), headerStyle)
+	}
+
+	// Datos
+	row := 4
+	for _, dato := range datos {
+		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), dato["codigo"])
+		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), dato["descripcion"])
+		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), dato["unidad"])
+		f.SetCellValue(sheet, fmt.Sprintf("D%d", row), dato["rendimiento"])
+		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), dato["costo_mo"])
+		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), dato["costo_mat"])
+		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), dato["costo_eq"])
+		f.SetCellValue(sheet, fmt.Sprintf("H%d", row), dato["costo_total"])
 		
-		f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("C%d", row), dataStyle)
-		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("G%d", row), numberStyle)
+		// Aplicar formato numérico a las columnas de números
+		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("H%d", row), numberStyle)
 		row++
 	}
+}
 
-	// Subtotal Materiales
-	f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
-	f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "")
-	f.SetCellValue(sheet, fmt.Sprintf("G%d", row), 12.41)
-	f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), columnStyle)
-	row++
-
-	// EQUIPOS
-	f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
-	f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "Equipos")
-	f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), columnStyle)
-	row++
-
-	equipos := []map[string]interface{}{
-		{"codigo": "0337010001", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%MO", "cuadrilla": "", "cantidad": 3.0000, "precio": 20.62, "parcial": 0.62},
+func calcularTotal(recursos []Recurso) float64 {
+	total := 0.0
+	for _, recurso := range recursos {
+		total += recurso.Cantidad * recurso.Precio
 	}
-
-	for _, item := range equipos {
-		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), item["codigo"])
-		f.SetCellValue(sheet, fmt.Sprintf("B%d", row), item["descripcion"])
-		f.SetCellValue(sheet, fmt.Sprintf("C%d", row), item["unidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("D%d", row), item["cuadrilla"])
-		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), item["cantidad"])
-		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), item["precio"])
-		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), item["parcial"])
-		
-		f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("C%d", row), dataStyle)
-		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("G%d", row), numberStyle)
-		row++
-	}
-
-	// Subtotal Equipos
-	f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
-	f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "")
-	f.SetCellValue(sheet, fmt.Sprintf("G%d", row), 0.62)
-	f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), columnStyle)
-
-	// Guardar archivo
-	if err := f.SaveAs("ACU_Partida_Completo.xlsx"); err != nil {
-		fmt.Println("Error guardando archivo:", err)
-	} else {
-		fmt.Println("✅ ACU generado correctamente - Formato completo")
-	}
+	return total
 }
