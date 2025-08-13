@@ -69,95 +69,6 @@
     ]
   },
   {
-    "codigo": "02.01.02.04",
-    "descripcion": "ELIMINACIÓN DE EXCEDENTES C/VOLQUETE (CARGUÍO, TRANSPORTE Y DISPOSICIÓN FINAL)",
-    "unidad": "m3",
-    "rendimiento": 320.0000,
-    "mano_obra": [
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0250, "precio": 19.13}
-    ],
-    "materiales": [
-      {"codigo": "020412006", "descripcion": "DISPOSICIÓN FINAL", "unidad": "m3", "cantidad": 1.0000, "precio": 5.40}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 0.48},
-      {"codigo": "030116001007", "descripcion": "CARGADOR SOBRE LLANTAS DE 125-155 HP 3 yd3", "unidad": "hm", "cuadrilla": 0.3000, "cantidad": 0.0075, "precio": 247.79},
-      {"codigo": "030118003", "descripcion": "VOLQUETE 15 M3", "unidad": "hm", "cuadrilla": 4.0000, "cantidad": 0.1000, "precio": 371.30}
-    ]
-  },
-  {
-    "codigo": "02.01.03.01",
-    "descripcion": "SUB BASE GRANULAR e=0.20 m",
-    "unidad": "m2",
-    "rendimiento": 1000.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0080, "precio": 29.08},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0160, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEÓN", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0320, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "027040001", "descripcion": "MATERIAL GRANULAR", "unidad": "m3", "cantidad": 0.2600, "precio": 45.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 1.09},
-      {"codigo": "030110006003", "descripcion": "RODILLO LISO VIBRATORIO AUTOPROPULSADO 101-135HP 10-12 ton", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0080, "precio": 215.35},
-      {"codigo": "030120002", "descripcion": "MOTONIVELADORA DE 125 HP", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0080, "precio": 223.99},
-      {"codigo": "030122010", "descripcion": "CAMIÓN CISTERNA 4X2 (AGUA) 122 HP 2000 GAL", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0080, "precio": 197.29}
-    ]
-  },
-  {
-    "codigo": "02.01.04.01",
-    "descripcion": "COLOCACIÓN Y RETIRO DE GUÍAS PARA PAVIMENTADORA",
-    "unidad": "m",
-    "rendimiento": 1260.0000,
-    "mano_obra": [
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0006, "precio": 24.23},
-      {"codigo": "010101005", "descripcion": "PEÓN", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0127, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "020412001005", "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"", "unidad": "kg", "cantidad": 0.2000, "precio": 6.40},
-      {"codigo": "021302004", "descripcion": "CAL DE OBRA 20 KG", "unidad": "bol", "cantidad": 0.0250, "precio": 13.14},
-      {"codigo": "023101003", "descripcion": "MADERA TORNILLO 16 A MAS (HABILITADO)", "unidad": "p2", "cantidad": 0.0952, "precio": 6.20}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 0.23}
-    ]
-  },
-  {
-    "codigo": "02.01.04.02",
-    "descripcion": "ENCOFRADO Y DESENCOFRADO DE PAVIMENTO RÍGIDO",
-    "unidad": "m2",
-    "rendimiento": 14.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0571, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.5714, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.5714, "precio": 19.13}
-    ],
-    "materiales": [
-      {"codigo": "020401001002", "descripcion": "ALAMBRE NEGRO RECOCIDO N° 16", "unidad": "kg", "cantidad": 0.2500, "precio": 6.40},
-      {"codigo": "020412001005", "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"", "unidad": "kg", "cantidad": 0.1800, "precio": 6.40},
-      {"codigo": "023101003", "descripcion": "MADERA TORNILLO 16 A MAS (HABILITADO)", "unidad": "p2", "cantidad": 1.0500, "precio": 6.20}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 26.44}
-    ]
-  },
-  {
-    "codigo": "02.01.04.03",
-    "descripcion": "SUMINISTRO Y COLOCACIÓN DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
-    "unidad": "m",
-    "rendimiento": 350.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0023, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 19.13}
-    ],
-    "materiales": [],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 703.12}
-    ]
-  },
- {
     "codigo": "01.01.02.01.01",
     "descripcion": "OBTENCIÓN DEL SERVICIO DE AGUA PARA LA CONSTRUCCIÓN",
     "unidad": "glb",
@@ -319,6 +230,7 @@
     ],
     "equipos": []
   },
+
   {
     "codigo": "02.01.01.01",
     "descripcion": "DEMOLICIÓN DE PAVIMENTO FLEXIBLE C/EQUIPO",
@@ -703,6 +615,21 @@
     ]
   },
   {
+    "codigo": "02.02.01.03",
+    "descripcion": "ESCARIFICADO,CONFORMACION Y COMPACTACIÓN DE SUBRASANTE",
+    "unidad": "m2",
+    "rendimiento": 1300.0000,
+    "mano_obra": [
+      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0006, "precio": 29.08},
+      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0123, "precio": 19.13},
+      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0123, "precio": 17.29}
+    ],
+    "materiales": [],
+    "equipos": [
+      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 0.47}
+    ]
+  },
+  {
     "codigo": "02.02.01.04",
     "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
     "unidad": "m3",
@@ -756,75 +683,7 @@
     "equipos": []
   },
   {
-    "codigo": "02.01.01.01",
-    "descripcion": "EXCAVACION HASTA SUBRASANTE EN TERRENO NORMAL",
-    "unidad": "m3",
-    "rendimiento": 280.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0029, "precio": 29.08},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0286, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0571, "precio": 17.29}
-    ],
-    "materiales": [],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 1.62},
-      {"codigo": "030118002004", "descripcion": "TRACTOR DE ORUGAS DE 140-160 HP", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0286, "precio": 348.29}
-    ]
-  },
-  {
-    "codigo": "02.02.01.02",
-    "descripcion": "RELLENO COMPACTADO CON MATERIAL PROPIO C/EQUIPO HASTA NIVELDE SUBRASANTE",
-    "unidad": "m3",
-    "rendimiento": 400.0000,
-    "mano_obra": [
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0200, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 6.0000, "cantidad": 0.1200, "precio": 17.29}
-    ],
-    "materiales": [],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 2.45},
-      {"codigo": "030110006003", "descripcion": "RODILLO LISO VIBRATORIO AUTOPROPULSADO 101-135HP 10-12 ton", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0200, "precio": 215.35},
-      {"codigo": "030118002004", "descripcion": "TRACTOR DE ORUGAS DE 140-160 HP", "unidad": "hm", "cuadrilla": 0.5000, "cantidad": 0.0100, "precio": 348.29},
-      {"codigo": "030120002", "descripcion": "MOTONIVELADORA DE 125 HP", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0200, "precio": 223.99},
-      {"codigo": "030122010", "descripcion": "CAMIÓN CISTERNA 4X2 (AGUA) 122 HP 2000 GAL", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0200, "precio": 197.29}
-    ]
-  },
-  {
-    "codigo": "02.02.01.03",
-    "descripcion": "ESCARIFICADO,CONFORMACION Y COMPACTACIÓN DE SUBRASANTE",
-    "unidad": "m2",
-    "rendimiento": 1300.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0006, "precio": 29.08},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0123, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 0.0123, "precio": 17.29}
-    ],
-    "materiales": [],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 0.47}
-    ]
-  },
-  {
-    "codigo": "02.03.03.01",
-    "descripcion": "ENCOFRADO Y DESENCOFRADO EN BOCACALLE",
-    "unidad": "m2",
-    "rendimiento": 14.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0571, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.5714, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.5714, "precio": 19.13}
-    ],
-    "materiales": [
-      {"codigo": "020410001002", "descripcion": "ALAMBRE NEGRO RECOCIDO N° 16", "unidad": "kg", "cantidad": 0.2500, "precio": 6.40},
-      {"codigo": "020412001005", "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"", "unidad": "kg", "cantidad": 0.1800, "precio": 6.40},
-      {"codigo": "023101003", "descripcion": "MADERA TORNILLO 16 A MAS (HABILITADO)", "unidad": "p2", "cantidad": 1.0500, "precio": 6.20}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 26.44}
-    ]
-  },
-  {
-    "codigo": "02.03.03.02",
+    "codigo": "02.02.03.02",
     "descripcion": "SUMINISTRO Y COLOCACION DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
     "unidad": "m",
     "rendimiento": 350.0000,
@@ -843,7 +702,7 @@
     ]
   },
   {
-    "codigo": "02.03.03.03",
+    "codigo": "02.02.03.03",
     "descripcion": "SUMINISTRO Y COLOCACION DE ACERO FY= 4200 kg/cm2 EN JUNTA LONGITUDINAL",
     "unidad": "kg",
     "rendimiento": 350.0000,
@@ -858,6 +717,25 @@
     "equipos": [
       {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 1.06},
       {"codigo": "030116004", "descripcion": "MONTACARGAS 58HP", "unidad": "hm", "cuadrilla": 0.1000, "cantidad": 0.0023, "precio": 95.90}
+    ]
+  },
+  {
+    "codigo": "02.02.03.04",
+    "descripcion": "LOSA DE CONCRETO F'C=350 KG/CM2 C/PAVIMENTADORA (H=0.25m)",
+    "unidad": "m2",
+    "rendimiento": 1080.0000,
+    "mano_obra": [
+      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0007, "precio": 29.08},
+      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 24.23},
+      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 19.13},
+      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 17.29}
+    ],
+    "materiales": [
+      {"codigo": "021901000036", "descripcion": "CONCRETO PREMEZCLADO FC=350 kg/cm2 CON CEMENTO TIPO HS (PAVIMENTADORA)", "unidad": "m3", "cantidad": 0.2550, "precio": 329.00}
+    ],
+    "equipos": [
+      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 1.82},
+      {"codigo": "030139003", "descripcion": "PAVIMENTADORA DE CONCRETO DE ENCOFRADO DESLIZANTE", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0074, "precio": 1600.00}
     ]
   },
   {
@@ -924,6 +802,7 @@
       {"codigo": "030136001002", "descripcion": "MOCHILA CON PULVERIZADOR MANUAL", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0320, "precio": 1.25}
     ]
   },
+
   {
     "codigo": "02.03.01.01",
     "descripcion": "EXCAVACION HASTA SUBRASANTE EN TERRENO NORMAL",
@@ -986,62 +865,7 @@
       {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 0.23}
     ]
   },
-  {
-    "codigo": "02.02.03.02",
-    "descripcion": "SUMINISTRO Y COLOCACION DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
-    "unidad": "m",
-    "rendimiento": 350.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0023, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 19.13}
-    ],
-    "materiales": [],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 1.06},
-      {"codigo": "030116004", "descripcion": "MONTACARGAS 58HP", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 95.90}
-    ],
-    "subcontratos": [
-      {"codigo": "042401021", "descripcion": "SC SUMINISTRO DE DOWELL (BARRA PASAJUNTA + CANASTILLA)", "unidad": "m", "cantidad": 1.0000, "precio": 96.32}
-    ]
-  },
-  {
-    "codigo": "02.02.03.03",
-    "descripcion": "SUMINISTRO Y COLOCACION DE ACERO FY= 4200 kg/cm2 EN JUNTA LONGITUDINAL",
-    "unidad": "kg",
-    "rendimiento": 350.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0023, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0229, "precio": 19.13}
-    ],
-    "materiales": [
-      {"codigo": "020403001", "descripcion": "ACERO CORRUGADO fy = 4200 kg/cm2 GRADO 60", "unidad": "kg", "cantidad": 1.0300, "precio": 5.60}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 1.06},
-      {"codigo": "030116004", "descripcion": "MONTACARGAS 58HP", "unidad": "hm", "cuadrilla": 0.1000, "cantidad": 0.0023, "precio": 95.90}
-    ]
-  },
-  {
-    "codigo": "02.02.03.04",
-    "descripcion": "LOSA DE CONCRETO F'C=350 KG/CM2 C/PAVIMENTADORA (H=0.25m)",
-    "unidad": "m2",
-    "rendimiento": 1080.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0007, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 0.0296, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "021901000036", "descripcion": "CONCRETO PREMEZCLADO FC=350 kg/cm2 CON CEMENTO TIPO HS (PAVIMENTADORA)", "unidad": "m3", "cantidad": 0.2550, "precio": 329.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 1.82},
-      {"codigo": "030139003", "descripcion": "PAVIMENTADORA DE CONCRETO DE ENCOFRADO DESLIZANTE", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0074, "precio": 1600.00}
-    ]
-  },
+
   {
     "codigo": "02.03.03.01",
     "descripcion": "ENCOFRADO Y DESENCOFRADO EN BOCACALLE",
@@ -1386,59 +1210,6 @@
     ]
   },
   {
-    "codigo": "02.05.02",
-    "descripcion": "NIVELACION Y REPOSICION DE TAPA DE BUZON A NIVEL DE RASANTE",
-    "unidad": "und",
-    "rendimiento": 10.0000,
-    "mano_obra": [
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.8000, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.8000, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 3.2000, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "020701001002", "descripcion": "PIEDRA CHANCADA 1/2\"", "unidad": "m3", "cantidad": 0.2780, "precio": 63.00},
-      {"codigo": "020702001002", "descripcion": "ARENA GRUESA", "unidad": "m3", "cantidad": 0.2500, "precio": 48.31},
-      {"codigo": "021301001004", "descripcion": "CEMENTO PORTLAND TIPO HS", "unidad": "bol", "cantidad": 2.1000, "precio": 23.39},
-      {"codigo": "021909002", "descripcion": "TAPA DE C°A° C/MARCO DE FIERRO PARA BUZONES", "unidad": "und", "cantidad": 1.0000, "precio": 400.00},
-      {"codigo": "029013002", "descripcion": "AGUA", "unidad": "m3", "cantidad": 0.0290, "precio": 5.11}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 90.01}
-    ]
-  },
-  {
-    "codigo": "02.05.03",
-    "descripcion": "NIVELACION Y REPOSICION DE CAJA DE VALVULAS",
-    "unidad": "und",
-    "rendimiento": 200.0000,
-    "mano_obra": [],
-    "materiales": [],
-    "equipos": [],
-    "subcontratos": [
-      {"codigo": "042401043", "descripcion": "NIVELACION Y REPOSICION DE CAJAS DE VALVULAS", "unidad": "und", "cantidad": 1.0000, "precio": 480.00}
-    ]
-  },
-  {
-    "codigo": "02.05.04",
-    "descripcion": "REDUCTOR DE VELOCIDAD DE ASFALTO EN FRIO DE (h=8 cm)",
-    "unidad": "und",
-    "rendimiento": 2.0000,
-    "mano_obra": [
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 8.0000, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 8.0000, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 16.0000, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "021050006", "descripcion": "MEZCLA ASFALTICA EN FRIO", "unidad": "m3", "cantidad": 0.3611, "precio": 650.00},
-      {"codigo": "024002016", "descripcion": "XILOL", "unidad": "gal", "cantidad": 0.2430, "precio": 55.00},
-      {"codigo": "024008001", "descripcion": "PINTURA PARA TRAFICO", "unidad": "gal", "cantidad": 0.9720, "precio": 46.33}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 623.52},
-      {"codigo": "030110001", "descripcion": "COMPACTADORA VIBRATORIA TIPO PLANCHA 7 HP", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 4.0000, "precio": 39.16}
-    ]
-  },
-  {
     "codigo": "02.05.05",
     "descripcion": "PROTECCION DE SEGURIDAD ELECTRICA",
     "unidad": "glb",
@@ -1685,56 +1456,6 @@
     "equipos": []
   },
   {
-    "codigo": "03.04.02",
-    "descripcion": "ENCOFRADO Y DESENCOFRADO DE RAMPAS",
-    "unidad": "m2",
-    "rendimiento": 20.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.0100, "cantidad": 0.0040, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 19.13}
-    ],
-    "materiales": [
-      {"codigo": "020401000100001", "descripcion": "ALAMBRE NEGRO RECOCIDO N° 8", "unidad": "kg", "cantidad": 0.2000, "precio": 6.40},
-      {"codigo": "020412001005", "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"", "unidad": "kg", "cantidad": 0.0500, "precio": 6.40},
-      {"codigo": "023101003", "descripcion": "MADERA TORNILLO 1\" x MAS (HABILITADO)", "unidad": "p2", "cantidad": 2.2500, "precio": 6.20}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 5.0000, "precio": 17.46}
-    ]
-  },
-  {
-    "codigo": "03.04.03",
-    "descripcion": "VEREDA DE CONCRETO PREMEZCLADO FC=175 kg/cm2, E=0.10m ACABADO C.A 1:2",
-    "unidad": "m3",
-    "rendimiento": 15.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0533, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 1.0667, "precio": 24.23},
-      {"codigo": "010101004", "descripcion": "OFICIAL", "unidad": "hh", "cuadrilla": 2.0000, "cantidad": 1.0667, "precio": 19.13},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 4.0000, "cantidad": 2.1333, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "021901000100033", "descripcion": "CONCRETO PREMEZCLADO FC=175 kg/cm2 CON CEMENTO TIPO HS", "unidad": "m3", "cantidad": 1.0300, "precio": 269.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 84.69},
-      {"codigo": "030129000100006", "descripcion": "VIBRADOR DE CONCRETO 4 HP 2.40\"", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.5333, "precio": 7.50}
-    ]
-  },
-  {
-    "codigo": "03.04.04",
-    "descripcion": "RAMPAS PEATONALES DE CONCRETO PREMEZCLADO, fc 175 kg/cm2 E=0.10m. ACABADO C.A 1:2",
-    "unidad": "m3",
-    "rendimiento": 12.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0667, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.6667, "precio": 24.23}
-    ],
-    "materiales": [],
-    "equipos": []
-  },
-  {
     "codigo": "03.04.05",
     "descripcion": "RAMPAS VEHICULARES DE CONCRETO PREMEZCLADO, fc 280 kg/cm2 E=0.15m ACABADO C.A 1:2",
     "unidad": "m3",
@@ -1783,27 +1504,54 @@
     "equipos": []
   },
   {
-    "codigo": "04.02.04",
-    "descripcion": "SEÑAL DOBLE (PREVENTIVA Y REGLAMENTARIA)",
+    "codigo": "03.05.01",
+    "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA AGUA",
     "unidad": "und",
-    "rendimiento": 12.0000,
-    "mano_obra": [],
-    "materiales": [],
-    "equipos": [],
-    "subcontratos": [
-      {"codigo": "041504001000010", "descripcion": "SEÑAL DOBLE (PREVENTIVA Y REGLAMENTARIA)", "unidad": "und", "cantidad": 1.0000, "precio": 475.00}
+    "rendimiento": 25.0000,
+    "mano_obra": [
+      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.3200, "precio": 24.23},
+      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 5.0000, "cantidad": 1.6000, "precio": 17.29}
+    ],
+    "materiales": [
+      {"codigo": "027040000100002", "descripcion": "CAJA TERMOPLASTICA PORTAMEDIDOR CON MARCO Y TAPA TERMOPLASTICA", "unidad": "und", "cantidad": 1.0000, "precio": 53.00}
+    ],
+    "equipos": [
+      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 35.41}
     ]
   },
   {
-    "codigo": "05.01",
-    "descripcion": "MITIGACION DE IMPACTO AMBIENTAL",
-    "unidad": "glb",
-    "rendimiento": 1.0000,
-    "mano_obra": [],
-    "materiales": [],
-    "equipos": [],
-    "subcontratos": [
-      {"codigo": "042401002", "descripcion": "PLAN DE MITIGACION DE IMPACTO AMBIENTAL", "unidad": "glb", "cantidad": 1.0000, "precio": 91878.12}
+    "codigo": "03.05.02",
+    "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA DESAGÜE",
+    "unidad": "und",
+    "rendimiento": 100.0000,
+    "mano_obra": [
+      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0800, "precio": 24.23},
+      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0800, "precio": 17.29}
+    ],
+    "materiales": [
+      {"codigo": "020702000100002", "descripcion": "ARENA GRUESA", "unidad": "m3", "cantidad": 0.0120, "precio": 48.31},
+      {"codigo": "021301000100004", "descripcion": "CEMENTO PORTLAND TIPO HS", "unidad": "bol", "cantidad": 0.2000, "precio": 23.39},
+      {"codigo": "021915002", "descripcion": "CAJA DE CONCRETO PREFABRICADA DE DESAGUE", "unidad": "und", "cantidad": 1.0000, "precio": 55.00}
+    ],
+    "equipos": [
+      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 3.32}
+    ]
+  },
+  {
+    "codigo": "03.05.03",
+    "descripcion": "SUMINISTRO E INSTALACIÓN DE BOLARDOS DE CONCRETO ALINEADO",
+    "unidad": "und",
+    "rendimiento": 20.0000,
+    "mano_obra": [
+      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0400, "precio": 29.08},
+      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 24.23},
+      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 17.29}
+    ],
+    "materiales": [
+      {"codigo": "029005000100010", "descripcion": "BOLARDO DE CONCRETO", "unidad": "und", "cantidad": 1.0000, "precio": 150.00}
+    ],
+    "equipos": [
+      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 17.77}
     ]
   },
   {
@@ -1864,57 +1612,7 @@
       {"codigo": "030136000100002", "descripcion": "MOCHILA CON PULVERIZADOR MANUAL", "unidad": "hm", "cuadrilla": 1.0000, "cantidad": 0.0320, "precio": 1.25}
     ]
   },
-  {
-    "codigo": "03.05.01",
-    "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA AGUA",
-    "unidad": "und",
-    "rendimiento": 25.0000,
-    "mano_obra": [
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.3200, "precio": 24.23},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 5.0000, "cantidad": 1.6000, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "027040000100002", "descripcion": "CAJA TERMOPLASTICA PORTAMEDIDOR CON MARCO Y TAPA TERMOPLASTICA", "unidad": "und", "cantidad": 1.0000, "precio": 53.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 35.41}
-    ]
-  },
-  {
-    "codigo": "03.05.02",
-    "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA DESAGÜE",
-    "unidad": "und",
-    "rendimiento": 100.0000,
-    "mano_obra": [
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0800, "precio": 24.23},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.0800, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "020702000100002", "descripcion": "ARENA GRUESA", "unidad": "m3", "cantidad": 0.0120, "precio": 48.31},
-      {"codigo": "021301000100004", "descripcion": "CEMENTO PORTLAND TIPO HS", "unidad": "bol", "cantidad": 0.2000, "precio": 23.39},
-      {"codigo": "021915002", "descripcion": "CAJA DE CONCRETO PREFABRICADA DE DESAGUE", "unidad": "und", "cantidad": 1.0000, "precio": 55.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 3.32}
-    ]
-  },
-  {
-    "codigo": "03.05.03",
-    "descripcion": "SUMINISTRO E INSTALACIÓN DE BOLARDOS DE CONCRETO ALINEADO",
-    "unidad": "und",
-    "rendimiento": 20.0000,
-    "mano_obra": [
-      {"codigo": "010101002", "descripcion": "CAPATAZ", "unidad": "hh", "cuadrilla": 0.1000, "cantidad": 0.0400, "precio": 29.08},
-      {"codigo": "010101003", "descripcion": "OPERARIO", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 24.23},
-      {"codigo": "010101005", "descripcion": "PEON", "unidad": "hh", "cuadrilla": 1.0000, "cantidad": 0.4000, "precio": 17.29}
-    ],
-    "materiales": [
-      {"codigo": "029005000100010", "descripcion": "BOLARDO DE CONCRETO", "unidad": "und", "cantidad": 1.0000, "precio": 150.00}
-    ],
-    "equipos": [
-      {"codigo": "030101006", "descripcion": "HERRAMIENTAS MANUALES", "unidad": "%mo", "cantidad": 3.0000, "precio": 17.77}
-    ]
-  },
+
   {
     "codigo": "04.02.02",
     "descripcion": "SEÑAL REGLAMENTARIA",

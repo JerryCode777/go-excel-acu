@@ -19,13 +19,14 @@ type Recurso struct {
 
 // Estructura para partidas
 type Partida struct {
-	Codigo      string    `json:"codigo"`
-	Descripcion string    `json:"descripcion"`
-	Unidad      string    `json:"unidad"`
-	Rendimiento float64   `json:"rendimiento"`
-	ManoObra    []Recurso `json:"mano_obra"`
-	Materiales  []Recurso `json:"materiales"`
-	Equipos     []Recurso `json:"equipos"`
+	Codigo       string    `json:"codigo"`
+	Descripcion  string    `json:"descripcion"`
+	Unidad       string    `json:"unidad"`
+	Rendimiento  float64   `json:"rendimiento"`
+	ManoObra     []Recurso `json:"mano_obra"`
+	Materiales   []Recurso `json:"materiales"`
+	Equipos      []Recurso `json:"equipos"`
+	Subcontratos []Recurso `json:"subcontratos"`
 }
 
 func main() {
@@ -187,7 +188,8 @@ func generarExcel(partidas []Partida, nombreArchivo string) error {
 		totalMO := calcularTotal(partida.ManoObra)
 		totalMat := calcularTotal(partida.Materiales)
 		totalEq := calcularTotal(partida.Equipos)
-		costoTotal := totalMO + totalMat + totalEq
+		totalSub := calcularTotal(partida.Subcontratos)
+		costoTotal := totalMO + totalMat + totalEq + totalSub
 
 		// Guardar para resumen
 		datosResumen = append(datosResumen, map[string]interface{}{
@@ -198,6 +200,7 @@ func generarExcel(partidas []Partida, nombreArchivo string) error {
 			"costo_mo":    totalMO,
 			"costo_mat":   totalMat,
 			"costo_eq":    totalEq,
+			"costo_sub":   totalSub,
 			"costo_total": costoTotal,
 		})
 
@@ -277,6 +280,23 @@ func generarExcel(partidas []Partida, nombreArchivo string) error {
 			row++
 		}
 
+		// Subcontratos
+		if len(partida.Subcontratos) > 0 {
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "SUBCONTRATOS")
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+			
+			row = agregarRecursos(f, sheet, partida.Subcontratos, row, dataStyle, numberStyle)
+			
+			// Subtotal Subcontratos
+			f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
+			f.SetCellValue(sheet, fmt.Sprintf("A%d", row), "SUBTOTAL SUBCONTRATOS")
+			f.SetCellValue(sheet, fmt.Sprintf("G%d", row), totalSub)
+			f.SetCellStyle(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("G%d", row), sectionStyle)
+			row++
+		}
+
 		// Costo total de la partida
 		f.MergeCell(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("F%d", row))
 		f.SetCellValue(sheet, fmt.Sprintf("A%d", row), fmt.Sprintf("COSTO TOTAL - PARTIDA %s", partida.Codigo))
@@ -338,6 +358,7 @@ func crearResumen(f *excelize.File, sheet string, datos []map[string]interface{}
 	f.SetColWidth(sheet, "F", "F", 15)
 	f.SetColWidth(sheet, "G", "G", 15)
 	f.SetColWidth(sheet, "H", "H", 15)
+	f.SetColWidth(sheet, "I", "I", 15)
 
 	// Estilos para resumen
 	titleStyle, _ := f.NewStyle(&excelize.Style{
@@ -358,12 +379,12 @@ func crearResumen(f *excelize.File, sheet string, datos []map[string]interface{}
 	})
 
 	// Título
-	f.MergeCell(sheet, "A1", "H1")
+	f.MergeCell(sheet, "A1", "I1")
 	f.SetCellValue(sheet, "A1", "RESUMEN DE COSTOS UNITARIOS")
-	f.SetCellStyle(sheet, "A1", "H1", titleStyle)
+	f.SetCellStyle(sheet, "A1", "I1", titleStyle)
 
 	// Cabeceras
-	headers := []string{"Código", "Descripción", "Unidad", "Rendimiento", "Mano Obra", "Materiales", "Equipos", "Costo Total"}
+	headers := []string{"Código", "Descripción", "Unidad", "Rendimiento", "Mano Obra", "Materiales", "Equipos", "Subcontratos", "Costo Total"}
 	for i, header := range headers {
 		f.SetCellValue(sheet, fmt.Sprintf("%c3", 'A'+i), header)
 		f.SetCellStyle(sheet, fmt.Sprintf("%c3", 'A'+i), fmt.Sprintf("%c3", 'A'+i), headerStyle)
@@ -379,10 +400,11 @@ func crearResumen(f *excelize.File, sheet string, datos []map[string]interface{}
 		f.SetCellValue(sheet, fmt.Sprintf("E%d", row), dato["costo_mo"])
 		f.SetCellValue(sheet, fmt.Sprintf("F%d", row), dato["costo_mat"])
 		f.SetCellValue(sheet, fmt.Sprintf("G%d", row), dato["costo_eq"])
-		f.SetCellValue(sheet, fmt.Sprintf("H%d", row), dato["costo_total"])
+		f.SetCellValue(sheet, fmt.Sprintf("H%d", row), dato["costo_sub"])
+		f.SetCellValue(sheet, fmt.Sprintf("I%d", row), dato["costo_total"])
 		
 		// Aplicar formato numérico a las columnas de números
-		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("H%d", row), numberStyle)
+		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("I%d", row), numberStyle)
 		row++
 	}
 }
