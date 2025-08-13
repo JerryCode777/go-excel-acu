@@ -66,16 +66,16 @@ go mod tidy
 ### Project Structure
 ```
 goexcel/
-├── cmd/goexcel/              # Main application entry point
-├── config/                   # Configuration management
-├── database/                 # SQL schemas and migrations
+├── cmd/goexcel/main.go      # Main application entry point
+├── config/                  # Configuration management  
+├── database/                # SQL schemas and migrations
 ├── internal/
-│   ├── database/            # DB connection and repositories
-│   ├── models/              # Data structures and DTOs
-│   ├── services/            # Business logic
-│   └── handlers/            # HTTP handlers (future API)
-├── pkg/                     # Reusable packages
-└── main.go                  # Legacy compatibility
+│   ├── database/           # DB connection and repositories
+│   ├── models/             # Data structures and DTOs
+│   └── services/           # Business logic
+├── bin/                    # Compiled binaries
+├── output/                 # Generated Excel files
+└── setup.sh               # Installation script
 ```
 
 ### Core Data Models

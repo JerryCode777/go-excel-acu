@@ -5,7 +5,6 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/xuri/excelize/v2"
 	"github.com/jerryandersonh/goexcel/config"
 	"github.com/jerryandersonh/goexcel/internal/models"
