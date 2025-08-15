@@ -8,7 +8,6 @@ import (
 	"net/http"
 	"os"
 	"strings"
-	"time"
 
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
@@ -26,6 +25,7 @@ type ProyectoHandler struct {
 	normalizationSvc *services.NormalizationService
 	migrationSvc     *services.NormalizedMigrationService
 	excelSvc         *services.ExcelService
+	excelJerarquicoSvc *services.ExcelJerarquicoService
 	hierarchySvc     *services.HierarchyService
 }
 
@@ -36,6 +36,7 @@ func NewProyectoHandler(db *database.DB, cfg *config.Config) *ProyectoHandler {
 		normalizationSvc: services.NewNormalizationService(),
 		migrationSvc:     services.NewNormalizedMigrationService(db),
 		excelSvc:         services.NewExcelService(cfg),
+		excelJerarquicoSvc: services.NewExcelJerarquicoService(cfg),
 		hierarchySvc:     services.NewHierarchyService(db.DB),
 	}
 }
@@ -395,69 +396,26 @@ func (h *ProyectoHandler) ExportProject(w http.ResponseWriter, r *http.Request) 
 
 	switch format {
 	case "excel":
-		// Debug: Mostrar proyectos disponibles en store
-		log.Printf("🔍 Proyectos en store: %d", len(originalJSONStore))
-		for id := range originalJSONStore {
-			log.Printf("   - %s", id)
+		// Validar UUID del proyecto
+		proyectoUUID, parseErr := uuid.Parse(projectID)
+		if parseErr != nil {
+			log.Printf("❌ UUID inválido: %s", projectID)
+			http.Error(w, "ID de proyecto inválido", http.StatusBadRequest)
+			return
 		}
 		
-		// Buscar JSON original guardado - si no existe, usar datos de BD
-		partidasLegacy, exists := originalJSONStore[projectID]
-		if !exists || len(partidasLegacy) == 0 {
-			log.Printf("🔄 No se encontró JSON original, generando desde base de datos para proyecto: %s", projectID)
-			
-			// Validar UUID y obtener datos de BD
-			proyectoUUID, parseErr := uuid.Parse(projectID)
-			if parseErr != nil {
-				log.Printf("❌ UUID inválido: %s", projectID)
-				http.Error(w, "ID de proyecto inválido", http.StatusBadRequest)
-				return
-			}
-			
-			// Obtener partidas completas de la BD
-			partidasCompletas, err := h.getPartidasConRecursos(proyectoUUID)
-			if err != nil {
-				log.Printf("❌ Error obteniendo partidas de BD: %v", err)
-				http.Error(w, "Error obteniendo datos del proyecto", http.StatusInternalServerError)
-				return
-			}
-			
-			if len(partidasCompletas) == 0 {
-				log.Printf("❌ No hay partidas en la BD del proyecto: %s", projectID)
-				http.Error(w, "No hay partidas disponibles", http.StatusNotFound)
-				return
-			}
-			
-			// Convertir a formato legacy
-			partidasLegacy = h.convertToLegacyFormatFromDB(partidasCompletas)
-			log.Printf("🔄 Convertidas %d partidas desde BD a formato legacy", len(partidasLegacy))
-		}
-
-		log.Printf("📊 Generando Excel con método legacy - %d partidas", len(partidasLegacy))
-
-		// Obtener nombre del proyecto para el archivo
-		var proyecto *models.Proyecto
-		if proyectoUUID, parseErr := uuid.Parse(projectID); parseErr == nil {
-			proyecto, _ = h.proyectoRepo.GetByID(proyectoUUID)
-		}
-
-		// Generar Excel usando exactamente el mismo método que funcionaba
-		nombreArchivo := "ACUs_Consolidado"
-		if proyecto != nil {
-			nombreArchivo = proyecto.Nombre
-		}
-		filename := fmt.Sprintf("output/%s_%d.xlsx", nombreArchivo, time.Now().Unix())
-		
-		// Crear directorio output si no existe
-		if err := os.MkdirAll("output", 0755); err != nil {
-			log.Printf("❌ Error creando directorio output: %v", err)
-			http.Error(w, "Error creando directorio", http.StatusInternalServerError)
+		// Obtener información del proyecto
+		proyecto, err := h.proyectoRepo.GetByID(proyectoUUID)
+		if err != nil {
+			log.Printf("❌ Error obteniendo proyecto: %v", err)
+			http.Error(w, "Proyecto no encontrado", http.StatusNotFound)
 			return
 		}
 
-		// Usar el generador jerárquico profesional
-		var err error
-		err = legacy.GenerarExcelJerarquico(partidasLegacy, filename)
+		log.Printf("📊 Generando Excel jerárquico profesional para proyecto: %s", proyecto.Nombre)
+
+		// Usar el nuevo servicio jerárquico directamente
+		filename, err := h.excelJerarquicoSvc.GenerarExcelJerarquico(proyecto, h.hierarchySvc)
 		if err != nil {
 			log.Printf("❌ Error generando Excel legacy: %v", err)
 			http.Error(w, fmt.Sprintf("Error generando Excel: %v", err), http.StatusInternalServerError)
@@ -474,8 +432,8 @@ func (h *ProyectoHandler) ExportProject(w http.ResponseWriter, r *http.Request) 
 		defer file.Close()
 		defer os.Remove(filename) // Limpiar archivo temporal
 
-		// Usar el nombre del archivo para el download
-		downloadName := nombreArchivo + ".xlsx"
+		// Usar el nombre del proyecto para el download
+		downloadName := proyecto.Nombre + ".xlsx"
 		w.Header().Set("Content-Disposition", fmt.Sprintf("attachment; filename=%s", downloadName))
 		w.Header().Set("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 		
@@ -782,76 +740,39 @@ func (h *ProyectoHandler) convertRecursosToLegacy(recursos []models.RecursoReque
 	return result
 }
 
-// generateExcelLegacy genera Excel usando el método original con datos de la BD
+// generateExcelLegacy genera Excel usando el nuevo servicio jerárquico con datos de la BD
 func (h *ProyectoHandler) generateExcelLegacy(proyecto *models.Proyecto, proyectoUUID uuid.UUID) (string, error) {
-	// Obtener datos completos de la BD para reconstruir el formato legacy
-	partidasCompletas, err := h.getPartidasConRecursos(proyectoUUID)
+	log.Printf("🔄 Generando Excel jerárquico profesional para proyecto: %s", proyecto.Nombre)
+
+	// Usar el nuevo servicio jerárquico que obtiene datos directamente de la BD
+	filename, err := h.excelJerarquicoSvc.GenerarExcelJerarquico(proyecto, h.hierarchySvc)
 	if err != nil {
-		return "", fmt.Errorf("error obteniendo partidas completas: %w", err)
+		return "", fmt.Errorf("error generando Excel jerárquico: %w", err)
 	}
 
-	// Convertir a formato legacy
-	partidasLegacy := h.convertToLegacyFormatFromDB(partidasCompletas)
-	if len(partidasLegacy) == 0 {
-		return "", fmt.Errorf("no se encontraron partidas para el proyecto")
-	}
-
-	// Generar nombre de archivo
-	outputDir := "output"
-	if h.excelSvc != nil && h.excelSvc.GetConfig() != nil {
-		outputDir = h.excelSvc.GetConfig().Files.ExcelOutputDir
-	}
-	filename := fmt.Sprintf("%s/%s_ACU_%d.xlsx", outputDir, proyecto.Nombre, time.Now().Unix())
-
-	// Crear directorio si no existe
-	if err := os.MkdirAll(outputDir, 0755); err != nil {
-		return "", fmt.Errorf("error creando directorio de salida: %w", err)
-	}
-
-	// Usar el generador Excel jerárquico
-	err = legacy.GenerarExcelJerarquico(partidasLegacy, filename)
-	if err != nil {
-		return "", fmt.Errorf("error generando Excel: %w", err)
-	}
-
-	log.Printf("✅ Excel generado exitosamente: %s", filename)
+	log.Printf("✅ Excel jerárquico generado exitosamente: %s", filename)
 	return filename, nil
 }
 
-// generateExcelFromOriginalJSON genera Excel usando el JSON original del frontend
+// generateExcelFromOriginalJSON genera Excel usando el JSON original del frontend o BD jerárquica
 func (h *ProyectoHandler) generateExcelFromOriginalJSON(proyecto *models.Proyecto, projectID string) (string, error) {
 	// Buscar JSON original guardado
 	partidasLegacy, exists := originalJSONStore[projectID]
 	if !exists {
-		return "", fmt.Errorf("no se encontró JSON original para el proyecto %s", projectID)
+		log.Printf("⚠️ No se encontró JSON original para proyecto %s, usando método jerárquico desde BD", projectID)
+		// Fallback al método jerárquico desde BD
+		return h.excelJerarquicoSvc.GenerarExcelJerarquico(proyecto, h.hierarchySvc)
 	}
 
 	if len(partidasLegacy) == 0 {
 		return "", fmt.Errorf("no hay partidas en el JSON original del proyecto")
 	}
 
-	log.Printf("📋 Usando JSON original con %d partidas", len(partidasLegacy))
+	log.Printf("📋 Usando JSON original con %d partidas - fallback a método jerárquico", len(partidasLegacy))
 
-	// Generar nombre de archivo
-	outputDir := "output"
-	if h.excelSvc != nil && h.excelSvc.GetConfig() != nil {
-		outputDir = h.excelSvc.GetConfig().Files.ExcelOutputDir
-	}
-	filename := fmt.Sprintf("%s/%s_ACU_%d.xlsx", outputDir, proyecto.Nombre, time.Now().Unix())
-
-	// Crear directorio si no existe
-	if err := os.MkdirAll(outputDir, 0755); err != nil {
-		return "", fmt.Errorf("error creando directorio de salida: %w", err)
-	}
-
-	// Usar el generador Excel jerárquico directamente
-	err := legacy.GenerarExcelJerarquico(partidasLegacy, filename)
-	if err != nil {
-		return "", fmt.Errorf("error generando Excel con método legacy: %w", err)
-	}
-
-	log.Printf("✅ Excel generado exitosamente desde JSON original: %s", filename)
-	return filename, nil
+	// Por ahora, usar el servicio jerárquico hasta implementar soporte para JSON legacy
+	log.Printf("⚠️ JSON legacy no soportado, usando método jerárquico desde BD")
+	return h.excelJerarquicoSvc.GenerarExcelJerarquico(proyecto, h.hierarchySvc)
 }
 
 // getPartidasConRecursos obtiene partidas con todos sus recursos de la BD
