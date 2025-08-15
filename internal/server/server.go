@@ -8,9 +8,9 @@ import (
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.com/jerryandersonh/goexcel/config"
-	"github.com/jerryandersonh/goexcel/internal/database"
-	apiHandlers "github.com/jerryandersonh/goexcel/internal/handlers"
+	"goexcel/config"
+	"goexcel/internal/database"
+	apiHandlers "goexcel/internal/handlers"
 )
 
 type Server struct {

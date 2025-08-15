@@ -31,7 +31,7 @@ Esta versión incluye:
 ### 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/jerryandersonh/goexcel.git
+git clone https://goexcel.git
 cd goexcel
 ```
 

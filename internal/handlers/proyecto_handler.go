@@ -11,12 +11,12 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
-	"github.com/jerryandersonh/goexcel/config"
-	"github.com/jerryandersonh/goexcel/internal/database"
-	"github.com/jerryandersonh/goexcel/internal/database/repositories"
-	"github.com/jerryandersonh/goexcel/internal/legacy"
-	"github.com/jerryandersonh/goexcel/internal/models"
-	"github.com/jerryandersonh/goexcel/internal/services"
+	"goexcel/config"
+	"goexcel/internal/database"
+	"goexcel/internal/database/repositories"
+	"goexcel/internal/legacy"
+	"goexcel/internal/models"
+	"goexcel/internal/services"
 )
 
 type ProyectoHandler struct {

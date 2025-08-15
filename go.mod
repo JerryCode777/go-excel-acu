@@ -1,4 +1,4 @@
-module github.com/jerryandersonh/goexcel
+module goexcel
 
 go 1.23.0
 
@@ -6,6 +6,8 @@ toolchain go1.24.3
 
 require (
 	github.com/google/uuid v1.4.0
+	github.com/gorilla/handlers v1.5.2
+	github.com/gorilla/mux v1.8.1
 	github.com/joho/godotenv v1.5.1
 	github.com/lib/pq v1.10.9
 	github.com/xuri/excelize/v2 v2.9.1
@@ -13,8 +15,6 @@ require (
 
 require (
 	github.com/felixge/httpsnoop v1.0.3 // indirect
-	github.com/gorilla/handlers v1.5.2 // indirect
-	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/richardlehane/mscfb v1.0.4 // indirect
 	github.com/richardlehane/msoleps v1.0.4 // indirect
 	github.com/tiendc/go-deepcopy v1.6.0 // indirect

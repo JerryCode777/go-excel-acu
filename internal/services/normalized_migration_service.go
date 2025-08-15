@@ -6,8 +6,8 @@ import (
 	"log"
 
 	"github.com/google/uuid"
-	"github.com/jerryandersonh/goexcel/internal/database"
-	"github.com/jerryandersonh/goexcel/internal/models"
+	"goexcel/internal/database"
+	"goexcel/internal/models"
 )
 
 type NormalizedMigrationService struct {

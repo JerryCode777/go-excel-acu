@@ -6,8 +6,8 @@ import (
 	"os"
 
 	"github.com/google/uuid"
-	"github.com/jerryandersonh/goexcel/internal/legacy"
-	"github.com/jerryandersonh/goexcel/internal/models"
+	"goexcel/internal/legacy"
+	"goexcel/internal/models"
 )
 
 type NormalizationService struct{}

@@ -6,8 +6,8 @@ import (
 	"time"
 
 	"github.com/xuri/excelize/v2"
-	"github.com/jerryandersonh/goexcel/config"
-	"github.com/jerryandersonh/goexcel/internal/models"
+	"goexcel/config"
+	"goexcel/internal/models"
 )
 
 type ExcelJerarquicoService struct {
@@ -530,3 +530,4 @@ func (s *ExcelJerarquicoService) crearEstilosProfesionales(f *excelize.File) map
 	
 	return estilos
 }
+

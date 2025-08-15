@@ -7,7 +7,7 @@ import (
 	"time"
 
 	_ "github.com/lib/pq"
-	"github.com/jerryandersonh/goexcel/config"
+	"goexcel/config"
 )
 
 type DB struct {

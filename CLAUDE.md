@@ -14,51 +14,53 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - API-ready structure for future React integration
 - Backward compatibility with legacy JSON mode
 
-## Commands
+## Comandos Principales
 
-### Setup (First Time)
+### Configuración Inicial
 ```bash
-# Run setup script
+# Ejecutar script de configuración completa
 ./setup.sh
 
-# Or manual setup:
-make build          # Compile application
-make setup-dirs     # Create necessary directories
+# O configuración manual:
+make build          # Compilar aplicación
+make setup-dirs     # Crear directorios necesarios
 ```
 
-### Database Operations
-```bash
-# Migrate JSON data to PostgreSQL
-./bin/goexcel migrate partidas.json
+### Aplicación CLI (Un solo main.go)
+La aplicación tiene **un solo punto de entrada**: `cmd/goexcel/main.go`
 
-# List available projects
+```bash
+# Listar proyectos disponibles en la base de datos
 ./bin/goexcel
 
-# Generate Excel from database
+# Migrar datos JSON a PostgreSQL
+./bin/goexcel migrate partidas.json
+
+# Generar Excel desde base de datos
 ./bin/goexcel generate <project_id>
-```
 
-### Legacy Mode (JSON only)
-```bash
-# Use original functionality (no database)
+# Modo legacy (sin base de datos)
 ./bin/goexcel legacy partidas.json
-./bin/goexcel legacy  # uses partidas.json by default
+
+# Iniciar servidor API REST
+./bin/goexcel server
 ```
 
-### Development
+### Desarrollo Local
 ```bash
-# Using Makefile
-make build         # Compile application
-make run-legacy    # Run in legacy mode
-make run-migrate   # Migrate JSON to DB
-make test          # Run tests
-make clean         # Clean build artifacts
-make fmt           # Format code
-
-# Direct Go commands
+# Compilar
+make build
 go build -o bin/goexcel cmd/goexcel/main.go
+
+# Ejecutar en modo desarrollo
 go run cmd/goexcel/main.go legacy partidas.json
-go mod tidy
+go run cmd/goexcel/main.go server
+
+# Herramientas de desarrollo
+make test          # Ejecutar tests
+make fmt           # Formatear código
+make clean         # Limpiar archivos generados
+go mod tidy        # Limpiar dependencias
 ```
 
 ## Architecture v2.0
@@ -145,9 +147,10 @@ Generates Excel files with:
 - Automatic calculations and totals including subcontracts
 - Project-based organization and metadata
 
-## Environment Setup
+## Configuración de Servidor y Base de Datos
 
-Required environment variables in `.env`:
+### Variables de Entorno
+Crear archivo `.env` en la raíz del proyecto:
 ```bash
 DB_HOST=localhost
 DB_PORT=5432
@@ -156,6 +159,38 @@ DB_PASSWORD=your_password
 DB_NAME=goexcel_db
 DB_SSLMODE=disable
 ```
+
+### Inicio del Servidor API
+```bash
+# Compilar y ejecutar servidor
+make build
+./bin/goexcel server
+
+# O ejecutar en modo desarrollo
+go run cmd/goexcel/main.go server
+```
+
+El servidor se ejecuta por defecto en puerto **8080** y proporciona:
+- API REST para manejo de proyectos y partidas
+- Endpoints para frontend React
+- CORS habilitado para desarrollo local
+
+**Acceso al servidor:**
+- API: `http://localhost:8080/api/v1`
+- Health Check: `http://localhost:8080/api/v1/health`
+
+**Si el puerto está en uso:**
+- Cambiar `SERVER_PORT=8081` en `.env`
+- O usar otro puerto libre disponible
+- Verificar procesos: `lsof -i :8080`
+
+### Para Clonar en Otra PC
+1. **Requisitos**: Go 1.23+, PostgreSQL
+2. **Clonar**: `git clone <tu-repo-local>`
+3. **Configurar**: Copiar `.env` y ajustar configuración de BD
+4. **Instalar**: `go mod download`
+5. **Compilar**: `make build` o `./setup.sh`
+6. **Ejecutar**: `./bin/goexcel server`
 
 ## Testing
 

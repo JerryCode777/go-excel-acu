@@ -3,7 +3,7 @@ package services
 import (
 	"database/sql"
 	"fmt"
-	"github.com/jerryandersonh/goexcel/internal/models"
+	"goexcel/internal/models"
 )
 
 type HierarchyService struct {
@@ -47,8 +47,7 @@ func (h *HierarchyService) ObtenerJerarquiaCompleta(proyectoID string) ([]Elemen
 	}
 	defer rows.Close()
 
-	elementosMap := make(map[string]*ElementoJerarquico)
-
+	var elementos []ElementoJerarquico
 	for rows.Next() {
 		var elem ElementoJerarquico
 		err := rows.Scan(
@@ -59,26 +58,32 @@ func (h *HierarchyService) ObtenerJerarquiaCompleta(proyectoID string) ([]Elemen
 		if err != nil {
 			return nil, fmt.Errorf("error escaneando elemento: %v", err)
 		}
-
-		elem.Hijos = make([]ElementoJerarquico, 0)
-		elementosMap[elem.Codigo] = &elem
+		elementos = append(elementos, elem)
 	}
 
-	// Construir la jerarquía
-	var raices []ElementoJerarquico
-	for _, elem := range elementosMap {
-		if elem.CodigoPadre == nil {
-			// Es un elemento raíz
-			raices = append(raices, *elem)
-		} else {
-			// Tiene padre, agregarlo como hijo
-			if padre, exists := elementosMap[*elem.CodigoPadre]; exists {
-				padre.Hijos = append(padre.Hijos, *elem)
-			}
+
+	// Construir jerarquía recursivamente
+	jerarquia := h.construirJerarquia(elementos, nil)
+	
+	return jerarquia, nil
+}
+
+// construirJerarquia construye recursivamente la estructura jerárquica
+func (h *HierarchyService) construirJerarquia(elementos []ElementoJerarquico, codigoPadre *string) []ElementoJerarquico {
+	var hijos []ElementoJerarquico
+	
+	for _, elem := range elementos {
+		// Verificar si este elemento pertenece al nivel actual
+		if (codigoPadre == nil && elem.CodigoPadre == nil) || 
+		   (codigoPadre != nil && elem.CodigoPadre != nil && *elem.CodigoPadre == *codigoPadre) {
+			
+			// Buscar recursivamente los hijos de este elemento
+			elem.Hijos = h.construirJerarquia(elementos, &elem.Codigo)
+			hijos = append(hijos, elem)
 		}
 	}
-
-	return raices, nil
+	
+	return hijos
 }
 
 // ObtenerPartidasConJerarquia devuelve solo las partidas (no títulos) con información de jerarquía

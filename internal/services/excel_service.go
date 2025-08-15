@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/xuri/excelize/v2"
-	"github.com/jerryandersonh/goexcel/config"
+	"goexcel/config"
 )
 
 type ExcelService struct {
