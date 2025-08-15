@@ -17,7 +17,7 @@ GOFMT=$(GOCMD) fmt
 # Build flags
 LDFLAGS=-ldflags "-s -w"
 
-.PHONY: all build clean test deps fmt help run-legacy run-migrate run-generate
+.PHONY: all build build-server build-all clean test deps fmt help run-legacy run-migrate run-generate
 
 all: clean deps fmt test build
 
@@ -27,6 +27,16 @@ build:
 	@mkdir -p $(BUILD_DIR)
 	$(GOBUILD) $(LDFLAGS) -o $(BUILD_DIR)/$(BINARY_NAME) $(MAIN_PACKAGE)
 	@echo "✅ Compilación completada: $(BUILD_DIR)/$(BINARY_NAME)"
+
+# Compilar el servidor
+build-server:
+	@echo "🔨 Compilando servidor..."
+	@mkdir -p $(BUILD_DIR)
+	$(GOBUILD) $(LDFLAGS) -o $(BUILD_DIR)/server ./cmd/server
+	@echo "✅ Compilación completada: $(BUILD_DIR)/server"
+
+# Compilar ambos binarios
+build-all: build build-server
 
 # Limpiar archivos generados
 clean:

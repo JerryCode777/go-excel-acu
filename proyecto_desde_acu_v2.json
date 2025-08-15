@@ -1,0 +1,142 @@
+[
+  {
+    "codigo": "470101",
+    "descripcion": "EXCAVACIÓN MANUAL EN TERRENO NORMAL",
+    "unidad": "hh",
+    "rendimiento": 5.5,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "RELLENO COMPACTADO CON MATERIAL PROPIO",
+    "unidad": "hh",
+    "rendimiento": 8,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "CONCRETO F'C=175 KG/CM2",
+    "unidad": "hh",
+    "rendimiento": 10,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "ENCOFRADO Y DESENCOFRADO EN MUROS",
+    "unidad": "hh",
+    "rendimiento": 12,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "ACERO DE REFUERZO FY=4200 KG/CM2",
+    "unidad": "hh",
+    "rendimiento": 250,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "ALBAÑILERÍA CON LADRILLO KK 18 HUECOS",
+    "unidad": "hh",
+    "rendimiento": 8,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "TARRAJEO INTERIOR CON MORTERO 1:5",
+    "unidad": "hh",
+    "rendimiento": 10,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "PINTURA LÁTEX INTERIOR 2 MANOS",
+    "unidad": "hh",
+    "rendimiento": 40,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470201",
+    "descripcion": "INSTALACIÓN PUNTO DE LUZ",
+    "unidad": "hh",
+    "rendimiento": 4,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470301",
+    "descripcion": "INSTALACIÓN PUNTO DE AGUA FRÍA",
+    "unidad": "hh",
+    "rendimiento": 3,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470101",
+    "descripcion": "PISO CERÁMICO 30X30 CM",
+    "unidad": "hh",
+    "rendimiento": 12,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470401",
+    "descripcion": "PUERTA DE MADERA CONTRAPLACADA",
+    "unidad": "hh",
+    "rendimiento": 0.5,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "470501",
+    "descripcion": "VIDRIO TRANSPARENTE 6MM",
+    "unidad": "hh",
+    "rendimiento": 8,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  },
+  {
+    "codigo": "SUB001",
+    "descripcion": "TRANSPORTE DE MATERIALES",
+    "unidad": "glb",
+    "rendimiento": 1,
+    "mano_obra": null,
+    "materiales": null,
+    "equipos": null,
+    "subcontratos": null
+  }
+]

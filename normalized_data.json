@@ -1,0 +1,6057 @@
+{
+  "proyecto": {
+    "id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+    "nombre": "Proyecto ACU - partidas.json",
+    "descripcion": "Proyecto normalizado desde partidas.json",
+    "moneda": "PEN"
+  },
+  "recursos": [
+    {
+      "id": "db88327b-c880-4d0e-81f4-d0b2697f3b4f",
+      "codigo": "026704007",
+      "descripcion": "RESPIRADORES DESCARTABLES",
+      "unidad": "und",
+      "precio_base": 10.93,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "0f89db73-0f3b-487b-ac43-1d5cd68121e2",
+      "codigo": "020702001001",
+      "descripcion": "ARENA FINA",
+      "unidad": "m3",
+      "precio_base": 45,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4f59952b-fc55-4d9d-82c9-374cf49cc35d",
+      "codigo": "021301000100004",
+      "descripcion": "CEMENTO PORTLAND TIPO HS",
+      "unidad": "bol",
+      "precio_base": 23.39,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "b6cff34d-cd6d-4a5c-92a5-b554cc4a9502",
+      "codigo": "026710006",
+      "descripcion": "FÉRULAS NEUMÁTICAS (kit)",
+      "unidad": "und",
+      "precio_base": 270,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "a4a7c456-4b0a-4055-bc95-b3f0e5d9c5cc",
+      "codigo": "020105001004",
+      "descripcion": "ASFALTO LIQUIDO RC-250",
+      "unidad": "gal",
+      "precio_base": 17,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "79c9a0cc-a46c-4d6f-898c-2478cdaa2928",
+      "codigo": "030124010",
+      "descripcion": "SOLDADORA ELECTRICA TRIFASICA 400 AMP",
+      "unidad": "hm",
+      "precio_base": 30.71,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "ab9b31e5-bd5b-436e-9e11-668b2a50d3be",
+      "codigo": "027001296",
+      "descripcion": "CABLE ELÉCTRICO VULCANIZADO 3 X 12",
+      "unidad": "rl",
+      "precio_base": 695,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "6f4e9443-e528-4750-87dd-21c55905869f",
+      "codigo": "040303009",
+      "descripcion": "SC PAGO TRANSPORTE MATERIAL MEZCLA ASFÁLTICA",
+      "unidad": "m3",
+      "precio_base": 805,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "87b1323b-5ecc-458b-b941-0f8a5f91ae2c",
+      "codigo": "020412000200003",
+      "descripcion": "PERNOS 5/16 X 6\" CON TUERCA Y ARANDELA",
+      "unidad": "pza",
+      "precio_base": 1,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "8226cfa7-e480-4000-b838-eeec934afc16",
+      "codigo": "026710011",
+      "descripcion": "MANTA DE YUTE",
+      "unidad": "m2",
+      "precio_base": 6,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "a2674ea9-1455-4a1c-b1d1-07e669ce7255",
+      "codigo": "030127005",
+      "descripcion": "PEINE DE FIBRA PLASTICA 2.44M",
+      "unidad": "hm",
+      "precio_base": 1,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "88eefefb-ee1a-4dcd-9c80-f61c75f2bc53",
+      "codigo": "020105000100004",
+      "descripcion": "ASFALTO LIQUIDO RC-250",
+      "unidad": "gal",
+      "precio_base": 17,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "3a0889fb-f4a5-4488-87a7-ab43d637846a",
+      "codigo": "042401010",
+      "descripcion": "OBTENCIÓN DEL SERVICIO DE AGUA PARA LA CONSTRUCCIÓN",
+      "unidad": "glb",
+      "precio_base": 350,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "0272fc2d-c4e4-4da2-931b-be569edbebd1",
+      "codigo": "021003001",
+      "descripcion": "MALLA CERCADORA NARANJA",
+      "unidad": "rl",
+      "precio_base": 59,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "f8f4621f-7dad-4ea7-956b-2b811fbde81e",
+      "codigo": "020403001",
+      "descripcion": "ACERO CORRUGADO fy = 4200 kg/cm2 GRADO 60",
+      "unidad": "kg",
+      "precio_base": 5.6,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "fd4594ba-4f33-4129-817b-7124565064af",
+      "codigo": "022218001017",
+      "descripcion": "CURADOR MEMBRANIL VISTA P/CONCRETO - 1 GAL",
+      "unidad": "gal",
+      "precio_base": 21.19,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "f3e37f44-39dc-4f4f-ae70-2ea1b6f7fb28",
+      "codigo": "021004001002",
+      "descripcion": "TECNOPOR DE 1\"X4X8'",
+      "unidad": "pln",
+      "precio_base": 4.46,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "e527be38-a136-49d3-b9d7-5b181a8ae0f1",
+      "codigo": "020702001002",
+      "descripcion": "ARENA GRUESA",
+      "unidad": "m3",
+      "precio_base": 48.31,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "e73db5ee-84b7-41ba-a971-6eb3d3fb1f7b",
+      "codigo": "042401043",
+      "descripcion": "NIVELACION Y REPOSICION DE CAJAS DE VALVULAS",
+      "unidad": "und",
+      "precio_base": 480,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "722dcc98-306d-4a56-8a53-b2897aac958f",
+      "codigo": "042401016",
+      "descripcion": "MANTENIMIENTO DE VÍAS DE PLAN DE DESVÍO",
+      "unidad": "glb",
+      "precio_base": 247594.45,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "899fdf4a-a93f-43d3-887c-2cb53f11aa93",
+      "codigo": "024006001",
+      "descripcion": "PINTURA PARA TRAFICO",
+      "unidad": "gal",
+      "precio_base": 46.33,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "2dd3175d-5823-4bd3-af4f-9c6b99f2dcf5",
+      "codigo": "029013002",
+      "descripcion": "AGUA",
+      "unidad": "m3",
+      "precio_base": 5.11,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "967f8cce-7cd0-4922-abba-d19dd04a8dc1",
+      "codigo": "020702000100001",
+      "descripcion": "ARENA FINA",
+      "unidad": "m3",
+      "precio_base": 45,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "77315271-d570-4d8a-b785-a4d192157794",
+      "codigo": "022208018",
+      "descripcion": "PEGAMENTO PVC 4 OZ",
+      "unidad": "und",
+      "precio_base": 48.3,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4b265539-5bc4-47f2-9c03-17fddda14bb2",
+      "codigo": "029023001008",
+      "descripcion": "FLUORESCENTE 1 X 36 W",
+      "unidad": "und",
+      "precio_base": 17.91,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "6e5fe240-ee8d-4f82-91c5-3f1656198e72",
+      "codigo": "026711001",
+      "descripcion": "CINTA DE SEÑALIZACIÓN",
+      "unidad": "und",
+      "precio_base": 34.9,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "e2c423dc-b6a0-46a3-bbd5-a04556076c9a",
+      "codigo": "026710005",
+      "descripcion": "BOTIQUÍN (equipos según lista de materiales)",
+      "unidad": "und",
+      "precio_base": 99.9,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "5ae56e3c-3fe6-424a-984f-b37f51d3a0d7",
+      "codigo": "030110000600003",
+      "descripcion": "RODILLO LISO VIBRATORIO AUTOPROPULSADO 101-135HP 10-12 ton",
+      "unidad": "hm",
+      "precio_base": 215.35,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "6a7924cb-a5b2-43de-ac02-84fa31d1001a",
+      "codigo": "024007003",
+      "descripcion": "PINTURA IMPRIMANTE",
+      "unidad": "gal",
+      "precio_base": 45.17,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "865dc74f-8abd-4223-8693-1c64e109b15d",
+      "codigo": "030139009",
+      "descripcion": "PAVIMENTADORA DE CONCRETO DE ENCOFRADO DESLIZANTE",
+      "unidad": "hm",
+      "precio_base": 1600,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "73d5e894-2cb0-4b53-9717-28f645ae105b",
+      "codigo": "022218000100017",
+      "descripcion": "CURADOR MEMBRANIL VISTA PICONCRETO - 1 GAL",
+      "unidad": "gal",
+      "precio_base": 21.19,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "eea58c4b-744d-43e9-a337-d575e33cfa25",
+      "codigo": "027040000100002",
+      "descripcion": "CAJA TERMOPLASTICA PORTAMEDIDOR CON MARCO Y TAPA TERMOPLASTICA",
+      "unidad": "und",
+      "precio_base": 53,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "637c8d51-7d19-42bc-980a-b0d74181c01c",
+      "codigo": "021003004",
+      "descripcion": "MALLA RASCHEL O SIMILAR PARA CERCO",
+      "unidad": "m2",
+      "precio_base": 3.1,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "c5e9b74d-1b55-4e86-a1b6-52566e226e6f",
+      "codigo": "020701001002",
+      "descripcion": "PIEDRA CHANCADA 1/2\"",
+      "unidad": "m3",
+      "precio_base": 63,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "d58aa596-8e7b-45aa-ad6d-00a7c5d4aff5",
+      "codigo": "027105140",
+      "descripcion": "PLATINA DE ACERO 1/8\" X 2\" X 6M",
+      "unidad": "pza",
+      "precio_base": 21,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "3544a77f-c816-425f-951f-5ee1008d7fbb",
+      "codigo": "022218000017",
+      "descripcion": "CURADOR MEMBRANIL VISTA PICONCRETO - 1 GAL",
+      "unidad": "gal",
+      "precio_base": 21.19,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "codigo": "020412001005",
+      "descripcion": "CLAVOS PARA MADERA CON CABEZA DE 3\"",
+      "unidad": "kg",
+      "precio_base": 6.4,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "b7921c28-5f76-4171-bb71-e9875fbf6b2a",
+      "codigo": "024101003",
+      "descripcion": "CINTA EPOM",
+      "unidad": "pza",
+      "precio_base": 3.15,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "5e11c0e1-859f-44ae-9ed0-576043b79bec",
+      "codigo": "026703001",
+      "descripcion": "OREJERAS PARA CASCO TIPO COPA",
+      "unidad": "und",
+      "precio_base": 42.29,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "dfd1d091-0177-49f7-ab90-e384f1a98329",
+      "codigo": "026711007",
+      "descripcion": "CABALLETES",
+      "unidad": "und",
+      "precio_base": 44.9,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "d9fb9c50-49c8-4ac9-ab07-44448504c045",
+      "codigo": "021302004",
+      "descripcion": "CAL DE OBRA 20 KG",
+      "unidad": "bol",
+      "precio_base": 13.14,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "cf6f8b23-7e00-4d63-a33c-87744fa6506d",
+      "codigo": "042401021",
+      "descripcion": "SC SUMINISTRO DE DOWELL (BARRA PASAJUNTA + CANASTILLA)",
+      "unidad": "m",
+      "precio_base": 96.32,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "cbd26a6f-c885-4d1f-8509-bccd697ceea6",
+      "codigo": "030129000100006",
+      "descripcion": "VIBRADOR DE CONCRETO 4 HP 2.40\"",
+      "unidad": "hm",
+      "precio_base": 7.5,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "517dba1c-ef68-4057-87ba-f7f47074232d",
+      "codigo": "021901000100031",
+      "descripcion": "CONCRETO PREMEZCLADO  FC=350 kg/cm2 CON CEMENTO TIPO HS",
+      "unidad": "m3",
+      "precio_base": 329,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "cbd7eb17-025b-45aa-ad38-c74272e8c2fa",
+      "codigo": "030124009",
+      "descripcion": "REGLA VIBRATORIA",
+      "unidad": "hm",
+      "precio_base": 5.5,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "17c23688-896f-4eb7-88ab-945f802d40dd",
+      "codigo": "029005000100010",
+      "descripcion": "BOLARDO DE CONCRETO",
+      "unidad": "und",
+      "precio_base": 150,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "108eb813-4769-4d25-9dbe-44e24fa726c5",
+      "codigo": "029005000000023",
+      "descripcion": "TINTA XEROGRAFICA NEGRA",
+      "unidad": "gal",
+      "precio_base": 130,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "a881f765-5ea6-43d5-b80c-5a1050efc817",
+      "codigo": "027040001",
+      "descripcion": "MATERIAL GRANULAR",
+      "unidad": "m3",
+      "precio_base": 45,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4cc67d8e-96f5-4663-9b3b-f52021e0e7fb",
+      "codigo": "021901001031",
+      "descripcion": "CONCRETO PREMEZCLADO F'C=350 kg/cm2 CON CEMENTO TIPO HS",
+      "unidad": "m3",
+      "precio_base": 329,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "codigo": "010101003",
+      "descripcion": "OPERARIO",
+      "unidad": "hh",
+      "precio_base": 24.23,
+      "tipo_recurso": "mano_obra"
+    },
+    {
+      "id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "codigo": "030120002",
+      "descripcion": "MOTONIVELADORA DE 125 HP",
+      "unidad": "hm",
+      "precio_base": 223.99,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "95c40936-0a55-49de-a22a-4473d61147c5",
+      "codigo": "026702009",
+      "descripcion": "LENTES DE PROTECCIÓN",
+      "unidad": "und",
+      "precio_base": 5,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "3580135e-6c9c-4658-aaff-27c86bb81c4d",
+      "codigo": "026709015",
+      "descripcion": "PROTECTORES AUDITIVOS",
+      "unidad": "und",
+      "precio_base": 4.66,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "18b9c809-2055-426a-b16d-709e7cf5fe71",
+      "codigo": "031160004",
+      "descripcion": "MONTACARGAS 68HP",
+      "unidad": "hm",
+      "precio_base": 95.9,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "7ddd9ca1-6008-4b41-8a89-c236024ddb3c",
+      "codigo": "021909002",
+      "descripcion": "TAPA DE C°A° C/MARCO DE FIERRO PARA BUZONES",
+      "unidad": "und",
+      "precio_base": 400,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "a87cac9b-d378-4ba0-be4f-fc2938ec8b42",
+      "codigo": "020601002",
+      "descripcion": "TUBO LUZ SAP 3/4",
+      "unidad": "pza",
+      "precio_base": 8.27,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "dcd5d114-5f03-435d-8eb6-805ab2d1b22d",
+      "codigo": "030118002004",
+      "descripcion": "TRACTOR DE ORUGAS DE 140-160 HP",
+      "unidad": "hm",
+      "precio_base": 348.29,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "930aa4ff-2e0f-4fa3-b083-215074a7c40e",
+      "codigo": "021901000100032",
+      "descripcion": "CONCRETO PREMEZCLADO FC=280 kg/cm2 CON CEMENTO TIPO HS",
+      "unidad": "m3",
+      "precio_base": 315,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "caebbb41-bc43-40e5-bc62-fa3677543a71",
+      "codigo": "040913010",
+      "descripcion": "SC SUMINISTRO E INSTALACION DE BARANDA METALICA INCLUYE PINTADO",
+      "unidad": "m",
+      "precio_base": 200,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "24580741-101e-40d7-bae2-53474d3904c9",
+      "codigo": "042401011",
+      "descripcion": "ALMACENAMIENTO Y DISTRIBUCIÓN DE AGUA PARA LA CONSTRUCCIÓN",
+      "unidad": "mes",
+      "precio_base": 400,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "408b502c-8df0-4a2d-993d-9928432c1153",
+      "codigo": "026707007",
+      "descripcion": "BOTAS DE SEGURIDAD",
+      "unidad": "par",
+      "precio_base": 40.59,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4d8cc394-e5d2-432a-90b2-ff73dab2225b",
+      "codigo": "030114002002",
+      "descripcion": "MARTILLO NEUMÁTICO DE 29 kg",
+      "unidad": "hm",
+      "precio_base": 6.66,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "a1a61971-4779-45de-96ab-48bf025270d3",
+      "codigo": "030116000100007",
+      "descripcion": "CARGADOR SOBRE LLANTAS DE 125-155 HP 3 yd3",
+      "unidad": "hm",
+      "precio_base": 247.79,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "00d75412-7ecc-4b43-8fa3-2b92604539f0",
+      "codigo": "030118000200004",
+      "descripcion": "TRACTOR DE ORUGAS DE 140-160 HP",
+      "unidad": "hm",
+      "precio_base": 348.29,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "f029d2e2-cf0a-4c88-aea2-f9828d83e9a8",
+      "codigo": "021001001",
+      "descripcion": "FIBRA DE VIDRIO DE 4 mm ACABADO",
+      "unidad": "m2",
+      "precio_base": 175.7,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "81aba394-7719-49a5-b533-b19d4f39a0f3",
+      "codigo": "020517001014",
+      "descripcion": "CURVA PVC-SAP 3/4",
+      "unidad": "pza",
+      "precio_base": 1.86,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "191846c0-80d1-4c8a-80e3-70ab0bf0c5b2",
+      "codigo": "020518002007",
+      "descripcion": "UNIÓN PVC-SAP 3/4",
+      "unidad": "pza",
+      "precio_base": 0.68,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "53892317-9819-4613-b0bf-695150b02fc2",
+      "codigo": "042401041",
+      "descripcion": "ALQUILER DE ALMACÉN",
+      "unidad": "mes",
+      "precio_base": 1500,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "81174d67-1497-48ab-8053-41059ade46ce",
+      "codigo": "042401009",
+      "descripcion": "ALQUILER DE SERVICIOS HIGIÉNICOS",
+      "unidad": "und",
+      "precio_base": 525,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "31250307-3a6c-444c-8864-78cead3f542d",
+      "codigo": "042401035",
+      "descripcion": "CAPACITACIÓN EN SEGURIDAD Y SALUD",
+      "unidad": "glb",
+      "precio_base": 3800,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "e2e1a629-cc6e-4585-8359-59150b9f0c2b",
+      "codigo": "026710007",
+      "descripcion": "COLLARINES CERVICALES (kit)",
+      "unidad": "und",
+      "precio_base": 55.1,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "102f85cb-e73b-4131-8e4e-3e964e1612d8",
+      "codigo": "020704001",
+      "descripcion": "MATERIAL GRANULAR",
+      "unidad": "m3",
+      "precio_base": 45,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "a207011c-f47b-4888-b4e7-0977b50e9003",
+      "codigo": "024030001",
+      "descripcion": "ACERO CORRUGADO fy = 4200 kg/cm2 GRADO 60",
+      "unidad": "kg",
+      "precio_base": 5.6,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "bb2dbe7c-9f08-439b-b35a-925894c73774",
+      "codigo": "021301001004",
+      "descripcion": "CEMENTO PORTLAND TIPO HS",
+      "unidad": "bol",
+      "precio_base": 23.39,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "076730de-86bc-411b-966d-12d176ccb6ed",
+      "codigo": "025608016",
+      "descripcion": "SOLDADURA CELLOCORD",
+      "unidad": "kg",
+      "precio_base": 12,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "1b72170b-2db8-4640-a0ed-a5d26901ad19",
+      "codigo": "026711027",
+      "descripcion": "LAMINA REFLECTIVA ALTA INTENSIDAD AZUL",
+      "unidad": "p2",
+      "precio_base": 8.57,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "1b7c863d-1879-4130-a068-37cae9a9f2ed",
+      "codigo": "023101001",
+      "descripcion": "CEMENTO PORTLAND TIPO I (42.5 kg)",
+      "unidad": "bol",
+      "precio_base": 22.09,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "9d973eed-28f8-4482-aadc-1ad28db67144",
+      "codigo": "026705001",
+      "descripcion": "GUANTES DE CUERO",
+      "unidad": "par",
+      "precio_base": 8.39,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "f934239d-e05f-45e6-aa83-322447275496",
+      "codigo": "030127007",
+      "descripcion": "FROTACHO DE MAGNESIO 1.80 m",
+      "unidad": "hm",
+      "precio_base": 5,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "629e52fc-8502-4511-bab0-75ec635dcf7c",
+      "codigo": "024008022",
+      "descripcion": "THINNER CORRIENTE",
+      "unidad": "gal",
+      "precio_base": 227,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "39d19af1-560c-423b-ba7d-3383164ee9ab",
+      "codigo": "042401022",
+      "descripcion": "PLAN DE MITIGACION DE IMPACTO AMBIENTAL",
+      "unidad": "glb",
+      "precio_base": 91878.12,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "863f5578-f5a6-4643-92e7-0e3cae982787",
+      "codigo": "026706020",
+      "descripcion": "UNIFORME PERSONAL DE OBRA",
+      "unidad": "und",
+      "precio_base": 53.22,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "667ddbe8-ffae-417c-8438-1ac5a607f592",
+      "codigo": "040303010",
+      "descripcion": "SC PAGO POR USO DE DEPOSITO DE MATERIAL EXCEDENTE - CARPETA ASFÁLTICA",
+      "unidad": "m3",
+      "precio_base": 65.15,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "7245a004-9407-4ed3-b3cd-6b33517677ac",
+      "codigo": "023406000100005",
+      "descripcion": "PLANCHA GALVANIZADA DE 1/16\"",
+      "unidad": "m2",
+      "precio_base": 84.78,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "c4feb84e-cba3-410e-ad79-803bd1d79766",
+      "codigo": "026711023",
+      "descripcion": "LAMINA REFLECTIVA ALTA INTENSIDAD BLANCA",
+      "unidad": "p2",
+      "precio_base": 8.63,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "e0226264-23de-4efa-96aa-93b7b4864b21",
+      "codigo": "026250002009",
+      "descripcion": "INTERRUPTOR TRIPLE 10 A 250V",
+      "unidad": "und",
+      "precio_base": 23.9,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "3302f935-9035-4c19-9f2b-f3c8750556d0",
+      "codigo": "026710010",
+      "descripcion": "CAMILLA METÁLICA TIPO CANASTA DE RESCATE",
+      "unidad": "und",
+      "precio_base": 300,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "8a5ace39-106b-45c1-9482-499c418df0b6",
+      "codigo": "030111003",
+      "descripcion": "CORTADORA DE CONCRETO 13HP DISCO DE 16\"",
+      "unidad": "hm",
+      "precio_base": 10,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "a4fb709a-45f7-462d-b884-5910a07ee2b5",
+      "codigo": "022216001025",
+      "descripcion": "BACKER ROD (CORDON DE POLIURETANO) 8mm",
+      "unidad": "m",
+      "precio_base": 0.85,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "0259e4da-ae0b-4e19-8469-6d21d8ff5b8c",
+      "codigo": "029013022",
+      "descripcion": "AGUA",
+      "unidad": "m3",
+      "precio_base": 5.11,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "8bda3ba7-9af0-4bf8-a0ce-b52396d46f09",
+      "codigo": "030117002001",
+      "descripcion": "RETROEXCAVADORA SOBRE LLANTAS 58 HP 1/2 y3",
+      "unidad": "hm",
+      "precio_base": 166.24,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "2a07b2a6-a06f-43bd-ae58-41ee75bcf510",
+      "codigo": "021915002",
+      "descripcion": "CAJA DE CONCRETO PREFABRICADA DE DESAGUE",
+      "unidad": "und",
+      "precio_base": 55,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "2132c273-7f1b-48dc-ac2b-7d7e1e2c9c44",
+      "codigo": "021901012",
+      "descripcion": "CONCRETO 1:10 +30% P.G. CIMIENTOS CORRIDOS",
+      "unidad": "m3",
+      "precio_base": 137.27,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "ae4345cb-cf9d-41ab-88c2-67971ba8e063",
+      "codigo": "026213001006",
+      "descripcion": "TOMACORRIENTE TRIPLE L/T 16A-250V",
+      "unidad": "und",
+      "precio_base": 20.53,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "9c4eecb1-e23e-4109-8704-69d0292016e1",
+      "codigo": "021901000100036",
+      "descripcion": "CONCRETO PREMEZCLADO  FC=350 kg/cm2 CON CEMENTO TIPO HS (PAVIMENTADORA)",
+      "unidad": "m3",
+      "precio_base": 329,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "6c1425e8-b247-4b85-bbb3-601a83c35606",
+      "codigo": "030127006",
+      "descripcion": "PEINE DE METALICO 1.20 m",
+      "unidad": "hm",
+      "precio_base": 1,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "cafec757-d702-41f0-abaf-9fbc0f02f9fb",
+      "codigo": "024002016",
+      "descripcion": "XILOL",
+      "unidad": "gal",
+      "precio_base": 55,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "87ca98e4-5fa7-447e-aefb-f92b1d73f1a3",
+      "codigo": "042401053",
+      "descripcion": "SUMINISTRO E INSTALACIÓN DE SEGURIDAD ELECTRICA",
+      "unidad": "glb",
+      "precio_base": 25000,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "0c37292e-e81e-402d-9ff0-d87a1a47cb92",
+      "codigo": "024603000100008",
+      "descripcion": "TUBO DE ACERO NEGRO CUADRADO 2\"X2MMX6M",
+      "unidad": "pza",
+      "precio_base": 108.82,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "codigo": "010101005",
+      "descripcion": "PEON",
+      "unidad": "hh",
+      "precio_base": 17.29,
+      "tipo_recurso": "mano_obra"
+    },
+    {
+      "id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "codigo": "030101006",
+      "descripcion": "HERRAMIENTAS MANUALES",
+      "unidad": "%mo",
+      "precio_base": 0.47,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "ef7c5ed7-64e7-4cd9-8b12-310d98550634",
+      "codigo": "026812003",
+      "descripcion": "CAJA DE PASO 4\" X 2\"",
+      "unidad": "und",
+      "precio_base": 4.6,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "1c23362c-9783-4c7c-8835-722dd4847d59",
+      "codigo": "026706018",
+      "descripcion": "CHALECO REFLECTIVO",
+      "unidad": "und",
+      "precio_base": 10.9,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "codigo": "030118003",
+      "descripcion": "VOLQUETE 15 M3",
+      "unidad": "hm",
+      "precio_base": 371.3,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "36043ba2-99be-4c77-ad4f-b1d634fad610",
+      "codigo": "030116004",
+      "descripcion": "MONTACARGAS 58HP",
+      "unidad": "hm",
+      "precio_base": 95.9,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "4bb504ef-d2b9-403d-8517-d4d159a549ce",
+      "codigo": "030139003",
+      "descripcion": "PAVIMENTADORA DE CONCRETO DE ENCOFRADO DESLIZANTE",
+      "unidad": "hm",
+      "precio_base": 1600,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "ffc8b26e-c75b-4979-bbcc-2f1fa21cb1a7",
+      "codigo": "030115001007",
+      "descripcion": "CARGADOR SOBRE LLANTAS DE 125-155 HP 3 yd3",
+      "unidad": "hm",
+      "precio_base": 247.79,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "bccdba89-9752-4509-84ac-605a5fd26184",
+      "codigo": "042401040",
+      "descripcion": "ALQUILER DE CASETA DE GUARDIANÍA",
+      "unidad": "mes",
+      "precio_base": 1000,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "0f0c59a1-dfde-4ed6-9514-6faaf691a614",
+      "codigo": "021901001033",
+      "descripcion": "CONCRETO PREMEZCLADO F'C=175 kg/cm2 CON CEMENTO TIPO HS",
+      "unidad": "m3",
+      "precio_base": 269,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4cb708c5-d109-435e-b9a4-779d91d2c50f",
+      "codigo": "030118001007",
+      "descripcion": "CARGADOR SOBRE LLANTAS DE 125-155 HP 3 yd3",
+      "unidad": "hm",
+      "precio_base": 247.79,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "b205cd47-a0d6-4871-a9f0-26f705cc2da9",
+      "codigo": "042401042",
+      "descripcion": "ALQUILER DE OFICINA DE RESIDENTE",
+      "unidad": "mes",
+      "precio_base": 1800,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "3efb1d93-3bed-4e15-9d46-4029beafe93f",
+      "codigo": "026701001009",
+      "descripcion": "CASCO DE SEGURIDAD",
+      "unidad": "und",
+      "precio_base": 33.98,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "ad092f21-4be4-4cb7-bdea-ecfa3014bbe4",
+      "codigo": "030114006003",
+      "descripcion": "COMPRESORA NEUMÁTICA 250 - 330 PCM - 87 HP",
+      "unidad": "hm",
+      "precio_base": 112.45,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "41f6b386-b8b0-4525-853b-333d84b9d94a",
+      "codigo": "024010001001",
+      "descripcion": "ALAMBRE NEGRO RECOCIDO N° 8",
+      "unidad": "kg",
+      "precio_base": 6.4,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "03e2909a-c662-42f9-a05b-8069d72b8fa8",
+      "codigo": "030136000100002",
+      "descripcion": "MOCHILA CON PULVERIZADOR MANUAL",
+      "unidad": "hm",
+      "precio_base": 1.25,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "c98e5ac2-eb73-4709-ab67-2732c0953d47",
+      "codigo": "021901000036",
+      "descripcion": "CONCRETO PREMEZCLADO FC=350 kg/cm2 CON CEMENTO TIPO HS (PAVIMENTADORA)",
+      "unidad": "m3",
+      "precio_base": 329,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "2a3813ba-1ff4-403f-be0e-31dc1794f6da",
+      "codigo": "030136001002",
+      "descripcion": "MOCHILA CON PULVERIZADOR MANUAL",
+      "unidad": "hm",
+      "precio_base": 1.25,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "4aaaf9e5-06e2-413e-8594-9179298c4517",
+      "codigo": "042401013",
+      "descripcion": "PAGO POR CONSUMO Y MANTENIMIENTO DE ENERGÍA ELÉCTRICA",
+      "unidad": "mes",
+      "precio_base": 200,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "5bc7541e-216b-448b-82e5-065fa46867ae",
+      "codigo": "029010003",
+      "descripcion": "HERRAMIENTAS DIVERSAS",
+      "unidad": "und",
+      "precio_base": 80,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "25affec4-cd24-43b0-b066-351ba782f12e",
+      "codigo": "020401001001",
+      "descripcion": "ALAMBRE NEGRO RECOCIDO N° 8",
+      "unidad": "kg",
+      "precio_base": 6.4,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "33900e07-664e-4ae7-96fa-7eb0a1b67bc4",
+      "codigo": "030110006003",
+      "descripcion": "RODILLO LISO VIBRATORIO AUTOPROPULSADO 101-135HP 10-12 ton",
+      "unidad": "hm",
+      "precio_base": 215.35,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "5fe78cb0-b82f-4cec-9ff8-fca628049ec7",
+      "codigo": "026710009",
+      "descripcion": "MANTA",
+      "unidad": "und",
+      "precio_base": 25,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4312227f-c978-4163-ab1f-8ab0fab120f3",
+      "codigo": "030117001001",
+      "descripcion": "EXCAVADORA SOBRE ORUGAS 115-165 HP",
+      "unidad": "hm",
+      "precio_base": 310.07,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "8893d6e3-b427-4a2a-a05c-b927b6cf515f",
+      "codigo": "024010001002",
+      "descripcion": "ALAMBRE NEGRO RECOCIDO N° 16",
+      "unidad": "kg",
+      "precio_base": 6.4,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "5bb9f12a-f48d-4591-bbd7-716627be01ed",
+      "codigo": "022216000100024",
+      "descripcion": "SELLADOR ELASTOMERICO POLIURETANO PARA JUNTAS",
+      "unidad": "gal",
+      "precio_base": 110,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "b3c132ff-6366-4511-9aaf-c97b70702b61",
+      "codigo": "021004000100002",
+      "descripcion": "TECNOPOR DE 1\"X4X8'",
+      "unidad": "pln",
+      "precio_base": 4.46,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "d0334e99-d3f5-4a10-b273-b08a3cb9d675",
+      "codigo": "020702000100002",
+      "descripcion": "ARENA GRUESA",
+      "unidad": "m3",
+      "precio_base": 48.31,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "42a49cca-dad7-456c-82d4-e6a8ea5e6337",
+      "codigo": "025401004",
+      "descripcion": "GIGANTOGRAFIA SEGUN MEDIDA",
+      "unidad": "und",
+      "precio_base": 618.65,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "codigo": "030122010",
+      "descripcion": "CAMIÓN CISTERNA 4X2 (AGUA) 122 HP 2000 GAL",
+      "unidad": "hm",
+      "precio_base": 197.29,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "d3675ee4-c47c-4943-8e88-ab5fc7a29191",
+      "codigo": "030129001006",
+      "descripcion": "VIBRADOR DE CONCRETO 4 HP 2.40\"",
+      "unidad": "hm",
+      "precio_base": 7.5,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "f1736e1e-1231-4a14-96ba-6aaeb957cb06",
+      "codigo": "020105006",
+      "descripcion": "MEZCLA ASFALTICA EN FRIO",
+      "unidad": "m3",
+      "precio_base": 650,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "codigo": "010101002",
+      "descripcion": "CAPATAZ",
+      "unidad": "hh",
+      "precio_base": 29.08,
+      "tipo_recurso": "mano_obra"
+    },
+    {
+      "id": "623244f0-9117-4930-ba19-0c731d848656",
+      "codigo": "042401012",
+      "descripcion": "INSTALACIÓN DE DESAGÜE PARA LA CONSTRUCCIÓN",
+      "unidad": "glb",
+      "precio_base": 350,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "370142cf-f5a8-4812-95ff-0e19faee5778",
+      "codigo": "030116001007",
+      "descripcion": "CARGADOR SOBRE LLANTAS DE 125-155 HP 3 yd3",
+      "unidad": "hm",
+      "precio_base": 247.79,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "bb7ddfcf-c0b3-44e4-b811-4f78ba9ec8d4",
+      "codigo": "030136000100002",
+      "descripcion": "MOCHILA CON PULVERIZADOR MANUAL",
+      "unidad": "hm",
+      "precio_base": 1.25,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "codigo": "030110001",
+      "descripcion": "COMPACTADORA VIBRATORIA TIPO PLANCHA 7 HP",
+      "unidad": "hm",
+      "precio_base": 39.16,
+      "tipo_recurso": "equipos"
+    },
+    {
+      "id": "e2b790c9-3c81-4984-b0ff-4806a127701c",
+      "codigo": "029005000000024",
+      "descripcion": "TINTA XEROGRAFICA ROJA",
+      "unidad": "gal",
+      "precio_base": 130,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "df4b3701-3267-487f-abe4-54f13eca42f8",
+      "codigo": "041504001000010",
+      "descripcion": "SEÑAL DOBLE (PREVENTIVA Y REGLAMENTARIA)",
+      "unidad": "und",
+      "precio_base": 475,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "eb2ffe09-a76b-4a7f-8828-a71e1f1b139e",
+      "codigo": "027033002",
+      "descripcion": "HORMIGON (PUESTO EN OBRA)",
+      "unidad": "m3",
+      "precio_base": 45,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "1b96802a-7d52-40f0-8810-7735e23feaf8",
+      "codigo": "042401014",
+      "descripcion": "MOVILIZACIÓN DE MAQUINARIA, EQUIPOS Y HERRAMIENTAS AL LUGAR DE LA OBRA",
+      "unidad": "glb",
+      "precio_base": 18352.1,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "d2c25e70-8583-4262-8ce9-b0f576f16252",
+      "codigo": "021003005",
+      "descripcion": "MALLA RASCHEL 80%/100MTS",
+      "unidad": "rl",
+      "precio_base": 1500,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "codigo": "020412006",
+      "descripcion": "DISPOSICIÓN FINAL",
+      "unidad": "m3",
+      "precio_base": 5.4,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "codigo": "023101003",
+      "descripcion": "MADERA TORNILLO 16' A MAS (HABILITADO)",
+      "unidad": "p2",
+      "precio_base": 6.2,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "31ca76ba-40b5-42f2-9731-ddae90a2e445",
+      "codigo": "022218000100017",
+      "descripcion": "CURADOR MEMBRANILL VISTA PICONCRETO - 1 GAL",
+      "unidad": "gal",
+      "precio_base": 21.19,
+      "tipo_recurso": "subcontratos"
+    },
+    {
+      "id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "codigo": "010101004",
+      "descripcion": "OFICIAL",
+      "unidad": "hh",
+      "precio_base": 19.13,
+      "tipo_recurso": "mano_obra"
+    },
+    {
+      "id": "b6abe1f2-5c53-4017-ad5c-de2101a338d6",
+      "codigo": "026710001",
+      "descripcion": "EXTINTOR DE POLVO QUÍMICO SECO (PQS)",
+      "unidad": "und",
+      "precio_base": 152.92,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "4ecbeeb9-e7fc-48f1-922d-9f6e2c69ff07",
+      "codigo": "022216001024",
+      "descripcion": "SELLADOR ELASTOMERICO POLIURETANO PARA JUNTAS",
+      "unidad": "gal",
+      "precio_base": 110,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "9ca91457-43e1-4f25-8bcc-3b665a48e109",
+      "codigo": "020416000100003",
+      "descripcion": "PLATINA DE FIERRO DE 1 1/2\" X 3/16\" X 1\" X 6 m",
+      "unidad": "pza",
+      "precio_base": 28,
+      "tipo_recurso": "materiales"
+    },
+    {
+      "id": "ee573d9f-ef91-42b8-8ab4-3bfe8808762e",
+      "codigo": "024002018",
+      "descripcion": "PINTURA ESMALTE SINTETICO",
+      "unidad": "gal",
+      "precio_base": 46.6,
+      "tipo_recurso": "materiales"
+    }
+  ],
+  "partidas": [
+    {
+      "id": "46bb1f81-26bc-4706-be19-08a381a8d43e",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.02.01.02",
+      "descripcion": "ALMACENAMIENTO Y DISTRIBUCIÓN DE AGUA PARA LA CONSTRUCCIÓN",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.02.01",
+      "descripcion": "EXCAVACIÓN HASTA SUBRASANTE EN TERRENO NORMAL",
+      "unidad": "m3",
+      "rendimiento": 280
+    },
+    {
+      "id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.02",
+      "descripcion": "SUMINISTRO Y COLOCACION DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
+      "unidad": "m",
+      "rendimiento": 350
+    },
+    {
+      "id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.06",
+      "descripcion": "CORTE CON DISCO EN JUNTAS TRANSVERSAL Y LONGITUDINAL",
+      "unidad": "m",
+      "rendimiento": 150
+    },
+    {
+      "id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.05.02",
+      "descripcion": "NIVELACION Y REPOSICION DE TAPA DE BUZON A NIVEL DE RASANTE",
+      "unidad": "und",
+      "rendimiento": 10
+    },
+    {
+      "id": "22134b7d-db76-470a-b616-074fea36b07a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.05.05",
+      "descripcion": "PROTECCION DE SEGURIDAD ELECTRICA",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.02.01",
+      "descripcion": "EXCAVACION MECANICA EN TERRENO NORMAL PARA VEREDAS",
+      "unidad": "m3",
+      "rendimiento": 250
+    },
+    {
+      "id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.02.03.01",
+      "descripcion": "CONEXIÓN E INSTALACIÓN DE ENERGÍA ELÉCTRICA PROVISIONAL",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "08010233-7161-48c2-984d-70179980c45f",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.03.04",
+      "descripcion": "CAPACITACIÓN EN SEGURIDAD Y SALUD",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.01.02",
+      "descripcion": "RELLENO COMPACTADO CON MATERIAL PROPIO C/EQUIPO HASTA NIVEL DE SUBRASANTE",
+      "unidad": "m3",
+      "rendimiento": 400
+    },
+    {
+      "id": "6dea2bd4-42df-4a91-9231-e24b0490bfb2",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.08",
+      "descripcion": "CURADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.06",
+      "descripcion": "CORTE CON DISCO EN JUNTAS TRANSVERSAL Y LONGITUDINAL",
+      "unidad": "m",
+      "rendimiento": 150
+    },
+    {
+      "id": "8ae04b9f-07ff-4612-9a22-d3f700b1a750",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.02.04",
+      "descripcion": "SEÑAL DOBLE (PREVENTIVA Y REGLAMENTARIA)",
+      "unidad": "und",
+      "rendimiento": 12
+    },
+    {
+      "id": "04dcb3e9-ae9e-4e40-85e1-0a8712a28873",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "05.01",
+      "descripcion": "MITIGACION DE IMPACTO AMBIENTAL",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "ee817485-efad-46e0-9144-725995c354f6",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.01.05",
+      "descripcion": "ELIMINACIÓN DE EXCEDENTES C/VOLQUETE (CARGUÍO, TRANSPORTE Y DISPOSICIÓN FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.02.03",
+      "descripcion": "ESCARIFICADO,CONFORMACION Y COMPACTACIÓN DE SUBRASANTE",
+      "unidad": "m2",
+      "rendimiento": 1300
+    },
+    {
+      "id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.02",
+      "descripcion": "ENCOFRADO Y DESENCOFRADO DE PAVIMENTO RIGIDO",
+      "unidad": "m2",
+      "rendimiento": 14
+    },
+    {
+      "id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.04",
+      "descripcion": "SUMINISTRO Y COLOCACION DE ACERO FY= 4200 kg/cm2 EN JUNTA LONGITUDINAL",
+      "unidad": "kg",
+      "rendimiento": 350
+    },
+    {
+      "id": "107a3713-e521-482c-945c-963e43542207",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.06",
+      "descripcion": "LOSA DE CONCRETO F C=350 KG/CM2  (H=0.25m)",
+      "unidad": "m2",
+      "rendimiento": 200
+    },
+    {
+      "id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.05",
+      "descripcion": "FLOTADO Y TEXTURIZADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 1080
+    },
+    {
+      "id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.02",
+      "descripcion": "ACERO CORRUGADO FY= 4200 kg/cm2 GRADO 60",
+      "unidad": "kg",
+      "rendimiento": 300
+    },
+    {
+      "id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.01.02",
+      "descripcion": "ESCARIFICADO,CONFORMACION Y COMPACTACIÓN DE SUBRASANTE",
+      "unidad": "m2",
+      "rendimiento": 1300
+    },
+    {
+      "id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.01.02",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.06",
+      "descripcion": "JUNTA CON ASFALTO E=1\" PARA VEREDAS Y RAMPAS",
+      "unidad": "m",
+      "rendimiento": 50
+    },
+    {
+      "id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.01.02",
+      "descripcion": "PINTADO DE PAVIMENTOS SIMBOLOS Y LETRAS",
+      "unidad": "m2",
+      "rendimiento": 40
+    },
+    {
+      "id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.01.02",
+      "descripcion": "CERCO PERIMETRICO PROVISIONAL DE OBRA",
+      "unidad": "m",
+      "rendimiento": 60
+    },
+    {
+      "id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.07",
+      "descripcion": "FLOTADO Y TEXTURIZADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 1080
+    },
+    {
+      "id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.01",
+      "descripcion": "COLOCACION Y RETIRO DE GUIAS PARA PAVIMENTADORA",
+      "unidad": "m",
+      "rendimiento": 1260
+    },
+    {
+      "id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.02",
+      "descripcion": "SUMINISTRO Y COLOCACION DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
+      "unidad": "m",
+      "rendimiento": 350
+    },
+    {
+      "id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.05.04",
+      "descripcion": "REDUCTOR DE VELOCIDAD DE ASFALTO EN FRIO DE (h=8 cm)",
+      "unidad": "und",
+      "rendimiento": 2
+    },
+    {
+      "id": "4a83718a-72ef-4141-8706-db02367a575e",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.02.01.01",
+      "descripcion": "OBTENCIÓN DEL SERVICIO DE AGUA PARA LA CONSTRUCCIÓN",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.03.02",
+      "descripcion": "EQUIPOS DE PROTECCIÓN INDIVIDUAL",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "8787680c-2d9c-4a05-bc0e-fed8f3661a93",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.10",
+      "descripcion": "CURADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.01.01",
+      "descripcion": "EXCAVACION HASTA SUBRASANTE EN TERRENO NORMAL",
+      "unidad": "m3",
+      "rendimiento": 280
+    },
+    {
+      "id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.04",
+      "descripcion": "JUNTA CON ASFALTO DE 1\" CADA 4.00m",
+      "unidad": "m",
+      "rendimiento": 50
+    },
+    {
+      "id": "92e4558b-bd17-4f62-b816-e1b13239e90c",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.02.02",
+      "descripcion": "EXCAVACION A MANO EN TERRENO NORMAL PARA RAMPAS",
+      "unidad": "m3",
+      "rendimiento": 8
+    },
+    {
+      "id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.02.04",
+      "descripcion": "CONFORMACION Y COMPACTACIÓN DE SUBRASANTE PARA RAMPAS",
+      "unidad": "m2",
+      "rendimiento": 200
+    },
+    {
+      "id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.05",
+      "descripcion": "RAMPAS VEHICULARES DE CONCRETO PREMEZCLADO, fc 280 kg/cm2 E=0.15m ACABADO C.A 1:2",
+      "unidad": "m3",
+      "rendimiento": 12
+    },
+    {
+      "id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.01.01",
+      "descripcion": "CARTEL DE IDENTIFICACIÓN DE OBRA (7.20m X 3.60m)",
+      "unidad": "und",
+      "rendimiento": 1
+    },
+    {
+      "id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.01.04",
+      "descripcion": "ELIMINACIÓN DE CARPETA ASFÁLTICA (DEMOLICIÓN) C/VOLQUETE 15M3",
+      "unidad": "m3",
+      "rendimiento": 480
+    },
+    {
+      "id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.01.04",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.05",
+      "descripcion": "FLOTADO Y TEXTURIZADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 1080
+    },
+    {
+      "id": "5a6e33ff-13a9-4d01-be47-5c895b52da8c",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.05.03",
+      "descripcion": "NIVELACION Y REPOSICION DE CAJA DE VALVULAS",
+      "unidad": "und",
+      "rendimiento": 200
+    },
+    {
+      "id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.02.05",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "d020c8b6-280c-4b5a-8ed0-5eb583e05cf3",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.05.01",
+      "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA AGUA",
+      "unidad": "und",
+      "rendimiento": 25
+    },
+    {
+      "id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.03",
+      "descripcion": "SUMINISTRO Y COLOCACION DE DOWELS LISO L=0.45m ALTURA = 0.125m (INCLUYE CANASTILLA)",
+      "unidad": "m",
+      "rendimiento": 350
+    },
+    {
+      "id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.01.01",
+      "descripcion": "DEMOLICION DE VEREDAS DE CONCRETO C/EQUIPO",
+      "unidad": "m2",
+      "rendimiento": 95
+    },
+    {
+      "id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.02.03",
+      "descripcion": "CONFORMACION Y COMPACTACIÓN DE SUBRASANTE PARA VEREDAS",
+      "unidad": "m2",
+      "rendimiento": 200
+    },
+    {
+      "id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.01",
+      "descripcion": "ENCOFRADO Y DESENCOFRADO EN BOCACALLE",
+      "unidad": "m2",
+      "rendimiento": 14
+    },
+    {
+      "id": "6eb43aa2-28bf-4c37-8f6b-fddd0538ef3d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.02.03.02",
+      "descripcion": "CONSUMO Y MANTENIMIENTO DE ENERGÍA ELÉCTRICA PROVISIONAL",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.02.01",
+      "descripcion": "SUB BASE GRANULAR e=0.20 m",
+      "unidad": "m2",
+      "rendimiento": 1000
+    },
+    {
+      "id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.07",
+      "descripcion": "SELLADO DE JUNTAS DE CONSTRUCCIÓN, CONTRACCIÓN Y ASFÁLTICA",
+      "unidad": "m",
+      "rendimiento": 120
+    },
+    {
+      "id": "1bb9bc7d-723b-477e-a648-cd63a387fb5a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.02.01",
+      "descripcion": "SUB BASE GRANULAR e=0.20 m",
+      "unidad": "m2",
+      "rendimiento": 1000
+    },
+    {
+      "id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.03",
+      "descripcion": "SARDINEL DE CONCRETO PREMEZCLADO F'C= 175 kg/cm2, E= 0.20m ACABADO. C.A. 1:2",
+      "unidad": "m3",
+      "rendimiento": 12
+    },
+    {
+      "id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.01.02",
+      "descripcion": "DEMOLICION DE ESTRUCTURAS DE CONCRETO",
+      "unidad": "m3",
+      "rendimiento": 85
+    },
+    {
+      "id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.02.01",
+      "descripcion": "SEÑAL PREVENTIVA",
+      "unidad": "und",
+      "rendimiento": 15
+    },
+    {
+      "id": "b99fbe0d-f61c-4b5f-9f96-64e4b7f59afc",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.02.02.01",
+      "descripcion": "INSTALACIÓN DE DESAGÜE PARA LA CONSTRUCCIÓN",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "74bdd78b-32d1-47c4-bbd5-5eba839684a8",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.03.01",
+      "descripcion": "MANTENIMIENTO DE TRÁNSITO Y SEGURIDAD VIAL",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "847192d7-1c63-4984-904d-f310d75a01ce",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.01.01",
+      "descripcion": "DEMOLICIÓN DE PAVIMENTO FLEXIBLE C/EQUIPO",
+      "unidad": "m3",
+      "rendimiento": 280
+    },
+    {
+      "id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.03",
+      "descripcion": "SUMINISTRO Y COLOCACION DE ACERO FY= 4200 kg/cm2 EN JUNTA LONGITUDINAL",
+      "unidad": "kg",
+      "rendimiento": 350
+    },
+    {
+      "id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.03.04",
+      "descripcion": "LOSA DE CONCRETO F'C=350 KG/CM2 C/PAVIMENTADORA (H=0.25m)",
+      "unidad": "m2",
+      "rendimiento": 1080
+    },
+    {
+      "id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.07",
+      "descripcion": "SELLADO DE JUNTAS DE CONSTRUCCIÓN, CONTRACCIÓN Y ASFALTICA",
+      "unidad": "m",
+      "rendimiento": 120
+    },
+    {
+      "id": "011008d9-2ca2-40e6-8c32-fc0593fedd13",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.08",
+      "descripcion": "CURADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.06",
+      "descripcion": "PINTADO DE SARDINEL PERALTADO",
+      "unidad": "m",
+      "rendimiento": 100
+    },
+    {
+      "id": "e50460d8-745b-494a-8d93-194f9442202c",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.02.01.01",
+      "descripcion": "MOVILIZACIÓN Y DESMOVILIZACIÓN DE EQUIPOS",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.03.03",
+      "descripcion": "EQUIPOS DE PROTECCIÓN COLECTIVA",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.02.04",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.05",
+      "descripcion": "LOSA DE CONCRETO F C=350 KG/CM2 C/PAVIMENTADORA (H=0.25m)",
+      "unidad": "m2",
+      "rendimiento": 1080
+    },
+    {
+      "id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.03",
+      "descripcion": "SUMINISTRO Y COLOCACION DE ACERO FY= 4200 kg/cm2 EN JUNTA LONGITUDINAL",
+      "unidad": "kg",
+      "rendimiento": 350
+    },
+    {
+      "id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.01.03",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "f0be6f7d-4a46-4194-8f25-5daf33f9690a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.07",
+      "descripcion": "CURADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.05.03",
+      "descripcion": "SUMINISTRO E INSTALACIÓN DE BOLARDOS DE CONCRETO ALINEADO",
+      "unidad": "und",
+      "rendimiento": 20
+    },
+    {
+      "id": "d302f3e9-bdeb-4f52-8256-441c2e470e16",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.01.04",
+      "descripcion": "ALQUILER DE SERVICIOS HIGIÉNICOS Y VESTUARIOS",
+      "unidad": "mes",
+      "rendimiento": 1
+    },
+    {
+      "id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.03.05",
+      "descripcion": "RECURSOS PARA RESPUESTAS ANTE EMERGENCIAS EN SEGURIDAD Y SALUD DURANTE EL TRABAJO",
+      "unidad": "glb",
+      "rendimiento": 1
+    },
+    {
+      "id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.01.02",
+      "descripcion": "DEMOLICIÓN DE SARDINEL PERALTADO E=0.15m",
+      "unidad": "m",
+      "rendimiento": 150
+    },
+    {
+      "id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.02.02",
+      "descripcion": "RELLENO COMPACTADO CON MATERIAL PROPIO C/EQUIPO HASTA NIVEL DE SUBRASANTE",
+      "unidad": "m3",
+      "rendimiento": 400
+    },
+    {
+      "id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.08",
+      "descripcion": "CORTE CON DISCO EN JUNTAS TRANSVERSAL Y LONGITUDINAL",
+      "unidad": "m",
+      "rendimiento": 150
+    },
+    {
+      "id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.01.01",
+      "descripcion": "EXCAVACION HASTA SUBRASANTE EN TERRENO NORMAL",
+      "unidad": "m3",
+      "rendimiento": 280
+    },
+    {
+      "id": "a3341e5e-c8ad-4dd9-995a-604ba2ede657",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.02.01.03",
+      "descripcion": "ESCARIFICADO,CONFORMACION Y COMPACTACIÓN DE SUBRASANTE",
+      "unidad": "m2",
+      "rendimiento": 1300
+    },
+    {
+      "id": "31377374-7579-4a69-ac7a-bdc77269493f",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.05",
+      "descripcion": "CURADO DE CONCRETO",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.09",
+      "descripcion": "SELLADO DE JUNTAS DE CONSTRUCCIÓN, CONTRACCIÓN Y ASFALTICA",
+      "unidad": "m",
+      "rendimiento": 120
+    },
+    {
+      "id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.02.01",
+      "descripcion": "ENCOFRADO Y DESENCOFRADO NORMAL EN SARDINEL",
+      "unidad": "m2",
+      "rendimiento": 15
+    },
+    {
+      "id": "627af0ba-5933-4a71-a802-db9dcb65c3b3",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.05.01",
+      "descripcion": "LIMPIEZA GENERAL DE LA OBRA",
+      "unidad": "m2",
+      "rendimiento": 250
+    },
+    {
+      "id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.02",
+      "descripcion": "ENCOFRADO Y DESENCOFRADO DE RAMPAS",
+      "unidad": "m2",
+      "rendimiento": 20
+    },
+    {
+      "id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.03",
+      "descripcion": "VEREDA DE CONCRETO PREMEZCLADO FC= 175 kg/cm2, E= 0.10m ACABADO C.A 1:2",
+      "unidad": "m3",
+      "rendimiento": 15
+    },
+    {
+      "id": "f51c615d-488b-4e71-a5ee-79636d123a6d",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.04",
+      "descripcion": "RAMPAS PEATONALES DE CONCRETO PREMEZCLADO, fc 175 kg/cm2 E=0.10m. ACABADO C.A 1:2",
+      "unidad": "m3",
+      "rendimiento": 12
+    },
+    {
+      "id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.05.02",
+      "descripcion": "NIVELACIÓN Y REPOSICION DE TAPA Y CAJA DOMICILIARIA DESAGÜE",
+      "unidad": "und",
+      "rendimiento": 100
+    },
+    {
+      "id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.01.01",
+      "descripcion": "PINTADO DE PAVIMENTOS (LINEA CONTINUA Y DISCONTINUA)",
+      "unidad": "m",
+      "rendimiento": 100
+    },
+    {
+      "id": "3db37554-7129-40a9-9ae2-5ca4f253ed7c",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "01.01.01.03",
+      "descripcion": "ALQUILER DE ALMACÉN, OFICINA Y CASETA DE GUARDIANÍA",
+      "unidad": "mes",
+      "rendimiento": 1
+    },
+    {
+      "id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.03.01",
+      "descripcion": "SUB BASE GRANULAR e=0.20 m",
+      "unidad": "m2",
+      "rendimiento": 1000
+    },
+    {
+      "id": "89c22b6a-7d34-43c7-af07-f8c9e8d566eb",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.04.01.01",
+      "descripcion": "EXCAVACION A MANO EN TERRENO NORMAL PARA SARDINELES",
+      "unidad": "m3",
+      "rendimiento": 8
+    },
+    {
+      "id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.03.01",
+      "descripcion": "BASE GRANULAR E = 0.10 m PARA VEREDAS",
+      "unidad": "m2",
+      "rendimiento": 60
+    },
+    {
+      "id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.03.02",
+      "descripcion": "BASE GRANULAR E = 0.10 m PARA RAMPAS",
+      "unidad": "m2",
+      "rendimiento": 60
+    },
+    {
+      "id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "03.04.01",
+      "descripcion": "ENCOFRADO Y DESENCOFRADO DE VEREDAS",
+      "unidad": "m2",
+      "rendimiento": 20
+    },
+    {
+      "id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.02.02",
+      "descripcion": "SEÑAL REGLAMENTARIA",
+      "unidad": "und",
+      "rendimiento": 15
+    },
+    {
+      "id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "04.02.03",
+      "descripcion": "SEÑAL INFORMATIVA",
+      "unidad": "und",
+      "rendimiento": 12
+    },
+    {
+      "id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.01.03",
+      "descripcion": "DEMOLICIÓN DE SARDINEL SUMERGIDO DE E=0.15m",
+      "unidad": "m",
+      "rendimiento": 170
+    },
+    {
+      "id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.01.04.01",
+      "descripcion": "COLOCACION Y RETIRO DE GUIAS PARA PAVIMENTADORA",
+      "unidad": "m",
+      "rendimiento": 1260
+    },
+    {
+      "id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.01.03",
+      "descripcion": "ELIMINACION DE EXCEDENTES C/VOLQUETE (CARGUIO, TRANSPORTE Y DISPOSICION FINAL)",
+      "unidad": "m3",
+      "rendimiento": 320
+    },
+    {
+      "id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "proyecto_id": "87f630de-df6d-47c0-9ca4-62fe6dbbee43",
+      "codigo": "02.03.03.04",
+      "descripcion": "LOSA DE CONCRETO F'C=350 KG/CM2 (H=0.25m) EN BOCACALLE",
+      "unidad": "m2",
+      "rendimiento": 200
+    }
+  ],
+  "relaciones": [
+    {
+      "id": "9b3f61e2-f547-4149-a007-ca651ff65fd9",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 8,
+      "precio": 29.08,
+      "cuadrilla": 1
+    },
+    {
+      "id": "68a5d388-d0cd-4375-b0b5-a04777fd4629",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 8,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "5d7696a7-f98e-47f0-9ad1-75eafb04bd66",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 16,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "de4f5f25-2908-4e45-8d5b-312e77f160da",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 2,
+      "precio": 6.4
+    },
+    {
+      "id": "6bca7c08-59f9-4b3e-833e-482693b40022",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "eb2ffe09-a76b-4a7f-8828-a71e1f1b139e",
+      "cantidad": 0.325,
+      "precio": 45
+    },
+    {
+      "id": "33d95734-3e21-42b4-b71b-8ddd63d89885",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "1b7c863d-1879-4130-a068-37cae9a9f2ed",
+      "cantidad": 1.35,
+      "precio": 22.09
+    },
+    {
+      "id": "9a83e760-c671-4475-9b41-68e7ad390bf7",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "1b7c863d-1879-4130-a068-37cae9a9f2ed",
+      "cantidad": 278,
+      "precio": 5.4
+    },
+    {
+      "id": "26dd8bfe-bd88-463c-b1c0-9b5114e31eb9",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "42a49cca-dad7-456c-82d4-e6a8ea5e6337",
+      "cantidad": 1,
+      "precio": 618.65
+    },
+    {
+      "id": "2223a64d-685a-4123-8ce9-750f2486dd91",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.47
+    },
+    {
+      "id": "2d12510f-6942-4880-a6cc-c526c2df5ea7",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "33900e07-664e-4ae7-96fa-7eb0a1b67bc4",
+      "cantidad": 0.0062,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "79695015-28de-4aa8-bd98-38fdb263e60f",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.0062,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c3d1e49d-0060-40a2-a846-c45f54d7dd17",
+      "partida_id": "f1ff1b2c-0b88-449d-b1bf-8bcc60fe7655",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.0062,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "80d4efff-6b16-43f6-9f8b-3b6dc6d1974f",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0133,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "6fd52b7c-d4a2-4e6f-a2a3-d5271d3cb829",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1333,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b4015e4a-8556-42c7-acaf-a478d266fb5a",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.1333,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b20ed82b-573f-439c-87e1-a5811b9ad777",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.15,
+      "precio": 6.4
+    },
+    {
+      "id": "379d84de-fd9d-452b-ac0b-5af2d8678624",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "637c8d51-7d19-42bc-980a-b0d74181c01c",
+      "cantidad": 1.05,
+      "precio": 3.1
+    },
+    {
+      "id": "7e46f5c5-c144-4605-8e63-fa7136da9f8e",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "1b7c863d-1879-4130-a068-37cae9a9f2ed",
+      "cantidad": 2.4,
+      "precio": 5.4
+    },
+    {
+      "id": "99f7d11a-5fc6-4a4a-9f14-24ba1626b329",
+      "partida_id": "a5568848-4b29-475b-b2fb-67c326337f47",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 5.24
+    },
+    {
+      "id": "72af50e3-ce69-409f-aeb4-db4d35e5250f",
+      "partida_id": "3db37554-7129-40a9-9ae2-5ca4f253ed7c",
+      "recurso_id": "bccdba89-9752-4509-84ac-605a5fd26184",
+      "cantidad": 1,
+      "precio": 1000
+    },
+    {
+      "id": "4a63783a-0c23-4b1e-80b0-72aca3075a94",
+      "partida_id": "3db37554-7129-40a9-9ae2-5ca4f253ed7c",
+      "recurso_id": "53892317-9819-4613-b0bf-695150b02fc2",
+      "cantidad": 1,
+      "precio": 1500
+    },
+    {
+      "id": "c012df25-9f9e-4615-8805-dfa7db8262fb",
+      "partida_id": "3db37554-7129-40a9-9ae2-5ca4f253ed7c",
+      "recurso_id": "b205cd47-a0d6-4871-a9f0-26f705cc2da9",
+      "cantidad": 1,
+      "precio": 1800
+    },
+    {
+      "id": "e76408be-1d94-4c8f-ad7b-4c31805f86b2",
+      "partida_id": "d302f3e9-bdeb-4f52-8256-441c2e470e16",
+      "recurso_id": "81174d67-1497-48ab-8053-41059ade46ce",
+      "cantidad": 4,
+      "precio": 525
+    },
+    {
+      "id": "14986053-2085-4bd8-9f69-3d063a66dc9b",
+      "partida_id": "4a83718a-72ef-4141-8706-db02367a575e",
+      "recurso_id": "3a0889fb-f4a5-4488-87a7-ab43d637846a",
+      "cantidad": 1,
+      "precio": 350
+    },
+    {
+      "id": "ded9d6ac-2cc1-48e8-828b-de8ceec1014e",
+      "partida_id": "46bb1f81-26bc-4706-be19-08a381a8d43e",
+      "recurso_id": "24580741-101e-40d7-bae2-53474d3904c9",
+      "cantidad": 5,
+      "precio": 400
+    },
+    {
+      "id": "b8a04f78-28ce-409f-9fff-653fcac2f98c",
+      "partida_id": "b99fbe0d-f61c-4b5f-9f96-64e4b7f59afc",
+      "recurso_id": "623244f0-9117-4930-ba19-0c731d848656",
+      "cantidad": 1,
+      "precio": 350
+    },
+    {
+      "id": "faad1122-ae30-4634-9d43-ddf5ba84e922",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.8,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "9b03d135-2073-4fed-a671-23860a4a30d0",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 16,
+      "precio": 24.23,
+      "cuadrilla": 2
+    },
+    {
+      "id": "0cd052a5-46a7-462b-b833-ffe3d7c66bb6",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 16,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "91b96de5-8c26-4f45-b870-83e325b95799",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "81aba394-7719-49a5-b533-b19d4f39a0f3",
+      "cantidad": 6,
+      "precio": 1.86
+    },
+    {
+      "id": "fc4e3e94-5652-41d5-8e97-d00f0de845b3",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "191846c0-80d1-4c8a-80e3-70ab0bf0c5b2",
+      "cantidad": 16,
+      "precio": 0.68
+    },
+    {
+      "id": "400b044e-a61f-49b5-8724-07a7589fe455",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "a87cac9b-d378-4ba0-be4f-fc2938ec8b42",
+      "cantidad": 16,
+      "precio": 8.27
+    },
+    {
+      "id": "30da4050-1c0e-41e6-8309-3c47224aaccd",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "77315271-d570-4d8a-b785-a4d192157794",
+      "cantidad": 5,
+      "precio": 48.3
+    },
+    {
+      "id": "55803d16-2c95-4f85-a1eb-aa664223a04a",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "b7921c28-5f76-4171-bb71-e9875fbf6b2a",
+      "cantidad": 5,
+      "precio": 3.15
+    },
+    {
+      "id": "b6e4e618-9289-4849-a526-c341ba2488ef",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "e0226264-23de-4efa-96aa-93b7b4864b21",
+      "cantidad": 4,
+      "precio": 23.9
+    },
+    {
+      "id": "d78b793a-1005-4a60-a7f6-466566e31065",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "ae4345cb-cf9d-41ab-88c2-67971ba8e063",
+      "cantidad": 4,
+      "precio": 20.53
+    },
+    {
+      "id": "5ba85ad3-8cce-4dc3-8c3f-7d460fbcdcc4",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "ef7c5ed7-64e7-4cd9-8b12-310d98550634",
+      "cantidad": 8,
+      "precio": 4.6
+    },
+    {
+      "id": "bb1b9830-6c7f-45f5-a712-5cc7b911d989",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "ab9b31e5-bd5b-436e-9e11-668b2a50d3be",
+      "cantidad": 0.5,
+      "precio": 695
+    },
+    {
+      "id": "21eafb55-ce09-401c-bdb1-30a97e3d6577",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "4b265539-5bc4-47f2-9c03-17fddda14bb2",
+      "cantidad": 4,
+      "precio": 17.91
+    },
+    {
+      "id": "f2b9861a-6d9d-4c55-afba-20cc23497cdb",
+      "partida_id": "5f240372-77b9-4c5a-aef7-5d94ebc29bd0",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 687.58
+    },
+    {
+      "id": "6288c7da-d09f-46e9-b1a1-0c3979f85873",
+      "partida_id": "6eb43aa2-28bf-4c37-8f6b-fddd0538ef3d",
+      "recurso_id": "4aaaf9e5-06e2-413e-8594-9179298c4517",
+      "cantidad": 5,
+      "precio": 200
+    },
+    {
+      "id": "d2ff1665-7ed9-4dcd-95aa-55db06a45a39",
+      "partida_id": "e50460d8-745b-494a-8d93-194f9442202c",
+      "recurso_id": "1b96802a-7d52-40f0-8810-7735e23feaf8",
+      "cantidad": 1,
+      "precio": 18352.1
+    },
+    {
+      "id": "c68140c0-a240-48c2-9c34-e57c93c9de5e",
+      "partida_id": "74bdd78b-32d1-47c4-bbd5-5eba839684a8",
+      "recurso_id": "722dcc98-306d-4a56-8a53-b2897aac958f",
+      "cantidad": 1,
+      "precio": 247594.45
+    },
+    {
+      "id": "bf906830-9d10-4e06-ac8e-46c5d409e7c8",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "3efb1d93-3bed-4e15-9d46-4029beafe93f",
+      "cantidad": 80,
+      "precio": 33.98
+    },
+    {
+      "id": "63f8a89c-d51e-4dba-b82b-90a390177427",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "95c40936-0a55-49de-a22a-4473d61147c5",
+      "cantidad": 80,
+      "precio": 5
+    },
+    {
+      "id": "396679e1-95e1-457a-9643-c151b811530b",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "5e11c0e1-859f-44ae-9ed0-576043b79bec",
+      "cantidad": 80,
+      "precio": 42.29
+    },
+    {
+      "id": "3fb8c981-b5b3-4179-bb3a-577caf54480e",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "db88327b-c880-4d0e-81f4-d0b2697f3b4f",
+      "cantidad": 80,
+      "precio": 10.93
+    },
+    {
+      "id": "1e3121ae-6d32-4138-8b14-cc362835a422",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "9d973eed-28f8-4482-aadc-1ad28db67144",
+      "cantidad": 80,
+      "precio": 8.39
+    },
+    {
+      "id": "8fff4764-c336-494a-aaad-4227f0d13b1b",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "1c23362c-9783-4c7c-8835-722dd4847d59",
+      "cantidad": 80,
+      "precio": 10.9
+    },
+    {
+      "id": "3be98425-18e8-4282-a504-6c5fd5ee0f3d",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "863f5578-f5a6-4643-92e7-0e3cae982787",
+      "cantidad": 80,
+      "precio": 53.22
+    },
+    {
+      "id": "df9d4892-cb00-4de7-b1e1-5b316185544b",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "408b502c-8df0-4a2d-993d-9928432c1153",
+      "cantidad": 80,
+      "precio": 40.59
+    },
+    {
+      "id": "1a3302fc-2016-41a4-9cce-f9bc8f4b8636",
+      "partida_id": "a956964e-cafd-47f1-8344-46c92b7faade",
+      "recurso_id": "3580135e-6c9c-4658-aaff-27c86bb81c4d",
+      "cantidad": 80,
+      "precio": 4.66
+    },
+    {
+      "id": "6c444ed0-6741-4ba3-8a5a-bc99c04d582b",
+      "partida_id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "recurso_id": "0272fc2d-c4e4-4da2-931b-be569edbebd1",
+      "cantidad": 8,
+      "precio": 59
+    },
+    {
+      "id": "1084fba3-9aa8-4cd6-bedd-9405b5cbe4b0",
+      "partida_id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "recurso_id": "d2c25e70-8583-4262-8ce9-b0f576f16252",
+      "cantidad": 1,
+      "precio": 1500
+    },
+    {
+      "id": "849f5a74-752d-44ba-8402-3ca281287adc",
+      "partida_id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "recurso_id": "b6abe1f2-5c53-4017-ad5c-de2101a338d6",
+      "cantidad": 3,
+      "precio": 152.92
+    },
+    {
+      "id": "77ea1200-7ce7-49b7-8d8e-61eab249c0af",
+      "partida_id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "recurso_id": "6e5fe240-ee8d-4f82-91c5-3f1656198e72",
+      "cantidad": 6,
+      "precio": 34.9
+    },
+    {
+      "id": "ff260882-48c3-4528-a9c1-e880785ad5d3",
+      "partida_id": "3319ac04-2fd2-462a-bbf9-e5bea1919522",
+      "recurso_id": "dfd1d091-0177-49f7-ab90-e384f1a98329",
+      "cantidad": 2,
+      "precio": 44.9
+    },
+    {
+      "id": "62ec07e3-60ff-4754-9071-6a36da353232",
+      "partida_id": "08010233-7161-48c2-984d-70179980c45f",
+      "recurso_id": "31250307-3a6c-444c-8864-78cead3f542d",
+      "cantidad": 1,
+      "precio": 3800
+    },
+    {
+      "id": "2fee5b66-b933-489f-bf93-f5b0910ad0c3",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "b6abe1f2-5c53-4017-ad5c-de2101a338d6",
+      "cantidad": 1,
+      "precio": 152.92
+    },
+    {
+      "id": "87a3a7ad-399b-4c26-85f5-bb8d1643ffcb",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "e2c423dc-b6a0-46a3-bbd5-a04556076c9a",
+      "cantidad": 4,
+      "precio": 99.9
+    },
+    {
+      "id": "6b3056c4-3d12-4c7b-bd8f-34618f2a9cd1",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "b6cff34d-cd6d-4a5c-92a5-b554cc4a9502",
+      "cantidad": 1,
+      "precio": 270
+    },
+    {
+      "id": "56914bb5-f64b-4cb8-a15e-6070a0a15a2b",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "e2e1a629-cc6e-4585-8359-59150b9f0c2b",
+      "cantidad": 2,
+      "precio": 55.1
+    },
+    {
+      "id": "bb709279-2c1d-4f4b-95bf-1145514d2ed9",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "5fe78cb0-b82f-4cec-9ff8-fca628049ec7",
+      "cantidad": 2,
+      "precio": 25
+    },
+    {
+      "id": "673bef2b-76c5-47b5-9133-8bf73e22a9bf",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "3302f935-9035-4c19-9f2b-f3c8750556d0",
+      "cantidad": 2,
+      "precio": 300
+    },
+    {
+      "id": "1f9c90b6-ffb3-4deb-91eb-93ba15c1ce20",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "8226cfa7-e480-4000-b838-eeec934afc16",
+      "cantidad": 10,
+      "precio": 6
+    },
+    {
+      "id": "26876d22-115c-4607-b6f6-484e5d4a8642",
+      "partida_id": "2baee66d-f5d8-4887-b55a-aae5425400f6",
+      "recurso_id": "5bc7541e-216b-448b-82e5-065fa46867ae",
+      "cantidad": 8,
+      "precio": 80
+    },
+    {
+      "id": "485fa0b3-b306-4e4c-8f95-5b12ece8826e",
+      "partida_id": "847192d7-1c63-4984-904d-f310d75a01ce",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0114,
+      "precio": 29.08,
+      "cuadrilla": 0.4
+    },
+    {
+      "id": "059e5234-3c78-44bd-bf94-7367c84aa9a0",
+      "partida_id": "847192d7-1c63-4984-904d-f310d75a01ce",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.1143,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "2a2ec6fc-19ac-4a19-ba08-78e705469269",
+      "partida_id": "847192d7-1c63-4984-904d-f310d75a01ce",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.31
+    },
+    {
+      "id": "f1b4e181-9ecf-406a-920b-71776799fe41",
+      "partida_id": "847192d7-1c63-4984-904d-f310d75a01ce",
+      "recurso_id": "4312227f-c978-4163-ab1f-8ab0fab120f3",
+      "cantidad": 0.0286,
+      "precio": 310.07,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c862fe98-6fda-47a8-8750-82e99c62bcbb",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0107,
+      "precio": 29.08,
+      "cuadrilla": 0.2
+    },
+    {
+      "id": "d2b0aa86-917e-4be2-b6f8-af671f54c11c",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1067,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "4c48a95e-239f-403c-988d-6a86e2ac6647",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.2133,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "1f2f1067-912b-482a-8e56-777fd180a44a",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 6.04
+    },
+    {
+      "id": "aa4ef90e-5b8d-427d-b361-5560f3112c0d",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "4d8cc394-e5d2-432a-90b2-ff73dab2225b",
+      "cantidad": 0.1067,
+      "precio": 6.66,
+      "cuadrilla": 2
+    },
+    {
+      "id": "adeb7afc-7cbb-458e-b21b-7aca581546c6",
+      "partida_id": "d5f9c455-e617-4657-9fc1-17044c3b1a2a",
+      "recurso_id": "ad092f21-4be4-4cb7-bdea-ecfa3014bbe4",
+      "cantidad": 0.0533,
+      "precio": 112.45,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ee9bd653-90fa-4f48-ad35-f0f19cf0ab5b",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0235,
+      "precio": 29.08,
+      "cuadrilla": 0.5
+    },
+    {
+      "id": "ad74eabe-309e-4b9a-891e-ebc7a99a930b",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0941,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "917b733d-119f-4310-989b-e0886c2d8841",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.1882,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "d6303e4a-4687-4e28-aa84-98e1b8cf5683",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 5.73
+    },
+    {
+      "id": "62c16fbf-d644-40fb-ba8b-653f25545192",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "4d8cc394-e5d2-432a-90b2-ff73dab2225b",
+      "cantidad": 0.0941,
+      "precio": 6.66,
+      "cuadrilla": 2
+    },
+    {
+      "id": "11d71fd8-b252-466e-a6ab-870f89b148b3",
+      "partida_id": "38ff33fa-5f45-4b28-b70e-2c9b692e6e68",
+      "recurso_id": "ad092f21-4be4-4cb7-bdea-ecfa3014bbe4",
+      "cantidad": 0.0471,
+      "precio": 112.45,
+      "cuadrilla": 1
+    },
+    {
+      "id": "208864cf-84d8-479a-9fa3-6a2671939fe0",
+      "partida_id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0333,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "10158503-59b6-4677-b9bb-f5054838e9ab",
+      "partida_id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.58
+    },
+    {
+      "id": "976493e6-4c49-4888-a5c0-472619acbd38",
+      "partida_id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "recurso_id": "370142cf-f5a8-4812-95ff-0e19faee5778",
+      "cantidad": 0.0133,
+      "precio": 247.79,
+      "cuadrilla": 0.798
+    },
+    {
+      "id": "eed68070-ec16-4184-8284-54d35bd5c70d",
+      "partida_id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "recurso_id": "6f4e9443-e528-4750-87dd-21c55905869f",
+      "cantidad": 1,
+      "precio": 805
+    },
+    {
+      "id": "b4803d34-74b9-4e64-96b4-585f98d293f0",
+      "partida_id": "70e451c3-e1f7-4072-af56-18ea737ddcda",
+      "recurso_id": "667ddbe8-ffae-417c-8438-1ac5a607f592",
+      "cantidad": 1,
+      "precio": 65.15
+    },
+    {
+      "id": "66927c64-04bf-4ec0-b22a-0a335b1c2fc7",
+      "partida_id": "ee817485-efad-46e0-9144-725995c354f6",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "686ac086-7de0-47d3-b01e-b3eb381010f5",
+      "partida_id": "ee817485-efad-46e0-9144-725995c354f6",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "d6f7d08e-31d2-4809-b48c-6190ace92306",
+      "partida_id": "ee817485-efad-46e0-9144-725995c354f6",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "5b3dc829-eb0e-484e-bc84-25b14a4ed2cc",
+      "partida_id": "ee817485-efad-46e0-9144-725995c354f6",
+      "recurso_id": "370142cf-f5a8-4812-95ff-0e19faee5778",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "532c4497-5933-4449-b4d0-8456fea071a2",
+      "partida_id": "ee817485-efad-46e0-9144-725995c354f6",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "0d0a58b6-a65f-4bdd-b17c-8a6502661519",
+      "partida_id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0029,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "b8713f4a-47fc-452c-9026-e4a73ceb922a",
+      "partida_id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0286,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c9e8d7e7-7588-45ae-9e52-b22f8fbe5353",
+      "partida_id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0571,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "e19ae5ea-2c49-4318-a847-422b9c7b40ff",
+      "partida_id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.62
+    },
+    {
+      "id": "46ae8cf4-8d22-45f4-931b-9e80d8f8a39e",
+      "partida_id": "da1ccd1a-e270-4ab9-8d5d-320ac5862daf",
+      "recurso_id": "dcd5d114-5f03-435d-8eb6-805ab2d1b22d",
+      "cantidad": 0.0286,
+      "precio": 348.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "bdaeab08-9d9b-4879-a8bf-a299c8f83c29",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.02,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "88778f14-2a67-4e52-9972-f4b05591664e",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.12,
+      "precio": 17.29,
+      "cuadrilla": 6
+    },
+    {
+      "id": "7de0a3e4-67da-49ec-be99-ef87997931c9",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.45
+    },
+    {
+      "id": "670f64d5-fc44-4cf3-be7b-de3c7215aa36",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "33900e07-664e-4ae7-96fa-7eb0a1b67bc4",
+      "cantidad": 0.02,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "3bbf0e56-fdb0-4acb-9eb2-198143f83e5f",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.02,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4c5e9980-4c8d-4795-afd8-b6ea21384300",
+      "partida_id": "84d8b74a-ff16-472f-8494-8d00911b8c67",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.02,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "1a524da2-7e59-460f-942e-afe604a8dcbd",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0006,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "d1f8f9d4-4dce-4ca0-8212-ebde7c368965",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0123,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "721dbe54-14f3-4e86-b486-25ce35b076f7",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0123,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "a7c2e557-fe4d-4365-be77-4d9fec99b650",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.47
+    },
+    {
+      "id": "68457ea1-2653-4b3e-8360-d4d1fc2a0177",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "5ae56e3c-3fe6-424a-984f-b37f51d3a0d7",
+      "cantidad": 0.0062,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "dc3cdbcc-923b-4c9c-b0e2-bc4d256c6a50",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.0062,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "575ff1fe-3deb-4c1b-9585-4a8ad6e04d22",
+      "partida_id": "9895b55e-00cb-42c5-8e38-97e1d3b594de",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.0062,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ffe6252a-9a07-4935-b1ec-ba8f01ea2330",
+      "partida_id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "1f0c5512-01ad-4d53-96c5-b2fc901b72a7",
+      "partida_id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "0e36fbde-0d47-48c3-a848-b7509461ef61",
+      "partida_id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "d9186d49-212c-40e8-8b7d-0b76366d09e9",
+      "partida_id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "recurso_id": "a1a61971-4779-45de-96ab-48bf025270d3",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "9ac2e27d-905c-4fd9-9cd0-5efefebed4a9",
+      "partida_id": "e041e70a-b5c0-417d-8061-bfd48e1ee804",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "34259fb4-8334-47dd-bc90-79c6744ea34a",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.008,
+      "precio": 29.08,
+      "cuadrilla": 1
+    },
+    {
+      "id": "50a6f53b-9215-4da3-b71a-028826219ada",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.016,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "2a2aead1-6d27-4cc2-9243-5cf11bbadd23",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.032,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "cdcfb3f6-9b88-4dbf-958a-85d9fc08569a",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "a881f765-5ea6-43d5-b80c-5a1050efc817",
+      "cantidad": 0.26,
+      "precio": 45
+    },
+    {
+      "id": "67411c81-86b3-4569-97c4-082d4a143efd",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 1.09
+    },
+    {
+      "id": "907f09fc-88db-4941-b0af-40b3ab241436",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "5ae56e3c-3fe6-424a-984f-b37f51d3a0d7",
+      "cantidad": 0.008,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "5e01a4f2-78c6-41b4-80a4-fb96c0ec2414",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.008,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "8d1d380c-8fff-4171-9527-53f071362ad6",
+      "partida_id": "6700d17d-8b71-4b4b-b06a-28bc73e5ae4a",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.008,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "59ebb9da-47be-41a1-bd21-75b5359a5fa7",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0006,
+      "precio": 24.23,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "0f9d44fd-4e00-41fa-8baa-0f3b00cad750",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0127,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "f214017c-e5ac-4374-a277-26889cb6c38e",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.2,
+      "precio": 6.4
+    },
+    {
+      "id": "55ab75b3-fbf3-4740-96e8-8140e5f42fd5",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "d9fb9c50-49c8-4ac9-ab07-44448504c045",
+      "cantidad": 0.025,
+      "precio": 13.14
+    },
+    {
+      "id": "9a5b44d4-4a15-444c-a4ec-4a4d7827a485",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 0.0952,
+      "precio": 6.2
+    },
+    {
+      "id": "da4242a3-94bc-401e-b52e-dbda3d63a561",
+      "partida_id": "e7e2a0b4-2050-4cda-a6e9-e85a0f908d48",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 0.23
+    },
+    {
+      "id": "2d8ddfcd-2394-4f67-b71d-84d3101a56f6",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0571,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "da204b91-2bea-4858-9a8f-424a6677393d",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.5714,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "075c86ca-bede-4ab4-b487-cd1df185ea67",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.5714,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b7cbcf89-3a28-4037-87e5-da2baf7ee2de",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "8893d6e3-b427-4a2a-a05c-b927b6cf515f",
+      "cantidad": 0.25,
+      "precio": 6.4
+    },
+    {
+      "id": "ffb35b3b-81ec-4a29-81b7-f440bbe57a8f",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.18,
+      "precio": 6.4
+    },
+    {
+      "id": "66942ddc-4e91-4864-af12-f6fa6bac973f",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 1.05,
+      "precio": 6.2
+    },
+    {
+      "id": "ae1a2410-8d07-4aa0-8ead-24f9479f22da",
+      "partida_id": "f2b1204b-71b4-49b9-a5d6-d919af3baa43",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 26.44
+    },
+    {
+      "id": "27abfa1c-bb5c-45c9-baf6-f47bc660b7c3",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "c968a3fb-b5cd-4435-9318-49c092af0616",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "083a9d53-5dea-4768-9ab3-a72939af56aa",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "9f22e41b-81a1-4732-86dd-0221e06245e3",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 1.06
+    },
+    {
+      "id": "724b3418-ac60-45c0-b1d5-d9a518fee549",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "18b9c809-2055-426a-b16d-709e7cf5fe71",
+      "cantidad": 0.0229,
+      "precio": 95.9,
+      "cuadrilla": 1
+    },
+    {
+      "id": "e56a9e6b-7605-4fb0-8d26-a53edf1efdd5",
+      "partida_id": "474e848b-076f-4db4-b3db-9f198e0745e4",
+      "recurso_id": "cf6f8b23-7e00-4d63-a33c-87744fa6506d",
+      "cantidad": 1,
+      "precio": 96.32
+    },
+    {
+      "id": "5ddd4609-5215-448f-901c-8a66eb263da1",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "1274e23e-e2c4-45ca-a707-b8cdce00bb0e",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "1c0c9cbb-fec0-43bf-9008-f13aecc6c322",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "12949c78-571a-43f7-bd57-08853b39795d",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "f8f4621f-7dad-4ea7-956b-2b811fbde81e",
+      "cantidad": 1.03,
+      "precio": 5.6
+    },
+    {
+      "id": "15368587-0e97-4306-bffb-7e525a480dae",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.06
+    },
+    {
+      "id": "8df93507-ed96-48c8-b3f2-86047d5f5a29",
+      "partida_id": "cb4a67fe-9b04-49f6-9d78-1fa1a30d9adb",
+      "recurso_id": "18b9c809-2055-426a-b16d-709e7cf5fe71",
+      "cantidad": 0.0023,
+      "precio": 95.9,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "0ae2a4c0-65ad-49be-8a30-108e580bfe0a",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0007,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "17e59f79-5c76-49f0-b8da-d0b3fc16014d",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0296,
+      "precio": 24.23,
+      "cuadrilla": 4
+    },
+    {
+      "id": "e9870195-9580-4967-ab95-0fbc84f6371a",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0296,
+      "precio": 19.13,
+      "cuadrilla": 4
+    },
+    {
+      "id": "4bc6d210-7649-4e98-8bcb-6e9a1eff385b",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0296,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "d3684c9f-e3d2-41d4-a6b6-4a05ee344c6c",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "9c4eecb1-e23e-4109-8704-69d0292016e1",
+      "cantidad": 0.255,
+      "precio": 329
+    },
+    {
+      "id": "7bc5a933-7e76-4a6a-9125-5f5a67367978",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.82
+    },
+    {
+      "id": "72479b70-e4f2-4971-84d5-f9c355dee7cd",
+      "partida_id": "c3297ba1-6ac7-4071-ba2a-e2cf8649fab5",
+      "recurso_id": "865dc74f-8abd-4223-8693-1c64e109b15d",
+      "cantidad": 0.0074,
+      "precio": 1600,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a4bafe19-f3c8-411c-9834-121fe93349da",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0004,
+      "precio": 29.08,
+      "cuadrilla": 0.01
+    },
+    {
+      "id": "fafabee0-9e7f-4773-90a0-bc144adeb4c1",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.08,
+      "precio": 24.23,
+      "cuadrilla": 2
+    },
+    {
+      "id": "9433d026-9916-4373-a3f5-d8da7e83362a",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.08,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "32d5056d-3335-4299-99db-e2b33467d9be",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "570f40e9-f890-4825-b1dc-f597438e5661",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "517dba1c-ef68-4057-87ba-f7f47074232d",
+      "cantidad": 0.255,
+      "precio": 329
+    },
+    {
+      "id": "ae9b3eb4-511b-48ec-ad13-7134a232cceb",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 6.25
+    },
+    {
+      "id": "c0c07a65-7b44-4a38-9c81-fd44a5ab85e0",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "cbd7eb17-025b-45aa-ad38-c74272e8c2fa",
+      "cantidad": 0.03,
+      "precio": 5.5,
+      "cuadrilla": 0.75
+    },
+    {
+      "id": "0a349976-97e8-4007-b648-9899c62883e1",
+      "partida_id": "107a3713-e521-482c-945c-963e43542207",
+      "recurso_id": "cbd26a6f-c885-4d1f-8509-bccd697ceea6",
+      "cantidad": 0.03,
+      "precio": 7.5,
+      "cuadrilla": 0.75
+    },
+    {
+      "id": "fc4f5675-1587-4437-bc26-f699119f8e45",
+      "partida_id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0296,
+      "precio": 24.23,
+      "cuadrilla": 4
+    },
+    {
+      "id": "37073497-5280-4939-886c-639e3b35a03b",
+      "partida_id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0148,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "48b07fbd-fc41-418d-a8e3-e3ac178adb3b",
+      "partida_id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "recurso_id": "a2674ea9-1455-4a1c-b1d1-07e669ce7255",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "437c4861-1179-4d9e-9cbf-e49c287f5214",
+      "partida_id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "recurso_id": "6c1425e8-b247-4b85-bbb3-601a83c35606",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "2a03160f-7890-407d-bc49-df4ae8ad82ee",
+      "partida_id": "c18aae32-1d39-477e-bad7-2ff19938544a",
+      "recurso_id": "f934239d-e05f-45e6-aa83-322447275496",
+      "cantidad": 0.0148,
+      "precio": 5,
+      "cuadrilla": 2
+    },
+    {
+      "id": "5e9aacfb-ffaf-46d5-808d-b30efa7841e8",
+      "partida_id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0053,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "359f4286-8224-416a-8d31-1eb0f572e394",
+      "partida_id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0533,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ccc2befc-6352-41fd-ba05-579d30573a66",
+      "partida_id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0533,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "9f625982-c8c5-4501-8c35-3fe328205701",
+      "partida_id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.36
+    },
+    {
+      "id": "31c1abf5-7c7b-4f0f-a8ce-1f341c8f5eb3",
+      "partida_id": "d1545f83-5ac6-4aeb-980e-fe7da52575b4",
+      "recurso_id": "8a5ace39-106b-45c1-9482-499c418df0b6",
+      "cantidad": 0.0533,
+      "precio": 10,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d499788f-a7bd-42a9-889a-dbb01ae4af7a",
+      "partida_id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "af52f552-b177-473f-bd27-2d80828736dc",
+      "partida_id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0667,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "62b288f9-27ea-4979-9d78-e724aac46f31",
+      "partida_id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "recurso_id": "5bb9f12a-f48d-4591-bbd7-716627be01ed",
+      "cantidad": 0.04,
+      "precio": 110
+    },
+    {
+      "id": "d606aa30-d511-4a45-ba5c-d0649cc786df",
+      "partida_id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "recurso_id": "a4fb709a-45f7-462d-b884-5910a07ee2b5",
+      "cantidad": 1.02,
+      "precio": 0.85
+    },
+    {
+      "id": "6869a31d-f471-4f5a-92aa-a9f6414c1fe3",
+      "partida_id": "891596e1-168f-4814-a862-f852ba9e9f3b",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.77
+    },
+    {
+      "id": "29585d3a-a28d-4ce1-9b67-ea699c42c392",
+      "partida_id": "8787680c-2d9c-4a05-bc0e-fed8f3661a93",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.032,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "0be2556d-a7e7-4aab-b1b0-7aefeb68ab5a",
+      "partida_id": "8787680c-2d9c-4a05-bc0e-fed8f3661a93",
+      "recurso_id": "73d5e894-2cb0-4b53-9717-28f645ae105b",
+      "cantidad": 0.05,
+      "precio": 21.19
+    },
+    {
+      "id": "733f733b-77c5-44f1-b8bd-f8ae8181c2e5",
+      "partida_id": "8787680c-2d9c-4a05-bc0e-fed8f3661a93",
+      "recurso_id": "bb7ddfcf-c0b3-44e4-b811-4f78ba9ec8d4",
+      "cantidad": 0.032,
+      "precio": 1.25,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b2c3926a-6ba6-42b6-9ae0-c884814da1c3",
+      "partida_id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0029,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "89712158-be18-4a16-bc1f-732362eda215",
+      "partida_id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0286,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d8ee8d1c-47b7-41c4-abfe-92914c7905f3",
+      "partida_id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0571,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "c89b39d6-a797-4658-9d74-8ff3d09d08a5",
+      "partida_id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.62
+    },
+    {
+      "id": "9fe9f6c4-6a65-4f68-845f-33fcc130b0c4",
+      "partida_id": "2ff55782-d7c9-4a48-af69-1e8ddb84ae3d",
+      "recurso_id": "00d75412-7ecc-4b43-8fa3-2b92604539f0",
+      "cantidad": 0.0286,
+      "precio": 348.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b0724935-4712-4aa3-99a6-ba5ba1ad5988",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.02,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "78ed7a48-b217-400e-844d-f4dcec998a84",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.12,
+      "precio": 17.29,
+      "cuadrilla": 6
+    },
+    {
+      "id": "a0f7ff52-7d1e-4f67-84d2-a44339e80ca7",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.45
+    },
+    {
+      "id": "7d79e9b1-8a62-4f58-b39d-fe0eddb7a684",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "5ae56e3c-3fe6-424a-984f-b37f51d3a0d7",
+      "cantidad": 0.02,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "fd07627b-08bd-4bde-bd13-6445e4bddd4c",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "00d75412-7ecc-4b43-8fa3-2b92604539f0",
+      "cantidad": 0.01,
+      "precio": 348.29,
+      "cuadrilla": 0.5
+    },
+    {
+      "id": "95376cd5-79e9-4871-8df5-6086e4995c73",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.02,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d43c6de3-dd3e-4ed1-86fa-c5e4baef2988",
+      "partida_id": "3c2dcd2c-2156-4f02-b77c-e70286441ac6",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.02,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "64304adc-a065-47fc-91ab-9d1b35138e0f",
+      "partida_id": "a3341e5e-c8ad-4dd9-995a-604ba2ede657",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0006,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "a9e4c8d6-00ba-446e-b119-925e141ab941",
+      "partida_id": "a3341e5e-c8ad-4dd9-995a-604ba2ede657",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0123,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "2a2d2e75-dcdc-4327-b017-1abfa929e426",
+      "partida_id": "a3341e5e-c8ad-4dd9-995a-604ba2ede657",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0123,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "8783ad15-b49e-4d79-befa-91f8bfe80d82",
+      "partida_id": "a3341e5e-c8ad-4dd9-995a-604ba2ede657",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.47
+    },
+    {
+      "id": "de786fe6-9681-4d39-888e-43080ed8f26f",
+      "partida_id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "9f950a92-7c87-4bfc-91ec-8e9e47157bcc",
+      "partida_id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "e1f76cc9-2518-44fb-a311-3d566962d395",
+      "partida_id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "e67ec559-eacd-42ff-b529-a5de603c23c5",
+      "partida_id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "recurso_id": "370142cf-f5a8-4812-95ff-0e19faee5778",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "8986b5d6-919f-4f96-9e97-2def11b8b478",
+      "partida_id": "9dc1ec14-ce48-4a51-913e-b47e88e7f977",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "b6f82ed9-f616-446b-997c-694c07755f6c",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.008,
+      "precio": 29.08,
+      "cuadrilla": 1
+    },
+    {
+      "id": "5aac7856-14fc-47f9-9d98-97dd9d84e33f",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.016,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "b178bbd4-b2ed-4f21-9e3f-9ee11d7e8a53",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.032,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "450e994b-e6ac-49c2-9767-30b4dfd63e6c",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "a881f765-5ea6-43d5-b80c-5a1050efc817",
+      "cantidad": 0.26,
+      "precio": 45
+    },
+    {
+      "id": "edddb088-0079-4cd7-9142-9ae0ab3c0c0f",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 1.09
+    },
+    {
+      "id": "3da26341-2c85-445f-acbf-3992b427dba2",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "33900e07-664e-4ae7-96fa-7eb0a1b67bc4",
+      "cantidad": 0.008,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "bbd92ad5-63ba-483e-a4b8-8a89d1e28ce4",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.008,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c9ebc81e-1c60-4e51-a772-c40c6c689510",
+      "partida_id": "ea18d431-de8d-42a1-864f-66a441552d02",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.008,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ba845286-336e-46ae-b95d-3f2d273189ae",
+      "partida_id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0006,
+      "precio": 24.23,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "eaf6bc2e-4928-45ce-bb3b-f63468118da3",
+      "partida_id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0127,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "f1325640-96e7-4da0-9871-c5c44ff12918",
+      "partida_id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.2,
+      "precio": 6.4
+    },
+    {
+      "id": "2b44f793-5c23-49df-b974-57a9d568641c",
+      "partida_id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "recurso_id": "d9fb9c50-49c8-4ac9-ab07-44448504c045",
+      "cantidad": 0.025,
+      "precio": 13.14
+    },
+    {
+      "id": "d7480fd3-9234-4b43-982a-025db581b6d7",
+      "partida_id": "003a1430-25b2-4826-98a7-ee8d796d4ae5",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 0.0952,
+      "precio": 6.2
+    },
+    {
+      "id": "c7bc35d0-4c0b-4343-9856-06c2c0a47f41",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "1d2d293a-2732-4015-981b-0fd3d33f81df",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "949ad2e0-a567-4e29-b8c6-3cc482be6b5a",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "8d71a055-ffe2-42ce-8e3c-d2cb24487644",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 1.06
+    },
+    {
+      "id": "9d789727-647d-4baa-9843-790bbb41f51c",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "36043ba2-99be-4c77-ad4f-b1d634fad610",
+      "cantidad": 0.0229,
+      "precio": 95.9,
+      "cuadrilla": 1
+    },
+    {
+      "id": "22478560-1714-490b-8a4e-694226d6ce02",
+      "partida_id": "66c87f74-e3d9-49ac-97a0-50905fc0bd94",
+      "recurso_id": "cf6f8b23-7e00-4d63-a33c-87744fa6506d",
+      "cantidad": 1,
+      "precio": 96.32
+    },
+    {
+      "id": "777e0859-04ee-4fce-8729-5f3dd6ddd051",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "ba24a38d-69c9-4c62-b4b7-257891057662",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b6e5d851-53ed-45d6-9655-f430804a6239",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "84b18682-850e-426b-a311-145fd5aa2159",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "f8f4621f-7dad-4ea7-956b-2b811fbde81e",
+      "cantidad": 1.03,
+      "precio": 5.6
+    },
+    {
+      "id": "4b2a4882-4023-4722-be0d-e2be9be29aae",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.06
+    },
+    {
+      "id": "20435060-ba39-4025-aad1-fbcb6336064d",
+      "partida_id": "d7f6bc82-865e-4368-aba2-b60ab6348139",
+      "recurso_id": "36043ba2-99be-4c77-ad4f-b1d634fad610",
+      "cantidad": 0.0023,
+      "precio": 95.9,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "92db4682-e7e0-43c2-b652-fe035c67fe1f",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0007,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "db7f7467-98a8-4ae5-aee3-6b0f8884500f",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0296,
+      "precio": 24.23,
+      "cuadrilla": 4
+    },
+    {
+      "id": "978dce18-8914-4cd4-baab-79530b885ac3",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0296,
+      "precio": 19.13,
+      "cuadrilla": 4
+    },
+    {
+      "id": "f31ac0a3-f3f0-4325-b1a8-2fa78d31ef40",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0296,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "b80631dc-4bfc-46f7-9bff-7d01b8175ebd",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "c98e5ac2-eb73-4709-ab67-2732c0953d47",
+      "cantidad": 0.255,
+      "precio": 329
+    },
+    {
+      "id": "5113f130-3d0e-4224-ae76-8bafad0714d5",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.82
+    },
+    {
+      "id": "e7ee6a68-dca8-4bcd-9548-f75962b49a0d",
+      "partida_id": "b58cc957-055a-4ac6-8c0c-81daca675f57",
+      "recurso_id": "4bb504ef-d2b9-403d-8517-d4d159a549ce",
+      "cantidad": 0.0074,
+      "precio": 1600,
+      "cuadrilla": 1
+    },
+    {
+      "id": "86103701-1a6f-4c32-8508-5f41fb0905bb",
+      "partida_id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0296,
+      "precio": 24.23,
+      "cuadrilla": 4
+    },
+    {
+      "id": "27505941-b28a-4470-85d1-16c6a0439fde",
+      "partida_id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0148,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "7cfeb5a4-dd39-489a-b105-3e061e816343",
+      "partida_id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "recurso_id": "a2674ea9-1455-4a1c-b1d1-07e669ce7255",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "43e14c2c-ae24-4c24-a5d2-1b574be12da3",
+      "partida_id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "recurso_id": "6c1425e8-b247-4b85-bbb3-601a83c35606",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "298a25cc-bcb8-4fb7-8601-0bff346cb5ab",
+      "partida_id": "cb60f2e5-4d29-4ab8-8c8f-017a985eac0b",
+      "recurso_id": "f934239d-e05f-45e6-aa83-322447275496",
+      "cantidad": 0.0148,
+      "precio": 5,
+      "cuadrilla": 2
+    },
+    {
+      "id": "0ed0ce91-dc0e-45e2-ae02-31a8005f1203",
+      "partida_id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0053,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "1850c349-4240-4365-b085-e061708e9b7a",
+      "partida_id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0533,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "31d5f0be-2b4c-4127-83d4-658d5e1d0490",
+      "partida_id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0533,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "e0bb6a8e-4153-424d-bc40-207755a11e4a",
+      "partida_id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.36
+    },
+    {
+      "id": "0ad17d8f-e6cb-40b2-ada8-bd12b7285f4b",
+      "partida_id": "e59fc544-4cf9-4bea-937f-e7f410658b81",
+      "recurso_id": "8a5ace39-106b-45c1-9482-499c418df0b6",
+      "cantidad": 0.0533,
+      "precio": 10,
+      "cuadrilla": 1
+    },
+    {
+      "id": "de4c0d0b-ca32-4ca1-839e-bfd814b8b9ab",
+      "partida_id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "31bc3d8d-8f2c-4bd4-afd8-3d8929fdddfe",
+      "partida_id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0667,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "57e0072a-3a51-4939-bbc2-6d883b655d5d",
+      "partida_id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "recurso_id": "4ecbeeb9-e7fc-48f1-922d-9f6e2c69ff07",
+      "cantidad": 0.04,
+      "precio": 110
+    },
+    {
+      "id": "b0fafd41-43df-45ae-ac5e-27d96488c491",
+      "partida_id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "recurso_id": "a4fb709a-45f7-462d-b884-5910a07ee2b5",
+      "cantidad": 1.02,
+      "precio": 0.85
+    },
+    {
+      "id": "007ff3f5-d254-4d6b-b0df-96de4f4c2a7f",
+      "partida_id": "aa16ae04-d888-4e97-a735-e1ee0db9e96e",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.77
+    },
+    {
+      "id": "d4e3f5ff-65c4-4ee3-be4e-3a67d1040513",
+      "partida_id": "6dea2bd4-42df-4a91-9231-e24b0490bfb2",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.032,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "fafbbe29-8ca2-47f2-bfb2-59de360fd029",
+      "partida_id": "6dea2bd4-42df-4a91-9231-e24b0490bfb2",
+      "recurso_id": "3544a77f-c816-425f-951f-5ee1008d7fbb",
+      "cantidad": 0.05,
+      "precio": 21.19
+    },
+    {
+      "id": "5e376b2c-b6d2-4fa9-b840-d7435768e983",
+      "partida_id": "6dea2bd4-42df-4a91-9231-e24b0490bfb2",
+      "recurso_id": "2a3813ba-1ff4-403f-be0e-31dc1794f6da",
+      "cantidad": 0.032,
+      "precio": 1.25,
+      "cuadrilla": 1
+    },
+    {
+      "id": "60bdfa73-62f9-4178-b608-fe405fcbbbd6",
+      "partida_id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0029,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "71fc88f1-2ad9-4000-95c0-a46b666cd04d",
+      "partida_id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0286,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "94ca8733-d951-4f18-af58-e5a654f974ec",
+      "partida_id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0571,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "ae2baccc-3bbc-4174-8c67-be88c7733d51",
+      "partida_id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.62
+    },
+    {
+      "id": "c139b446-c6a0-46ff-99e4-766a0442e3a4",
+      "partida_id": "a5dfe917-e584-4122-a4ec-739d45cd1f60",
+      "recurso_id": "dcd5d114-5f03-435d-8eb6-805ab2d1b22d",
+      "cantidad": 0.0286,
+      "precio": 348.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "82ff2a2b-9fa2-4ca4-92a6-a89819ee6e43",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0006,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "969addc0-90a9-42a7-8c6a-663b64a3b42a",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0123,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "97446e0a-2799-4b58-9b7e-a900571dfd25",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0123,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "120990ff-0967-4e58-b291-c5d615bae83d",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.47
+    },
+    {
+      "id": "c725e3fb-6ab7-472e-abe7-1e8549cae230",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "33900e07-664e-4ae7-96fa-7eb0a1b67bc4",
+      "cantidad": 0.0062,
+      "precio": 215.35,
+      "cuadrilla": 1
+    },
+    {
+      "id": "f6b8fdf9-a9d6-4bcd-ae10-eaef7dc027e0",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "8da909bc-1548-4d3b-9ee2-62dd76f9d46c",
+      "cantidad": 0.0062,
+      "precio": 223.99,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ef394d49-a721-4b6e-8435-dbf35ffe00e7",
+      "partida_id": "40d3ee02-63a4-4f1b-8959-5a947bcd0c74",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.0062,
+      "precio": 197.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4951103a-7615-4bd1-a30a-6d3ee1afc414",
+      "partida_id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d4878080-3532-471e-a2e4-106986cf1086",
+      "partida_id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "26703d31-2a84-4e7b-916a-f55b8e64385c",
+      "partida_id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "dbcb9703-4f4e-4487-b880-64d0e7167928",
+      "partida_id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "recurso_id": "370142cf-f5a8-4812-95ff-0e19faee5778",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "442f4ebd-3f6d-4145-adfe-a7c299cab818",
+      "partida_id": "4a7eda83-ee90-4440-8867-de43f94cf201",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "3c09bff2-cd7e-429d-8f84-eac95c2520f6",
+      "partida_id": "1bb9bc7d-723b-477e-a648-cd63a387fb5a",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 0.23
+    },
+    {
+      "id": "bd1fb193-f3fd-402f-992d-28d8e94dc049",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0571,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "f869a038-4e41-4b7b-b838-b6d3eb93cfcd",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.5714,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "3789ff06-7766-4604-b6f5-90de66a66993",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.5714,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "861f25a0-d2cc-4a5b-b996-17f8f6fa9e27",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "8893d6e3-b427-4a2a-a05c-b927b6cf515f",
+      "cantidad": 0.25,
+      "precio": 6.4
+    },
+    {
+      "id": "0b2e27bc-85ac-4ab5-bc27-813a11248a25",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.18,
+      "precio": 6.4
+    },
+    {
+      "id": "8d84fcc2-42f5-483b-94d6-e158547e0897",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 1.05,
+      "precio": 6.2
+    },
+    {
+      "id": "1dedb8fa-0620-4b61-afc5-b9b93f20ea59",
+      "partida_id": "8174ec59-e1a9-4607-80df-42da4abb666d",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 26.44
+    },
+    {
+      "id": "57290ce4-2a13-4998-b2fd-0c8214155f39",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "da93db7e-9a4d-48d0-810c-cc571a8bf4be",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "69209b44-e349-489d-b7a9-d703d8a21cac",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "cbbf7723-e42b-4b2e-9ae7-140032cfb117",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 1.06
+    },
+    {
+      "id": "684d0f90-5aeb-4ea8-b982-55b6daf6522e",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "36043ba2-99be-4c77-ad4f-b1d634fad610",
+      "cantidad": 0.0229,
+      "precio": 95.9,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b88e3b2b-e6e0-4c00-a882-9490b9165c4d",
+      "partida_id": "f5b97cc0-b38b-4c01-b69c-1540d929002c",
+      "recurso_id": "cf6f8b23-7e00-4d63-a33c-87744fa6506d",
+      "cantidad": 1,
+      "precio": 96.32
+    },
+    {
+      "id": "0c523bfa-8634-41ac-8814-d18c60baa704",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0023,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "f2b1a427-c687-4150-b214-03aa8fb06b5d",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0229,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "36d8a8fc-afbf-44da-8775-9f66c890a348",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0229,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "41869681-28c3-46e2-882f-518fa7dbf168",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "a207011c-f47b-4888-b4e7-0977b50e9003",
+      "cantidad": 1.03,
+      "precio": 5.6
+    },
+    {
+      "id": "865e2e76-40f5-48aa-9b3e-7ee94da690c7",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.06
+    },
+    {
+      "id": "43dd1d10-5856-44d2-b179-88fcd46823ac",
+      "partida_id": "f51e66f5-4e2e-472f-a341-5127d581eb6d",
+      "recurso_id": "36043ba2-99be-4c77-ad4f-b1d634fad610",
+      "cantidad": 0.0023,
+      "precio": 95.9,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "cec16d91-478f-472f-a722-8ba674a864c7",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0004,
+      "precio": 29.08,
+      "cuadrilla": 0.01
+    },
+    {
+      "id": "45aa39b9-90c7-4c6b-bc6c-c653bf0bcba8",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.08,
+      "precio": 24.23,
+      "cuadrilla": 2
+    },
+    {
+      "id": "529090be-c459-4c7b-b49c-9331a4e99aad",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.08,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "341387db-6249-4125-860e-211436a9c869",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "5c0f660f-27c7-4fca-bc0e-a4c2275eac14",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "4cc67d8e-96f5-4663-9b3b-f52021e0e7fb",
+      "cantidad": 0.255,
+      "precio": 329
+    },
+    {
+      "id": "743e60d8-b474-4335-8997-7f7a6e2abb68",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 6.25
+    },
+    {
+      "id": "124af88d-43b8-4588-b7df-ae342c9235af",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "cbd7eb17-025b-45aa-ad38-c74272e8c2fa",
+      "cantidad": 0.03,
+      "precio": 5.5,
+      "cuadrilla": 0.75
+    },
+    {
+      "id": "c8419400-3c56-4f30-aff6-1ab850c8f93c",
+      "partida_id": "df2092a6-9e31-42ca-94f5-4a902771ddc5",
+      "recurso_id": "d3675ee4-c47c-4943-8e88-ab5fc7a29191",
+      "cantidad": 0.03,
+      "precio": 7.5,
+      "cuadrilla": 0.75
+    },
+    {
+      "id": "d385d964-79c2-49f3-b8f4-26e9d1ee958f",
+      "partida_id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0296,
+      "precio": 24.23,
+      "cuadrilla": 4
+    },
+    {
+      "id": "78f0f725-f7e0-4766-9820-a95fc3b11a94",
+      "partida_id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0148,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "2bd9999f-75c0-483e-8faa-d08824e3623a",
+      "partida_id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "recurso_id": "a2674ea9-1455-4a1c-b1d1-07e669ce7255",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "f719deae-8190-40f7-9a1b-82ba47bf546d",
+      "partida_id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "recurso_id": "6c1425e8-b247-4b85-bbb3-601a83c35606",
+      "cantidad": 0.0148,
+      "precio": 1,
+      "cuadrilla": 2
+    },
+    {
+      "id": "c1e3150b-708e-40e5-a12c-2f46c87d74c5",
+      "partida_id": "8e308821-ddc3-4e8f-b4ce-799315f5cf3b",
+      "recurso_id": "f934239d-e05f-45e6-aa83-322447275496",
+      "cantidad": 0.0148,
+      "precio": 5,
+      "cuadrilla": 2
+    },
+    {
+      "id": "f25cc845-976a-41ae-bb8f-2f309570315e",
+      "partida_id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0053,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "da9dbd7a-004a-4119-b10b-e37d88937245",
+      "partida_id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0533,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "8ddcb923-ff77-4fa3-9152-2d4a20f4119e",
+      "partida_id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0533,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "67676871-ea84-465c-9346-4eb885a64a85",
+      "partida_id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.36
+    },
+    {
+      "id": "c5f810a4-ee16-4cc2-bc3c-f060ac3eaba7",
+      "partida_id": "bc89c9f6-3164-48aa-a9eb-48944777ae09",
+      "recurso_id": "8a5ace39-106b-45c1-9482-499c418df0b6",
+      "cantidad": 0.0533,
+      "precio": 10,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d4db560f-ecb4-4dad-97e8-4a4abc536479",
+      "partida_id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "af280e6e-7596-4672-9489-36a990311591",
+      "partida_id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.0667,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "73c46eeb-d4a0-4b93-9531-7bc3909b9ef5",
+      "partida_id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "recurso_id": "4ecbeeb9-e7fc-48f1-922d-9f6e2c69ff07",
+      "cantidad": 0.04,
+      "precio": 110
+    },
+    {
+      "id": "b4b2d3ba-36e1-44d2-be1b-3afc8cbbfddd",
+      "partida_id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "recurso_id": "a4fb709a-45f7-462d-b884-5910a07ee2b5",
+      "cantidad": 1.02,
+      "precio": 0.85
+    },
+    {
+      "id": "aa57f6c5-f3e3-4193-8633-04ded346a9aa",
+      "partida_id": "a78e4af5-78fd-4c09-8803-3889068278e0",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 2.77
+    },
+    {
+      "id": "d0de22cb-90aa-4406-802d-dc06145eb864",
+      "partida_id": "011008d9-2ca2-40e6-8c32-fc0593fedd13",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.032,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d385e16e-8d9e-4be2-bf5e-cb9cffafa157",
+      "partida_id": "011008d9-2ca2-40e6-8c32-fc0593fedd13",
+      "recurso_id": "fd4594ba-4f33-4129-817b-7124565064af",
+      "cantidad": 0.05,
+      "precio": 21.19
+    },
+    {
+      "id": "0be4ea68-8295-4e73-9aef-1d87d6e8da98",
+      "partida_id": "011008d9-2ca2-40e6-8c32-fc0593fedd13",
+      "recurso_id": "2a3813ba-1ff4-403f-be0e-31dc1794f6da",
+      "cantidad": 0.032,
+      "precio": 1.25,
+      "cuadrilla": 1
+    },
+    {
+      "id": "63c0a18e-4308-47f7-90f5-77602b3e06e8",
+      "partida_id": "89c22b6a-7d34-43c7-af07-f8c9e8d566eb",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "8e840c56-56a7-4867-9d60-7267a4271d4f",
+      "partida_id": "89c22b6a-7d34-43c7-af07-f8c9e8d566eb",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 34.58
+    },
+    {
+      "id": "775449c8-a8fd-4276-9bc3-6043ee3a86e6",
+      "partida_id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "633dd35e-ed82-40ef-be70-6ed63dc72a8d",
+      "partida_id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "8a64bbac-14af-4778-89f1-67e9fbc4d89b",
+      "partida_id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "9d62375c-9bcd-4dc3-b530-cddbdd672da7",
+      "partida_id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "recurso_id": "ffc8b26e-c75b-4979-bbcc-2f1fa21cb1a7",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "47a3e9b3-e7ad-46b5-b5df-c8df5c4dc251",
+      "partida_id": "42a1ce66-c87f-4181-8bf6-227166d6ece6",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "d02ef84f-db43-4b63-a166-4d75521c5bbc",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0053,
+      "precio": 29.08,
+      "cuadrilla": 0.01
+    },
+    {
+      "id": "4ee669df-dd4c-448c-8fcf-d57ebc8f0a3d",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.5333,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "17261e26-653b-4fe4-9229-39545b284acc",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.5333,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "cfadeb3c-ccad-4936-a09b-32a9a6bd7a62",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "41f6b386-b8b0-4525-853b-333d84b9d94a",
+      "cantidad": 0.2,
+      "precio": 6.4
+    },
+    {
+      "id": "e697cb93-85da-4910-992c-46c659e64c60",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.03,
+      "precio": 6.4
+    },
+    {
+      "id": "51bc00fe-c124-4b11-adbe-75cf9e1fa499",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 2.25,
+      "precio": 6.2
+    },
+    {
+      "id": "07fb80ec-5071-44eb-866d-43f5cae9e9c2",
+      "partida_id": "6ba2ef7b-f5d0-42da-acb9-9b160b94d77e",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 22.29
+    },
+    {
+      "id": "974d9fe0-11c6-4be4-a1e9-b9d63f6af428",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0027,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "2e407711-29f7-4f43-9fc4-06b5a0918063",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.0267,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "540eb1f5-d0ad-441b-ac2a-1584308df2b8",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.0267,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a4f0c938-3b68-4a0b-9862-db22c101edbe",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "8893d6e3-b427-4a2a-a05c-b927b6cf515f",
+      "cantidad": 0.05,
+      "precio": 6.4
+    },
+    {
+      "id": "7b43a06c-3d01-466f-b8b4-aae995c52c5b",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "a207011c-f47b-4888-b4e7-0977b50e9003",
+      "cantidad": 1.05,
+      "precio": 5.6
+    },
+    {
+      "id": "6aba9a9c-0999-4675-832a-1f035065e9d0",
+      "partida_id": "32735361-7b59-4c0a-b16b-a3066abc7ef6",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.24
+    },
+    {
+      "id": "976cb111-745e-498d-b988-c7bd8e01834b",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0667,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "bef8863f-b69d-4107-b4a8-19cd80727f81",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.6667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "8bf614b9-6d64-425c-93c0-51adbda6a6a1",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 1.3333,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "e037a38e-4585-4ede-8f45-98bf98758439",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2.6667,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "c3bb132e-5da6-46ff-bc16-75b425f96751",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "0f0c59a1-dfde-4ed6-9514-6faaf691a614",
+      "cantidad": 1.05,
+      "precio": 269
+    },
+    {
+      "id": "ee450455-5f4b-4466-9ea7-737e1cea2cf2",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 89.71
+    },
+    {
+      "id": "ea074298-9d88-4cdc-91eb-3117fa873e13",
+      "partida_id": "169a8059-7ee5-4934-a5e5-9263ee551488",
+      "recurso_id": "d3675ee4-c47c-4943-8e88-ab5fc7a29191",
+      "cantidad": 0.6667,
+      "precio": 7.5,
+      "cuadrilla": 1
+    },
+    {
+      "id": "1e69ae28-6758-426a-9461-5309fb07c37e",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.16,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "9cb93e82-059a-49b9-a0a0-600ed03386ee",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "f5acf71f-0aa7-4f3a-b9b7-2cf477ef5594",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "a4a7c456-4b0a-4055-bc95-b3f0e5d9c5cc",
+      "cantidad": 0.07,
+      "precio": 17
+    },
+    {
+      "id": "c5801f94-22b0-41e3-bd60-eebcb7cf25f6",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "0f89db73-0f3b-487b-ac43-1d5cd68121e2",
+      "cantidad": 0.003,
+      "precio": 45
+    },
+    {
+      "id": "31039d85-87e7-4f16-b354-938d5876f214",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "f3e37f44-39dc-4f4f-ae70-2ea1b6f7fb28",
+      "cantidad": 0.1,
+      "precio": 4.46
+    },
+    {
+      "id": "03995bf2-bd2c-4e8c-a01e-a999d8cd1d26",
+      "partida_id": "7da8f401-5b19-4d99-b950-48de50a14e65",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 5.83
+    },
+    {
+      "id": "86e4a031-53c4-4f57-adc2-34b483eadc8f",
+      "partida_id": "31377374-7579-4a69-ac7a-bdc77269493f",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.032,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "10f0eded-25bb-4cb2-80d8-d766950ef7ca",
+      "partida_id": "31377374-7579-4a69-ac7a-bdc77269493f",
+      "recurso_id": "fd4594ba-4f33-4129-817b-7124565064af",
+      "cantidad": 0.05,
+      "precio": 21.19
+    },
+    {
+      "id": "e63707c8-cb43-408c-9dd8-28302459353e",
+      "partida_id": "31377374-7579-4a69-ac7a-bdc77269493f",
+      "recurso_id": "2a3813ba-1ff4-403f-be0e-31dc1794f6da",
+      "cantidad": 0.032,
+      "precio": 1.25,
+      "cuadrilla": 1
+    },
+    {
+      "id": "5e69073d-d80d-407c-8838-c6a3e6932f9a",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.08,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "cefbbadc-99ce-4e09-af77-ad15b6911c0f",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.08,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "3d10dc5a-bc57-4a34-a68f-952848628211",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.48,
+      "precio": 17.29,
+      "cuadrilla": 6
+    },
+    {
+      "id": "b8adc541-beaf-4c75-8920-3e7b7b038d01",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "cafec757-d702-41f0-abaf-9fbc0f02f9fb",
+      "cantidad": 0.012,
+      "precio": 55
+    },
+    {
+      "id": "0bfa1c25-8d76-49d0-8ebb-430eb8a71074",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "899fdf4a-a93f-43d3-887c-2cb53f11aa93",
+      "cantidad": 0.048,
+      "precio": 46.33
+    },
+    {
+      "id": "81594b27-667d-43a2-9807-f611d758bbf4",
+      "partida_id": "81b5970a-710d-4e51-a10c-13674447d56d",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 11.77
+    },
+    {
+      "id": "3c314b83-ec9f-4f9a-a233-29e059a396d3",
+      "partida_id": "627af0ba-5933-4a71-a802-db9dcb65c3b3",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.032,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "5744e85e-b8b0-4999-8e5f-f88ccf4633af",
+      "partida_id": "627af0ba-5933-4a71-a802-db9dcb65c3b3",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.55
+    },
+    {
+      "id": "1a638401-e2ba-481e-8bee-74e1e1a6089e",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.8,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "8572dd2a-cc40-4c5b-bfd1-991945b0d410",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.8,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "877559de-4b28-4598-9d27-e021d947a97b",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 3.2,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "1a83ff39-1a1a-402c-9d60-08b141bc2a4c",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "c5e9b74d-1b55-4e86-a1b6-52566e226e6f",
+      "cantidad": 0.278,
+      "precio": 63
+    },
+    {
+      "id": "5fe74023-5c9e-4e02-a285-7930016e6cdf",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "e527be38-a136-49d3-b9d7-5b181a8ae0f1",
+      "cantidad": 0.25,
+      "precio": 48.31
+    },
+    {
+      "id": "7d8e25e2-9dcd-4bc5-9036-2afaff95079b",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "bb2dbe7c-9f08-439b-b35a-925894c73774",
+      "cantidad": 2.1,
+      "precio": 23.39
+    },
+    {
+      "id": "13f3686a-03ea-463f-bad3-2e58a90c588b",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "7ddd9ca1-6008-4b41-8a89-c236024ddb3c",
+      "cantidad": 1,
+      "precio": 400
+    },
+    {
+      "id": "77218492-93d0-4fae-a082-45f3afa1afdb",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "0259e4da-ae0b-4e19-8469-6d21d8ff5b8c",
+      "cantidad": 0.029,
+      "precio": 5.11
+    },
+    {
+      "id": "c2d047ec-2bc1-4b4b-9c96-fbcc051f765a",
+      "partida_id": "4bd31496-ad69-4f1d-a10e-bdf6c07d9f0a",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 90.01
+    },
+    {
+      "id": "ccdd27e8-189b-4b7d-a540-15ba566dfc16",
+      "partida_id": "5a6e33ff-13a9-4d01-be47-5c895b52da8c",
+      "recurso_id": "e73db5ee-84b7-41ba-a971-6eb3d3fb1f7b",
+      "cantidad": 1,
+      "precio": 480
+    },
+    {
+      "id": "26c2cc36-a250-4d6f-9c28-2318cd147c78",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 8,
+      "precio": 24.23,
+      "cuadrilla": 2
+    },
+    {
+      "id": "46d6fa82-37d5-47cf-8dfe-76ad900231f9",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 8,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "f52ec305-0056-45ae-bd8d-d306c0e9c08c",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 16,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "1c5a5dd2-6a22-434a-829a-2d68c316759d",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "f1736e1e-1231-4a14-96ba-6aaeb957cb06",
+      "cantidad": 0.3611,
+      "precio": 650
+    },
+    {
+      "id": "3a750dd0-7b8b-42ac-9323-56e50fb19577",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "cafec757-d702-41f0-abaf-9fbc0f02f9fb",
+      "cantidad": 0.243,
+      "precio": 55
+    },
+    {
+      "id": "136962d5-a451-4fb8-9469-3516c9c6a950",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "899fdf4a-a93f-43d3-887c-2cb53f11aa93",
+      "cantidad": 0.972,
+      "precio": 46.33
+    },
+    {
+      "id": "ff5ba978-0b5c-4faf-9113-8e4ec7717dc1",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 623.52
+    },
+    {
+      "id": "8adfd8aa-b36c-4567-8c30-2c60965e0dd0",
+      "partida_id": "944fbb25-1da5-4d1a-a25a-cad6f1fb9f73",
+      "recurso_id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "cantidad": 4,
+      "precio": 39.16,
+      "cuadrilla": 1
+    },
+    {
+      "id": "dafe268e-08e8-4927-81e3-c7767eeeff51",
+      "partida_id": "22134b7d-db76-470a-b616-074fea36b07a",
+      "recurso_id": "87ca98e4-5fa7-447e-aefb-f92b1d73f1a3",
+      "cantidad": 1,
+      "precio": 25000
+    },
+    {
+      "id": "6c2923f6-e763-4441-a7f8-337a7771dd95",
+      "partida_id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1684,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "e6616195-ea96-412d-9ff9-48c954478c0d",
+      "partida_id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.3368,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "ecf93d0c-677f-4f10-8e9b-19db429dc5f8",
+      "partida_id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 9.04
+    },
+    {
+      "id": "2688dd12-6cbe-4048-b4df-df0627c92c7f",
+      "partida_id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "recurso_id": "4d8cc394-e5d2-432a-90b2-ff73dab2225b",
+      "cantidad": 0.1684,
+      "precio": 6.66,
+      "cuadrilla": 2
+    },
+    {
+      "id": "0f6c78de-1a28-49f2-ad78-07c9b040c9c1",
+      "partida_id": "1e39d5b1-7f05-4ca7-8fc6-f7930c0bfadd",
+      "recurso_id": "ad092f21-4be4-4cb7-bdea-ecfa3014bbe4",
+      "cantidad": 0.0842,
+      "precio": 112.45,
+      "cuadrilla": 1
+    },
+    {
+      "id": "f7c36353-30cc-46e1-b4b5-2ef4482a3fbc",
+      "partida_id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1882,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "a0f8021b-db19-4dfe-b09c-317e94658b14",
+      "partida_id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.3765,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "4d7579d0-3eae-4a0c-bc3d-f857f6500c63",
+      "partida_id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 10.11
+    },
+    {
+      "id": "68433550-d57a-4892-a55f-929f1b8d9659",
+      "partida_id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "recurso_id": "4d8cc394-e5d2-432a-90b2-ff73dab2225b",
+      "cantidad": 0.1882,
+      "precio": 6.66,
+      "cuadrilla": 2
+    },
+    {
+      "id": "0d0f89c9-4f46-4b1c-b55b-9ed32f1a3072",
+      "partida_id": "3a2a4d27-afa3-40ff-8f67-28fe2b003636",
+      "recurso_id": "ad092f21-4be4-4cb7-bdea-ecfa3014bbe4",
+      "cantidad": 0.0941,
+      "precio": 112.45,
+      "cuadrilla": 1
+    },
+    {
+      "id": "95595d76-93e5-496a-b38d-a86ce4abf6e7",
+      "partida_id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "08ba54ca-beee-4133-ba7e-7277ec0bd1b5",
+      "partida_id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "3aa73069-5f93-47aa-8bda-1ab2fba3795b",
+      "partida_id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "e665fab1-2832-4022-8c52-027ca54eb62a",
+      "partida_id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "recurso_id": "4cb708c5-d109-435e-b9a4-779d91d2c50f",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "84893684-b275-4e49-aad2-c86a374f660c",
+      "partida_id": "b04ebdc6-8d71-44ca-bea2-17a7d07ff6ca",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "cbe01424-e9f7-4c47-bf72-4ddac2598b5a",
+      "partida_id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0032,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "8b4b9aee-ab17-49f5-8498-fa1352b9a83a",
+      "partida_id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.032,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "be659b5a-0624-4c85-9f66-f30e17e1cc08",
+      "partida_id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.032,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "75333139-d45d-4859-ad53-f451af601e7c",
+      "partida_id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 1.42
+    },
+    {
+      "id": "410de95d-856d-4e60-98fc-7c83ba554de2",
+      "partida_id": "12184918-6f84-44a6-b5b4-9dfb0710bda8",
+      "recurso_id": "8bda3ba7-9af0-4bf8-a0ce-b52396d46f09",
+      "cantidad": 0.032,
+      "precio": 166.24,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c1df3e8e-db7b-44c3-be19-9529817953c9",
+      "partida_id": "92e4558b-bd17-4f62-b816-e1b13239e90c",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2,
+      "precio": 17.29,
+      "cuadrilla": 2
+    },
+    {
+      "id": "5b7fcdfe-c2d1-48ee-8db1-7f26faa89ac3",
+      "partida_id": "92e4558b-bd17-4f62-b816-e1b13239e90c",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 34.58
+    },
+    {
+      "id": "700c528e-1f97-41b7-b9e9-e45094ee2441",
+      "partida_id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.04,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "abbdccfa-8810-4103-bce5-fd7872a72296",
+      "partida_id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "1eb3a158-3e34-4d50-acf6-3e9193acf3eb",
+      "partida_id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 3.54
+    },
+    {
+      "id": "60352c5e-1ae1-48f4-9445-540677e665f2",
+      "partida_id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "recurso_id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "cantidad": 0.04,
+      "precio": 39.16,
+      "cuadrilla": 1
+    },
+    {
+      "id": "f04d0c33-9ad6-4e3f-8055-8b3cb5c689b7",
+      "partida_id": "feaa04fa-9ee2-4c86-b05c-96892b5bb783",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.004,
+      "precio": 197.29,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "1c66d617-ef4e-4108-afb7-9759908ee145",
+      "partida_id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.04,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4448ac6e-1e04-4d71-8fc3-37740989364f",
+      "partida_id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "8f2cb523-608d-4058-9753-d88f3c760a0b",
+      "partida_id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 3.54
+    },
+    {
+      "id": "8030005a-23ca-46a8-9f24-bb37ec5eb459",
+      "partida_id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "recurso_id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "cantidad": 0.04,
+      "precio": 39.16,
+      "cuadrilla": 1
+    },
+    {
+      "id": "e421ccbc-4273-4926-b41a-13728572b22f",
+      "partida_id": "d7185064-d990-4b87-a21b-5fcd2df2de51",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.004,
+      "precio": 197.29,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "ca94c447-0e15-4fd4-bced-40e92d9bb909",
+      "partida_id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.025,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ae7ee260-0849-451a-b6c1-583b13abbacd",
+      "partida_id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "recurso_id": "46c29023-04eb-465b-8848-cc00fda80304",
+      "cantidad": 1,
+      "precio": 5.4
+    },
+    {
+      "id": "d83a8481-ac34-4f94-98b7-9cfe9a474891",
+      "partida_id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 0.48
+    },
+    {
+      "id": "9dd56c17-c6d2-4fa5-a37c-96d0d4838876",
+      "partida_id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "recurso_id": "4cb708c5-d109-435e-b9a4-779d91d2c50f",
+      "cantidad": 0.0075,
+      "precio": 247.79,
+      "cuadrilla": 0.3
+    },
+    {
+      "id": "39d96758-e74d-447a-b160-b9972e73473d",
+      "partida_id": "a885f7ba-bf0e-4a5c-b13e-5c92d889c128",
+      "recurso_id": "739193e6-856b-42eb-8bb3-3c85886281ba",
+      "cantidad": 0.1,
+      "precio": 371.3,
+      "cuadrilla": 4
+    },
+    {
+      "id": "6a96e15a-c3e7-4088-88fc-25e42c9ea44c",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1333,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d1c1d6db-595c-44fe-b3ad-b8fff19d96f6",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.5333,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "5f3f5bab-9b7a-49d3-a7ee-63b0b27666ce",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "102f85cb-e73b-4131-8e4e-3e964e1612d8",
+      "cantidad": 0.12,
+      "precio": 45
+    },
+    {
+      "id": "c77ba54b-aa70-4bd1-a8d1-d02954605d0d",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "2dd3175d-5823-4bd3-af4f-9c6b99f2dcf5",
+      "cantidad": 0.046,
+      "precio": 5.11
+    },
+    {
+      "id": "f6f66374-3c08-405e-9101-49b6a46830dd",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 11.77
+    },
+    {
+      "id": "85e72a2f-d76a-4eba-98c8-b5901689e6ba",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "cantidad": 0.1333,
+      "precio": 39.16,
+      "cuadrilla": 1
+    },
+    {
+      "id": "81d4d928-1606-45e6-ae70-6708dc7da901",
+      "partida_id": "d7f4c8c2-2c65-43d3-b4f3-c221d041e64f",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.0133,
+      "precio": 197.29,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "ad7236b4-96f0-41df-bb9f-95f1f41c2ecb",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.1333,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "1c311758-35a3-4929-8c22-7cef705cb85b",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.5333,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "1581c951-0a87-4471-8834-c86fde94bb9c",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "102f85cb-e73b-4131-8e4e-3e964e1612d8",
+      "cantidad": 0.12,
+      "precio": 45
+    },
+    {
+      "id": "2a36574c-53b3-4236-9d8d-a734fd6e19b0",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "2dd3175d-5823-4bd3-af4f-9c6b99f2dcf5",
+      "cantidad": 0.046,
+      "precio": 5.11
+    },
+    {
+      "id": "b88e2a24-552c-4f3e-add9-a62ae649bf05",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 11.77
+    },
+    {
+      "id": "0bb482e6-c276-4e69-9029-40803da20b08",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "f420f97b-67e4-48bc-9ee3-484f44b3997c",
+      "cantidad": 0.1333,
+      "precio": 39.16,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4d6b7066-44c6-41ab-a30b-cb25aacf673f",
+      "partida_id": "e13860e6-83c7-4b25-907b-f3a5533f6663",
+      "recurso_id": "637c0915-a0b2-49ab-a200-b0e192568883",
+      "cantidad": 0.0133,
+      "precio": 197.29,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "c1680c78-6ca9-4e4c-9101-024a763ce185",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.004,
+      "precio": 29.08,
+      "cuadrilla": 0.01
+    },
+    {
+      "id": "9bc3c149-2bf6-4156-82c9-832c66833a2f",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.4,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "f8aece61-3237-4f0d-9df3-0768a0b98a40",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.4,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a7fddf2e-27da-4753-8c86-6f397f6884f8",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "25affec4-cd24-43b0-b066-351ba782f12e",
+      "cantidad": 0.2,
+      "precio": 6.4
+    },
+    {
+      "id": "93fd6317-9bb5-4606-9378-db04c70881da",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.05,
+      "precio": 6.4
+    },
+    {
+      "id": "5e692581-70a1-434b-86a7-1e5e7661a543",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 2.25,
+      "precio": 6.2
+    },
+    {
+      "id": "204f76e0-b04b-4428-b12a-406773dd2d87",
+      "partida_id": "d98b432d-7a1b-4c59-a3fd-89013e0355c0",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 17.46
+    },
+    {
+      "id": "520d6adf-bea2-4fa1-9454-6667fd539c7b",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.004,
+      "precio": 29.08,
+      "cuadrilla": 0.01
+    },
+    {
+      "id": "57dcdd16-9de8-41f6-8d4e-5193aad2d6f9",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.4,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "d30c394d-62ed-4e9f-9431-eb2ea7b995a0",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.4,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4b9d56ff-815c-467e-9166-46da1b962c9a",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "25affec4-cd24-43b0-b066-351ba782f12e",
+      "cantidad": 0.2,
+      "precio": 6.4
+    },
+    {
+      "id": "9fb41c58-eb8f-458b-9ae1-41ef5841e672",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "d9a2caa5-e51b-416b-bb51-9b87497e6b4e",
+      "cantidad": 0.05,
+      "precio": 6.4
+    },
+    {
+      "id": "33d99cf3-33e4-4e1a-8d47-c42530bb8f89",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "3a4c6bcc-5f92-4f9d-b14f-ed2fc0c82fc1",
+      "cantidad": 2.25,
+      "precio": 6.2
+    },
+    {
+      "id": "0106cd6a-ef38-491e-900e-fc2834abd394",
+      "partida_id": "cae1144e-b176-4cc0-b4a9-4c465d35a4ac",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 17.46
+    },
+    {
+      "id": "4066042d-6059-4e19-8963-bca358cec9cf",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0533,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "ae71dc31-b97e-457c-ba60-6441e553845d",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 1.0667,
+      "precio": 24.23,
+      "cuadrilla": 2
+    },
+    {
+      "id": "0ec59c80-cd3e-485d-8317-0750d2654aec",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 1.0667,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "b3c8d238-9355-401c-a833-da3be202c6a6",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2.1333,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "33df00a1-8d77-4b54-a532-72c45567248a",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "0f0c59a1-dfde-4ed6-9514-6faaf691a614",
+      "cantidad": 1.03,
+      "precio": 269
+    },
+    {
+      "id": "a1f469fa-c507-4270-9c35-ac54ac67310c",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 84.69
+    },
+    {
+      "id": "11fc87a6-f2e7-4ca5-b807-bd335c3deb2b",
+      "partida_id": "4be1aa44-b71a-4736-8228-75e3ad8c1a39",
+      "recurso_id": "d3675ee4-c47c-4943-8e88-ab5fc7a29191",
+      "cantidad": 0.5333,
+      "precio": 7.5,
+      "cuadrilla": 1
+    },
+    {
+      "id": "63a8ce30-8cb8-4e70-8278-bea0956e9c85",
+      "partida_id": "f51c615d-488b-4e71-a5ee-79636d123a6d",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0667,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "aef0f47b-c1f5-4f1e-b471-3f1662363530",
+      "partida_id": "f51c615d-488b-4e71-a5ee-79636d123a6d",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.6667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "162088e2-c7e3-4e59-ab18-7ad259563200",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.0667,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "c7d87e39-bb02-49a9-841a-8eca15bdad03",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.6667,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "2ef56889-607d-4424-a434-4cc3c664fa64",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 1.3333,
+      "precio": 19.13,
+      "cuadrilla": 2
+    },
+    {
+      "id": "a52d400c-62f0-4020-a7b2-5ff94aeefa31",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2.6667,
+      "precio": 17.29,
+      "cuadrilla": 4
+    },
+    {
+      "id": "e079bde9-30ad-45d2-bd22-a68b795ea498",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "930aa4ff-2e0f-4fa3-b083-215074a7c40e",
+      "cantidad": 1.03,
+      "precio": 315
+    },
+    {
+      "id": "a5cec84b-46e8-4e01-b2bb-71f9b6b22014",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 89.71
+    },
+    {
+      "id": "1a19978c-1035-4702-8eb6-6ad584e6bf92",
+      "partida_id": "92aac079-c37d-4c8b-b463-9e9a7f583c51",
+      "recurso_id": "cbd26a6f-c885-4d1f-8509-bccd697ceea6",
+      "cantidad": 0.6667,
+      "precio": 7.5,
+      "cuadrilla": 1
+    },
+    {
+      "id": "3ed38c79-f57d-4950-bd04-123aeae5eb64",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.16,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "143d2fd6-1e6a-48fd-9a8a-b0650d8ce598",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.16,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "4b26860c-0414-47da-a83e-26903edc6b6e",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "88eefefb-ee1a-4dcd-9c80-f61c75f2bc53",
+      "cantidad": 0.07,
+      "precio": 17
+    },
+    {
+      "id": "3cf44f70-4aa4-43d1-9198-b8754869dd50",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "967f8cce-7cd0-4922-abba-d19dd04a8dc1",
+      "cantidad": 0.003,
+      "precio": 45
+    },
+    {
+      "id": "a46c1acb-7621-4046-b2ca-406b4677fc3c",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "b3c132ff-6366-4511-9aaf-c97b70702b61",
+      "cantidad": 0.1,
+      "precio": 4.46
+    },
+    {
+      "id": "265569ef-84f8-4d28-9913-7ae761488b64",
+      "partida_id": "dd2cc18b-532b-48be-9eb4-a2e95dc62015",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 5.83
+    },
+    {
+      "id": "c3af637d-c2f1-454d-8766-a84374c3f064",
+      "partida_id": "f0be6f7d-4a46-4194-8f25-5daf33f9690a",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.032,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "c5ea070a-1e4f-4162-98ef-bec2cc4cb7a1",
+      "partida_id": "d020c8b6-280c-4b5a-8ed0-5eb583e05cf3",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.32,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a4c9bdcf-ef53-4f89-b1f7-e336d0939ba3",
+      "partida_id": "d020c8b6-280c-4b5a-8ed0-5eb583e05cf3",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 1.6,
+      "precio": 17.29,
+      "cuadrilla": 5
+    },
+    {
+      "id": "bfc0ce8c-c963-41e4-a96a-10627bfa7504",
+      "partida_id": "d020c8b6-280c-4b5a-8ed0-5eb583e05cf3",
+      "recurso_id": "eea58c4b-744d-43e9-a337-d575e33cfa25",
+      "cantidad": 1,
+      "precio": 53
+    },
+    {
+      "id": "1f0b48a5-8be7-4c2f-9eac-1f0ca5d1ae6e",
+      "partida_id": "d020c8b6-280c-4b5a-8ed0-5eb583e05cf3",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 35.41
+    },
+    {
+      "id": "58276801-ce1e-48c5-bfea-42cd835da7dc",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.08,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b560f7ed-cff5-490e-8427-b5dc43305d58",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.08,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "2b29f45f-8eeb-4b1d-867b-4354f3da26d9",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "d0334e99-d3f5-4a10-b273-b08a3cb9d675",
+      "cantidad": 0.012,
+      "precio": 48.31
+    },
+    {
+      "id": "cde49141-e0d9-4977-a29a-82e281f44dbf",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "4f59952b-fc55-4d9d-82c9-374cf49cc35d",
+      "cantidad": 0.2,
+      "precio": 23.39
+    },
+    {
+      "id": "8373c63a-1437-4918-bea7-1a27b74d04c3",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "2a07b2a6-a06f-43bd-ae58-41ee75bcf510",
+      "cantidad": 1,
+      "precio": 55
+    },
+    {
+      "id": "cbb22c2f-2b0b-4610-bccf-b1eb294f8c8c",
+      "partida_id": "9011ee01-0165-42ac-be08-e1dc079a20bd",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 3.32
+    },
+    {
+      "id": "e7fae7c4-30cd-4781-87a9-4085fff9e035",
+      "partida_id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "recurso_id": "b77a8ae0-85c2-48fb-85ac-27f884c6a0e0",
+      "cantidad": 0.04,
+      "precio": 29.08,
+      "cuadrilla": 0.1
+    },
+    {
+      "id": "a0a1807b-f464-4bc2-b36c-ccc5d954ff63",
+      "partida_id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.4,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "b4591ac5-c775-4bbd-9ed1-790370f08a3d",
+      "partida_id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.4,
+      "precio": 17.29,
+      "cuadrilla": 1
+    },
+    {
+      "id": "6074c312-f415-46d0-bad8-ec8b453855e7",
+      "partida_id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "recurso_id": "17c23688-896f-4eb7-88ab-945f802d40dd",
+      "cantidad": 1,
+      "precio": 150
+    },
+    {
+      "id": "3372c9f2-75c1-45c5-a92b-bc283a9139f4",
+      "partida_id": "2865c58f-a14b-42b1-8a4e-56262b26cc0f",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 17.77
+    },
+    {
+      "id": "a0a6a8a5-0ae1-44f9-931d-a2e6ee94d07c",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.08,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "65d18833-9100-45c6-8dcb-7d4612810e05",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.08,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "ca77b487-81c0-4db3-8933-c2446fabaa83",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 0.48,
+      "precio": 17.29,
+      "cuadrilla": 6
+    },
+    {
+      "id": "7084e4d3-8e4e-4219-90ef-d4de2fa82903",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "cafec757-d702-41f0-abaf-9fbc0f02f9fb",
+      "cantidad": 0.003,
+      "precio": 55
+    },
+    {
+      "id": "62f52470-319d-4d85-bc5a-7dfa0d49db66",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "899fdf4a-a93f-43d3-887c-2cb53f11aa93",
+      "cantidad": 0.012,
+      "precio": 46.33
+    },
+    {
+      "id": "95438c43-17e1-4708-8b2f-d89030f93fd5",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 11.77
+    },
+    {
+      "id": "703c69e8-fa74-41b6-9553-e60c64c0c687",
+      "partida_id": "d51406e6-8221-4cfb-ae21-0219efbadddf",
+      "recurso_id": "caebbb41-bc43-40e5-bc62-fa3677543a71",
+      "cantidad": 1,
+      "precio": 200
+    },
+    {
+      "id": "64ebd19f-91ca-4c99-a06b-496ee269569f",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 0.2,
+      "precio": 24.23,
+      "cuadrilla": 1
+    },
+    {
+      "id": "72d71a8f-94cd-433d-9f20-df431fc2291e",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "55d13a9c-8d50-4e3e-841e-641f556cc9e5",
+      "cantidad": 0.2,
+      "precio": 19.13,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a4c02376-5077-4639-8e80-65ed13e54b9d",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 1.2,
+      "precio": 17.29,
+      "cuadrilla": 6
+    },
+    {
+      "id": "b0214646-ddf7-434d-a0bc-25e8ef8f7a12",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "cafec757-d702-41f0-abaf-9fbc0f02f9fb",
+      "cantidad": 0.03,
+      "precio": 55
+    },
+    {
+      "id": "c2805c4e-fdc3-40f7-98d9-1c69a54c0b8f",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "899fdf4a-a93f-43d3-887c-2cb53f11aa93",
+      "cantidad": 0.12,
+      "precio": 46.33
+    },
+    {
+      "id": "04a917d8-866c-432d-9f14-54f94ab997cf",
+      "partida_id": "532a7193-ca68-4653-84f8-11030e9b69e5",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 5,
+      "precio": 29.43
+    },
+    {
+      "id": "46a87be6-46d2-4345-9911-226d48b440eb",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 2.6667,
+      "precio": 24.23,
+      "cuadrilla": 5
+    },
+    {
+      "id": "5b2e089b-dd76-4ceb-80ee-dcd12c393460",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 1.6,
+      "precio": 17.29,
+      "cuadrilla": 3
+    },
+    {
+      "id": "35791633-1050-48a9-a894-6297c5d71b53",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "87b1323b-5ecc-458b-b941-0f8a5f91ae2c",
+      "cantidad": 2,
+      "precio": 1
+    },
+    {
+      "id": "51e1f2c2-c219-42ce-b5dd-de875e5ea125",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "9ca91457-43e1-4f25-8bcc-3b665a48e109",
+      "cantidad": 0.25,
+      "precio": 28
+    },
+    {
+      "id": "2cae3a05-46d7-49eb-b2c8-d6f8029b30aa",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "31ca76ba-40b5-42f2-9731-ddae90a2e445",
+      "cantidad": 0.05,
+      "precio": 21.19
+    },
+    {
+      "id": "f1397019-22b2-4e28-8a26-399bc39b4c98",
+      "partida_id": "cb69a1da-52d8-49c9-9594-d3d34a8ee8ff",
+      "recurso_id": "03e2909a-c662-42f9-a05b-8069d72b8fa8",
+      "cantidad": 0.032,
+      "precio": 1.25,
+      "cuadrilla": 1
+    },
+    {
+      "id": "a2cce8ca-348a-4c4b-9782-83b8b4f51fe8",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 2.6667,
+      "precio": 24.23,
+      "cuadrilla": 5
+    },
+    {
+      "id": "fc84491a-30f8-46e3-9571-276c0c636d21",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 1.6,
+      "precio": 17.29,
+      "cuadrilla": 3
+    },
+    {
+      "id": "29f48cb1-eb18-4b15-8602-8107b284c134",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "87b1323b-5ecc-458b-b941-0f8a5f91ae2c",
+      "cantidad": 2,
+      "precio": 1
+    },
+    {
+      "id": "3aef2a8b-0484-4be3-9286-e3e45453d50c",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "9ca91457-43e1-4f25-8bcc-3b665a48e109",
+      "cantidad": 0.25,
+      "precio": 28
+    },
+    {
+      "id": "d79f5aef-d02f-48ea-abf8-b9a79e4c02d1",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "f029d2e2-cf0a-4c88-aea2-f9828d83e9a8",
+      "cantidad": 0.98,
+      "precio": 175.7
+    },
+    {
+      "id": "a431bddc-df6f-4ec4-b2ab-b912b3ed3eba",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "2132c273-7f1b-48dc-ac2b-7d7e1e2c9c44",
+      "cantidad": 0.1,
+      "precio": 137.27
+    },
+    {
+      "id": "4e23e961-7c9f-4f53-af3c-f332cffa4698",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "7245a004-9407-4ed3-b3cd-6b33517677ac",
+      "cantidad": 0.54,
+      "precio": 84.78
+    },
+    {
+      "id": "8af4f7de-21b8-49c5-98f8-733c6a648fbc",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "ee573d9f-ef91-42b8-8ab4-3bfe8808762e",
+      "cantidad": 0.03,
+      "precio": 46.6
+    },
+    {
+      "id": "a8abd2b1-eccb-497d-b797-7efda92f8d90",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "6a7924cb-a5b2-43de-ac02-84fa31d1001a",
+      "cantidad": 0.02,
+      "precio": 45.17
+    },
+    {
+      "id": "d7012b65-66fd-4064-a2e1-6c81c0b4058d",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "629e52fc-8502-4511-bab0-75ec635dcf7c",
+      "cantidad": 0.015,
+      "precio": 227
+    },
+    {
+      "id": "e60da35e-dad0-44c9-a5b8-a75d356988d9",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "0c37292e-e81e-402d-9ff0-d87a1a47cb92",
+      "cantidad": 0.5,
+      "precio": 108.82
+    },
+    {
+      "id": "dd7bb6a6-e393-4a60-b8f6-e31721c0b61a",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "076730de-86bc-411b-966d-12d176ccb6ed",
+      "cantidad": 0.05,
+      "precio": 12
+    },
+    {
+      "id": "197ff3a2-9ee8-495f-9e0a-b5950e1326ca",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "c4feb84e-cba3-410e-ad79-803bd1d79766",
+      "cantidad": 10.8,
+      "precio": 8.63
+    },
+    {
+      "id": "81fd0144-f755-469a-aa49-82febda005ae",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "d58aa596-8e7b-45aa-ad6d-00a7c5d4aff5",
+      "cantidad": 0.283,
+      "precio": 21
+    },
+    {
+      "id": "1d240352-160f-40b6-8a04-f275603ca33f",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "108eb813-4769-4d25-9dbe-44e24fa726c5",
+      "cantidad": 0.01,
+      "precio": 130
+    },
+    {
+      "id": "4a2e3246-1040-446e-8b73-d83590d2beed",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "e2b790c9-3c81-4984-b0ff-4806a127701c",
+      "cantidad": 0.013,
+      "precio": 130
+    },
+    {
+      "id": "317567ba-845d-430a-8835-591b73abebdb",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 92.27
+    },
+    {
+      "id": "81b3308f-5b45-453b-8ce4-525bf68e7a1d",
+      "partida_id": "4b986bb4-fe16-467e-a95b-13322bdb1cae",
+      "recurso_id": "79c9a0cc-a46c-4d6f-898c-2478cdaa2928",
+      "cantidad": 0.2667,
+      "precio": 30.71,
+      "cuadrilla": 0.5
+    },
+    {
+      "id": "57522676-ae9a-4958-bdb4-732e909d8b42",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "d4b0bc20-9865-421c-bd4a-cf279aed9612",
+      "cantidad": 3.3333,
+      "precio": 24.23,
+      "cuadrilla": 5
+    },
+    {
+      "id": "a0a31ce6-9d3f-4c57-909a-02e6003c4277",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "ef33ab46-c58c-4613-8158-c903cf6ca311",
+      "cantidad": 2,
+      "precio": 17.29,
+      "cuadrilla": 3
+    },
+    {
+      "id": "93ab10e6-eb65-4aaf-84d5-ce7809c4b97d",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "9ca91457-43e1-4f25-8bcc-3b665a48e109",
+      "cantidad": 0.25,
+      "precio": 28
+    },
+    {
+      "id": "3770b1cb-3014-4934-9d3c-4c7682a4c806",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "f029d2e2-cf0a-4c88-aea2-f9828d83e9a8",
+      "cantidad": 0.98,
+      "precio": 175.7
+    },
+    {
+      "id": "9fc3f867-fafc-409e-900d-fa093144bb86",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "2132c273-7f1b-48dc-ac2b-7d7e1e2c9c44",
+      "cantidad": 0.1,
+      "precio": 137.27
+    },
+    {
+      "id": "da95fde0-47c2-4a5e-9084-bdb277271464",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "7245a004-9407-4ed3-b3cd-6b33517677ac",
+      "cantidad": 0.54,
+      "precio": 84.78
+    },
+    {
+      "id": "6eaa605a-c3e9-4501-a428-1441d24efb92",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "ee573d9f-ef91-42b8-8ab4-3bfe8808762e",
+      "cantidad": 0.03,
+      "precio": 46.6
+    },
+    {
+      "id": "32873d77-51fb-4708-be51-af575f61b658",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "6a7924cb-a5b2-43de-ac02-84fa31d1001a",
+      "cantidad": 0.015,
+      "precio": 45.17
+    },
+    {
+      "id": "9ef79937-9f80-4c46-8a69-641f04990b05",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "629e52fc-8502-4511-bab0-75ec635dcf7c",
+      "cantidad": 0.015,
+      "precio": 227
+    },
+    {
+      "id": "a7698cc7-98b9-40d7-84a4-98d920cbf87d",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "0c37292e-e81e-402d-9ff0-d87a1a47cb92",
+      "cantidad": 0.5,
+      "precio": 108.82
+    },
+    {
+      "id": "0f128cf5-f276-4bc8-a7ff-a91a626d1f08",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "076730de-86bc-411b-966d-12d176ccb6ed",
+      "cantidad": 0.05,
+      "precio": 12
+    },
+    {
+      "id": "6d7163ed-5837-4464-beb8-a29573a47306",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "c4feb84e-cba3-410e-ad79-803bd1d79766",
+      "cantidad": 3.45,
+      "precio": 8.63
+    },
+    {
+      "id": "946432cf-2782-434c-b661-1c5dd8bde6f7",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "1b72170b-2db8-4640-a0ed-a5d26901ad19",
+      "cantidad": 5.25,
+      "precio": 8.57
+    },
+    {
+      "id": "1831a7dd-951b-43f5-bd20-f609d164ab0b",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "d58aa596-8e7b-45aa-ad6d-00a7c5d4aff5",
+      "cantidad": 0.283,
+      "precio": 21
+    },
+    {
+      "id": "f982a0a9-439e-46ac-abef-adfe1e946251",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "108eb813-4769-4d25-9dbe-44e24fa726c5",
+      "cantidad": 0.04,
+      "precio": 130
+    },
+    {
+      "id": "aef84f02-0929-474f-a14c-d2739d713f94",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "d235eb54-18df-42c6-bdbd-e64864286bf2",
+      "cantidad": 3,
+      "precio": 115.35
+    },
+    {
+      "id": "2ab4f61b-2852-4ccd-8674-d49bbd21297f",
+      "partida_id": "083150da-2c83-45e0-adac-d4c0bcde0472",
+      "recurso_id": "79c9a0cc-a46c-4d6f-898c-2478cdaa2928",
+      "cantidad": 0.3333,
+      "precio": 30.71,
+      "cuadrilla": 0.5
+    },
+    {
+      "id": "e391cd71-2656-4c07-93ed-a89f3d6a9d50",
+      "partida_id": "8ae04b9f-07ff-4612-9a22-d3f700b1a750",
+      "recurso_id": "df4b3701-3267-487f-abe4-54f13eca42f8",
+      "cantidad": 1,
+      "precio": 475
+    },
+    {
+      "id": "36b68032-b1ec-4217-a5cc-8c4a6091200f",
+      "partida_id": "04dcb3e9-ae9e-4e40-85e1-0a8712a28873",
+      "recurso_id": "39d19af1-560c-423b-ba7d-3383164ee9ab",
+      "cantidad": 1,
+      "precio": 91878.12
+    }
+  ]
+}

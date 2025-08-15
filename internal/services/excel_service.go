@@ -20,7 +20,11 @@ func NewExcelService(config *config.Config) *ExcelService {
 	}
 }
 
-func (s *ExcelService) GenerarExcelFromDB(proyecto *models.Proyecto, partidas []models.PartidaCompleta) (string, error) {
+func (s *ExcelService) GetConfig() *config.Config {
+	return s.config
+}
+
+func (s *ExcelService) GenerarExcelJerarquicoFromDB(proyecto *models.Proyecto, hierarchySvc *HierarchyService) (string, error) {
 	f := excelize.NewFile()
 	defer f.Close()
 	
@@ -303,4 +307,41 @@ func (s *ExcelService) crearResumen(f *excelize.File, sheet string, datos []map[
 		f.SetCellStyle(sheet, fmt.Sprintf("D%d", row), fmt.Sprintf("I%d", row), numberStyle)
 		row++
 	}
+}
+
+// GenerarExcelProfesionalAPU genera Excel en formato profesional APU y Presupuesto
+func (s *ExcelService) GenerarExcelProfesionalAPU(proyecto *models.Proyecto, partidas []models.PartidaCompleta, metrados map[string]float64) (string, error) {
+	f := excelize.NewFile()
+	defer f.Close()
+
+	// Crear las dos hojas requeridas
+	apuSheet := "Análisis de Precios Unitarios"
+	presupuestoSheet := "Presupuesto General"
+	
+	f.SetSheetName("Sheet1", apuSheet)
+	f.NewSheet(presupuestoSheet)
+
+	// Configurar estilos profesionales
+	estilos := s.crearEstilosProfesionales(f)
+
+	// Generar hoja de APU
+	if err := s.generarHojaAPU(f, apuSheet, proyecto, partidas, estilos); err != nil {
+		return "", fmt.Errorf("error generando hoja APU: %v", err)
+	}
+
+	// Generar hoja de Presupuesto
+	if err := s.generarHojaPresupuesto(f, presupuestoSheet, proyecto, partidas, metrados, estilos); err != nil {
+		return "", fmt.Errorf("error generando hoja de Presupuesto: %v", err)
+	}
+
+	// Guardar archivo
+	filename := fmt.Sprintf("APU_Presupuesto_%s_%d.xlsx", 
+		proyecto.Nombre, time.Now().Unix())
+	filepath := filepath.Join(s.config.Files.ExcelOutputDir, filename)
+
+	if err := f.SaveAs(filepath); err != nil {
+		return "", fmt.Errorf("error guardando archivo: %v", err)
+	}
+
+	return filepath, nil
 }
