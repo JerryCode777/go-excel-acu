@@ -29,12 +29,24 @@ type RecursoRequest struct {
 
 // Response structures for API
 type ProyectoResponse struct {
-	ID          string `json:"id"`
-	Nombre      string `json:"nombre"`
-	Descripcion string `json:"descripcion"`
-	Moneda      string `json:"moneda"`
-	CreatedAt   string `json:"created_at"`
-	UpdatedAt   string `json:"updated_at"`
+	ID          string           `json:"id"`
+	Nombre      string           `json:"nombre"`
+	Descripcion string           `json:"descripcion"`
+	Moneda      string           `json:"moneda"`
+	Visibility  string           `json:"visibility,omitempty"`
+	LikesCount  int              `json:"likes_count,omitempty"`
+	VistasCount int              `json:"vistas_count,omitempty"`
+	IsLiked     bool             `json:"is_liked,omitempty"`
+	CreatedAt   string           `json:"created_at"`
+	UpdatedAt   string           `json:"updated_at"`
+	Usuario     *UsuarioResponse `json:"usuario,omitempty"`
+}
+
+type UsuarioResponse struct {
+	ID     string `json:"id"`
+	Nombre string `json:"nombre"`
+	Email  string `json:"email"`
+	Rol    string `json:"rol,omitempty"`
 }
 
 type PartidaResponse struct {

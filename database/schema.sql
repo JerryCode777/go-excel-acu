@@ -4,6 +4,34 @@
 -- Extensiones necesarias
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- Tabla de organizaciones
+CREATE TABLE organizaciones (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    nombre VARCHAR(255) NOT NULL,
+    descripcion TEXT,
+    logo_url TEXT,
+    activo BOOLEAN DEFAULT true,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla de usuarios
+CREATE TABLE usuarios (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password_hash VARCHAR(255) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255),
+    rol VARCHAR(50) DEFAULT 'user' CHECK (rol IN ('admin', 'user', 'moderator')),
+    organizacion_id UUID REFERENCES organizaciones(id) ON DELETE SET NULL,
+    avatar_url TEXT,
+    activo BOOLEAN DEFAULT true,
+    email_verificado BOOLEAN DEFAULT false,
+    ultimo_acceso TIMESTAMP,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
 -- Tabla de proyectos
 CREATE TABLE proyectos (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
@@ -14,6 +42,13 @@ CREATE TABLE proyectos (
     fecha_inicio DATE,
     fecha_fin DATE,
     moneda VARCHAR(10) DEFAULT 'PEN',
+    usuario_id UUID REFERENCES usuarios(id) ON DELETE CASCADE,
+    organizacion_id UUID REFERENCES organizaciones(id) ON DELETE SET NULL,
+    visibility VARCHAR(20) DEFAULT 'private' CHECK (visibility IN ('private', 'public', 'featured')),
+    template_categoria VARCHAR(50),
+    imagen_portada TEXT,
+    likes_count INTEGER DEFAULT 0,
+    vistas_count INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -92,6 +127,11 @@ CREATE TABLE analisis_historicos (
 );
 
 -- Índices para optimizar consultas
+CREATE INDEX idx_usuarios_email ON usuarios(email);
+CREATE INDEX idx_usuarios_organizacion ON usuarios(organizacion_id);
+CREATE INDEX idx_proyectos_usuario_id ON proyectos(usuario_id);
+CREATE INDEX idx_proyectos_organizacion_id ON proyectos(organizacion_id);
+CREATE INDEX idx_proyectos_visibility ON proyectos(visibility);
 CREATE INDEX idx_partidas_proyecto_id ON partidas(proyecto_id);
 CREATE INDEX idx_partidas_codigo ON partidas(codigo);
 CREATE INDEX idx_recursos_codigo ON recursos(codigo);
@@ -109,6 +149,12 @@ END;
 $$ language 'plpgsql';
 
 -- Triggers para actualizar updated_at automáticamente
+CREATE TRIGGER update_organizaciones_updated_at BEFORE UPDATE ON organizaciones
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+CREATE TRIGGER update_usuarios_updated_at BEFORE UPDATE ON usuarios
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
 CREATE TRIGGER update_proyectos_updated_at BEFORE UPDATE ON proyectos
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
@@ -206,3 +252,76 @@ LEFT JOIN (
     WHERE tr.nombre = 'subcontratos'
     GROUP BY pr.partida_id
 ) sub ON p.id = sub.partida_id;
+
+-- Tabla de sesiones de usuario (opcional para logout global)
+CREATE TABLE sesiones_usuario (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    usuario_id UUID REFERENCES usuarios(id) ON DELETE CASCADE,
+    token_hash VARCHAR(255) NOT NULL,
+    ip_address INET,
+    user_agent TEXT,
+    expires_at TIMESTAMP NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla de likes en proyectos
+CREATE TABLE proyecto_likes (
+    id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+    proyecto_id UUID REFERENCES proyectos(id) ON DELETE CASCADE,
+    usuario_id UUID REFERENCES usuarios(id) ON DELETE CASCADE,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE(proyecto_id, usuario_id)
+);
+
+-- Función para actualizar contador de likes
+CREATE OR REPLACE FUNCTION update_proyecto_likes_count()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF TG_OP = 'DELETE' THEN
+        UPDATE proyectos 
+        SET likes_count = (
+            SELECT COUNT(*) FROM proyecto_likes WHERE proyecto_id = OLD.proyecto_id
+        )
+        WHERE id = OLD.proyecto_id;
+        RETURN OLD;
+    ELSE
+        UPDATE proyectos 
+        SET likes_count = (
+            SELECT COUNT(*) FROM proyecto_likes WHERE proyecto_id = NEW.proyecto_id
+        )
+        WHERE id = NEW.proyecto_id;
+        RETURN NEW;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+-- Trigger para actualizar likes_count automáticamente
+CREATE TRIGGER update_proyecto_likes_count_trigger
+    AFTER INSERT OR DELETE ON proyecto_likes
+    FOR EACH ROW EXECUTE FUNCTION update_proyecto_likes_count();
+
+-- Índices adicionales
+CREATE INDEX idx_sesiones_usuario_id ON sesiones_usuario(usuario_id);
+CREATE INDEX idx_sesiones_expires_at ON sesiones_usuario(expires_at);
+CREATE INDEX idx_proyecto_likes_proyecto_id ON proyecto_likes(proyecto_id);
+CREATE INDEX idx_proyecto_likes_usuario_id ON proyecto_likes(usuario_id);
+
+-- Insertar organización por defecto
+INSERT INTO organizaciones (id, nombre, descripcion) VALUES 
+('00000000-0000-0000-0000-000000000001', 'PresupuestosAI', 'Organización principal del sistema');
+
+-- Insertar usuario administrador por defecto (password: admin123)
+INSERT INTO usuarios (id, email, password_hash, nombre, rol, organizacion_id) VALUES 
+('00000000-0000-0000-0000-000000000001', 'admin@presupuestosai.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'Administrador', 'admin', '00000000-0000-0000-0000-000000000001');
+
+-- Limpiar sesiones expiradas (función de mantenimiento)
+CREATE OR REPLACE FUNCTION cleanup_expired_sessions()
+RETURNS INTEGER AS $$
+DECLARE
+    deleted_count INTEGER;
+BEGIN
+    DELETE FROM sesiones_usuario WHERE expires_at < CURRENT_TIMESTAMP;
+    GET DIAGNOSTICS deleted_count = ROW_COUNT;
+    RETURN deleted_count;
+END;
+$$ LANGUAGE plpgsql;

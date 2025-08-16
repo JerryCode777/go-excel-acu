@@ -12,6 +12,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"goexcel/config"
+	"goexcel/internal/auth"
 	"goexcel/internal/database"
 	"goexcel/internal/database/repositories"
 	"goexcel/internal/legacy"
@@ -73,6 +74,13 @@ type ProjectDetailResponse struct {
 // CreateProject creates a new project from ACU JSON data
 func (h *ProyectoHandler) CreateProject(w http.ResponseWriter, r *http.Request) {
 	log.Printf("📥 Recibiendo solicitud para crear proyecto")
+	
+	// Obtener usuario autenticado
+	user := auth.GetUserFromContext(r.Context())
+	if user == nil {
+		http.Error(w, "Usuario no autenticado", http.StatusUnauthorized)
+		return
+	}
 	
 	var req CreateProjectRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {

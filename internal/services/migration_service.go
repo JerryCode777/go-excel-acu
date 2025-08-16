@@ -35,7 +35,9 @@ func (s *MigrationService) MigrarDesdeJSON(partidasJSON []legacy.PartidaLegacy, 
 		Moneda: "PEN",
 	}
 	
-	proyecto, err := s.proyectoRepo.Create(proyectoReq)
+	// Para migración, usar usuario admin por defecto
+	adminUserID := uuid.MustParse("00000000-0000-0000-0000-000000000001")
+	proyecto, err := s.proyectoRepo.Create(proyectoReq, adminUserID)
 	if err != nil {
 		return nil, fmt.Errorf("error creando proyecto: %w", err)
 	}
