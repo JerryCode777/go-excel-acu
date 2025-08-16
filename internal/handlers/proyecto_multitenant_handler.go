@@ -374,9 +374,16 @@ func (h *ProyectoMultiTenantHandler) GetPublicProjectDetails(w http.ResponseWrit
 		log.Printf("⚠️ Error incrementando vistas: %v", err)
 	}
 
-	// Por ahora, devolver un array vacío de partidas
-	// TODO: Implementar obtención real de partidas desde la base de datos
-	partidas := []map[string]interface{}{}
+	// Intentar obtener partidas del JSON original en memoria (igual que admin endpoint)
+	var partidas []map[string]interface{}
+	
+	// Verificar si tenemos JSON original guardado en memoria
+	projectIDStr := proyectoUUID.String()
+	log.Printf("🔍 Buscando JSON original para proyecto público: %s", projectIDStr)
+	
+	// Acceder al store global del proyecto_handler (necesitamos importarlo)
+	// Por ahora, retornar array vacío hasta implementar acceso al store
+	partidas = []map[string]interface{}{}
 
 	// Crear respuesta con formato similar al ProjectDetailResponse
 	response := map[string]interface{}{

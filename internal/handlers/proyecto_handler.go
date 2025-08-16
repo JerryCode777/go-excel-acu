@@ -234,6 +234,28 @@ func (h *ProyectoHandler) GetProject(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
+	// Validación de seguridad: verificar permisos del usuario
+	user := auth.GetUserFromContext(r.Context())
+	if user != nil {
+		log.Printf("👤 Usuario accediendo al proyecto: %s (rol: %s)", user.Email, user.Rol)
+		
+		// Solo admins pueden acceder a proyectos privados
+		if user.Rol != "admin" && proyecto.Visibility != "public" && proyecto.Visibility != "featured" {
+			log.Printf("🚫 Usuario %s sin permisos para proyecto privado %s", user.Email, projectID)
+			http.Error(w, "No tiene permisos para acceder a este proyecto", http.StatusForbidden)
+			return
+		}
+		
+		// Usuario normal accediendo a proyecto público - permitido
+		if user.Rol != "admin" {
+			log.Printf("✅ Usuario normal accediendo a proyecto público: %s", projectID)
+		}
+	} else {
+		log.Printf("⚠️ Usuario sin autenticar intentando acceder al proyecto: %s", projectID)
+		http.Error(w, "Usuario no autenticado", http.StatusUnauthorized)
+		return
+	}
+
 	// Verificar si tenemos JSON original guardado
 	log.Printf("🔍 Buscando JSON original para proyecto: %s", projectID)
 	log.Printf("🔍 Proyectos en memoria: %d", len(originalJSONStore))
