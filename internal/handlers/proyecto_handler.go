@@ -131,8 +131,8 @@ func (h *ProyectoHandler) CreateProject(w http.ResponseWriter, r *http.Request) 
 		normalizedData.Proyecto.Moneda = req.Proyecto.Moneda
 	}
 
-	// Migrar a PostgreSQL
-	if err := h.migrationSvc.MigrateNormalizedData(normalizedData); err != nil {
+	// Migrar a PostgreSQL con usuario_id
+	if err := h.migrationSvc.MigrateNormalizedDataWithUser(normalizedData, user.ID); err != nil {
 		log.Printf("❌ Error migrando a PostgreSQL: %v", err)
 		http.Error(w, fmt.Sprintf("Error saving to database: %v", err), http.StatusInternalServerError)
 		return

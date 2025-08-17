@@ -16,15 +16,17 @@ import (
 )
 
 type Server struct {
-	config           *config.Config
-	db               *database.DB
-	router           *mux.Router
-	proyectoHandler  *apiHandlers.ProyectoHandler
-	authHandler      *apiHandlers.AuthHandler
-	adminHandler     *apiHandlers.AdminHandler
-	multiTenantHandler *apiHandlers.ProyectoMultiTenantHandler
-	jwtService       *auth.JWTService
-	authMiddleware   *auth.AuthMiddleware
+	config                  *config.Config
+	db                      *database.DB
+	router                  *mux.Router
+	proyectoHandler         *apiHandlers.ProyectoHandler
+	authHandler             *apiHandlers.AuthHandler
+	adminHandler            *apiHandlers.AdminHandler
+	multiTenantHandler      *apiHandlers.ProyectoMultiTenantHandler
+	metradoHandler          *apiHandlers.MetradoHandler
+	presupuestoJerarquicoHandler *apiHandlers.PresupuestoJerarquicoHandler
+	jwtService              *auth.JWTService
+	authMiddleware          *auth.AuthMiddleware
 }
 
 func NewServer(cfg *config.Config, db *database.DB) *Server {
@@ -32,6 +34,8 @@ func NewServer(cfg *config.Config, db *database.DB) *Server {
 	usuarioRepo := repositories.NewUsuarioRepository(db)
 	organizacionRepo := repositories.NewOrganizacionRepository(db)
 	proyectoRepo := repositories.NewProyectoRepository(db)
+	metradoRepo := repositories.NewMetradoRepository(db.DB)
+	presupuestoRepo := repositories.NewPresupuestoRepository(db.DB)
 
 	// Inicializar servicios de auth
 	jwtService := auth.NewJWTService(cfg.JWT.Secret, "PresupuestosAI")
@@ -39,15 +43,17 @@ func NewServer(cfg *config.Config, db *database.DB) *Server {
 
 	// Inicializar handlers
 	server := &Server{
-		config:             cfg,
-		db:                 db,
-		router:             mux.NewRouter(),
-		proyectoHandler:    apiHandlers.NewProyectoHandler(db, cfg),
-		authHandler:        apiHandlers.NewAuthHandler(usuarioRepo, jwtService),
-		adminHandler:       apiHandlers.NewAdminHandler(usuarioRepo, organizacionRepo, proyectoRepo),
-		multiTenantHandler: apiHandlers.NewProyectoMultiTenantHandler(proyectoRepo),
-		jwtService:         jwtService,
-		authMiddleware:     authMiddleware,
+		config:                       cfg,
+		db:                           db,
+		router:                       mux.NewRouter(),
+		proyectoHandler:              apiHandlers.NewProyectoHandler(db, cfg),
+		authHandler:                  apiHandlers.NewAuthHandler(usuarioRepo, jwtService),
+		adminHandler:                 apiHandlers.NewAdminHandler(usuarioRepo, organizacionRepo, proyectoRepo),
+		multiTenantHandler:           apiHandlers.NewProyectoMultiTenantHandler(proyectoRepo),
+		metradoHandler:               apiHandlers.NewMetradoHandler(metradoRepo),
+		presupuestoJerarquicoHandler: apiHandlers.NewPresupuestoJerarquicoHandler(presupuestoRepo),
+		jwtService:                   jwtService,
+		authMiddleware:               authMiddleware,
 	}
 
 	server.setupRoutes()
@@ -106,6 +112,16 @@ func (s *Server) setupRoutes() {
 	projects.HandleFunc("/{id}/hierarchy", s.proyectoHandler.GetProjectHierarchy).Methods("GET")
 	projects.HandleFunc("/{id}/titles", s.proyectoHandler.GetProjectTitles).Methods("GET")
 	projects.HandleFunc("/{id}/titles", s.proyectoHandler.UpdateProjectTitles).Methods("PUT")
+	
+	// Metrado routes (protected)
+	projects.HandleFunc("/{proyecto_id}/metrados", s.metradoHandler.ObtenerMetradosPorProyecto).Methods("GET")
+	projects.HandleFunc("/{proyecto_id}/metrados", s.metradoHandler.CrearMetrado).Methods("POST")
+	projects.HandleFunc("/{proyecto_id}/metrados/batch", s.metradoHandler.ActualizarMetradosLote).Methods("PUT")
+	projects.HandleFunc("/{proyecto_id}/metrados/simple", s.metradoHandler.ObtenerMetradoSimple).Methods("GET")
+	projects.HandleFunc("/{proyecto_id}/metrados/{partida_codigo}", s.metradoHandler.ObtenerMetradoPorPartida).Methods("GET")
+	projects.HandleFunc("/{proyecto_id}/metrados/{partida_codigo}", s.metradoHandler.EliminarMetrado).Methods("DELETE")
+	projects.HandleFunc("/{proyecto_id}/resumen", s.metradoHandler.ObtenerResumenProyecto).Methods("GET")
+	projects.HandleFunc("/{proyecto_id}/costo-total", s.metradoHandler.CalcularCostoTotalProyecto).Methods("GET")
 
 	// Admin routes (require admin role)
 	admin := api.PathPrefix("/admin").Subrouter()
@@ -121,6 +137,9 @@ func (s *Server) setupRoutes() {
 
 	// ACU validation (public)
 	api.HandleFunc("/validate-acu", s.proyectoHandler.ValidateACU).Methods("POST")
+
+	// Hierarchical Budget routes (Presupuestos Jerárquicos) - public for testing
+	apiHandlers.SetupPresupuestoJerarquicoRoutes(s.router, s.presupuestoJerarquicoHandler)
 
 	// Static files and React app (for production)
 	s.router.PathPrefix("/").Handler(http.FileServer(http.Dir("./web/build/")))

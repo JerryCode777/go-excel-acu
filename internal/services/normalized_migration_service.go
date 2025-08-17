@@ -454,3 +454,192 @@ func (s *NormalizedMigrationService) insertRelacionTx(tx *sql.Tx, id uuid.UUID, 
 	_, err := tx.Exec(query, id, partidaID, recursoID, relacion.Cantidad, relacion.Precio, relacion.Cuadrilla)
 	return err
 }
+
+func (s *NormalizedMigrationService) MigrateNormalizedDataWithUser(data *models.NormalizedData, usuarioID uuid.UUID) error {
+	log.Printf("🚀 Iniciando migración de datos normalizados con usuario: %s", usuarioID.String())
+	
+	// Iniciar transacción explícita
+	tx, err := s.db.Begin()
+	if err != nil {
+		return fmt.Errorf("error iniciando transacción: %w", err)
+	}
+	
+	// Variable para capturar errores durante la operación
+	var migrationErr error
+	
+	// Asegurar que la transacción se complete
+	defer func() {
+		if migrationErr != nil {
+			log.Printf("❌ Error durante migración, haciendo rollback: %v", migrationErr)
+			if rollbackErr := tx.Rollback(); rollbackErr != nil {
+				log.Printf("❌ Error adicional haciendo rollback: %v", rollbackErr)
+			}
+		} else {
+			log.Printf("✅ Migración exitosa, haciendo commit")
+			if commitErr := tx.Commit(); commitErr != nil {
+				log.Printf("❌ Error haciendo commit: %v", commitErr)
+				migrationErr = fmt.Errorf("error haciendo commit: %w", commitErr)
+			} else {
+				log.Printf("🎯 Commit completado exitosamente")
+			}
+		}
+	}()
+
+	// 1. Crear proyecto con usuario_id
+	proyectoUUID, migrationErr := uuid.Parse(data.Proyecto.ID)
+	if migrationErr != nil {
+		migrationErr = fmt.Errorf("error parseando UUID del proyecto: %w", migrationErr)
+		return migrationErr
+	}
+
+	migrationErr = s.insertProyectoWithUserTx(tx, proyectoUUID, data.Proyecto, usuarioID)
+	if migrationErr != nil {
+		migrationErr = fmt.Errorf("error insertando proyecto: %w", migrationErr)
+		return migrationErr
+	}
+	log.Printf("✅ Proyecto insertado: %s", data.Proyecto.Nombre)
+	
+	// Verificar que el proyecto se insertó correctamente en la transacción
+	var count int
+	verifyErr := tx.QueryRow("SELECT COUNT(*) FROM proyectos WHERE id = $1", proyectoUUID).Scan(&count)
+	if verifyErr == nil {
+		log.Printf("🔍 Proyecto verificado en TX: %d registros encontrados", count)
+	} else {
+		log.Printf("⚠️  Error verificando proyecto en TX: %v", verifyErr)
+	}
+
+	// 2. Obtener mapeo de tipos de recurso
+	tiposRecurso, migrationErr := s.getTiposRecursoTx(tx)
+	if migrationErr != nil {
+		migrationErr = fmt.Errorf("error obteniendo tipos de recurso: %w", migrationErr)
+		return migrationErr
+	}
+
+	// 3. Insertar recursos y crear mapeo de UUIDs reales
+	recursosInsertados := 0
+	recursosRealMap := make(map[string]uuid.UUID) // mapeo código -> UUID real en BD
+	
+	for _, recurso := range data.Recursos {
+		tipoID, exists := tiposRecurso[recurso.TipoRecurso]
+		if !exists {
+			log.Printf("⚠️  Tipo de recurso desconocido: %s", recurso.TipoRecurso)
+			continue
+		}
+
+		recursoUUID, err := uuid.Parse(recurso.ID)
+		if err != nil {
+			log.Printf("⚠️  Error parseando UUID del recurso %s: %v", recurso.Codigo, err)
+			continue
+		}
+
+		// Insertar recurso y obtener el UUID real en la BD
+		realRecursoID, err := s.insertRecursoAndGetIDTx(tx, recursoUUID, recurso, tipoID)
+		if err != nil {
+			log.Printf("⚠️  Error insertando recurso %s: %v", recurso.Codigo, err)
+			continue
+		}
+
+		recursosRealMap[recurso.Codigo] = realRecursoID
+		recursosInsertados++
+	}
+	log.Printf("✅ Recursos insertados: %d/%d", recursosInsertados, len(data.Recursos))
+
+	// 4. Insertar partidas
+	partidasInsertadas := 0
+	partidasRealMap := make(map[string]uuid.UUID) // mapeo código partida -> UUID real en BD
+	
+	for _, partida := range data.Partidas {
+		partidaUUID, err := uuid.Parse(partida.ID)
+		if err != nil {
+			log.Printf("⚠️  Error parseando UUID de la partida %s: %v", partida.Codigo, err)
+			continue
+		}
+
+		// Insertar partida y obtener el UUID real en la BD
+		realPartidaID, err := s.insertPartidaAndGetIDTx(tx, partidaUUID, partida, proyectoUUID)
+		if err != nil {
+			log.Printf("⚠️  Error insertando partida %s: %v", partida.Codigo, err)
+			continue
+		}
+
+		partidasRealMap[partida.Codigo] = realPartidaID
+		partidasInsertadas++
+	}
+	log.Printf("✅ Partidas insertadas: %d/%d", partidasInsertadas, len(data.Partidas))
+
+	// 5. Insertar relaciones partida-recurso usando UUIDs reales
+	relacionesInsertadas := 0
+	
+	// Crear mapeo inverso para buscar códigos por UUID normalizado
+	recursoNormToCode := make(map[string]string)
+	partidaNormToCode := make(map[string]string)
+	
+	for _, recurso := range data.Recursos {
+		recursoNormToCode[recurso.ID] = recurso.Codigo
+	}
+	
+	for _, partida := range data.Partidas {
+		partidaNormToCode[partida.ID] = partida.Codigo
+	}
+	
+	for _, relacion := range data.Relaciones {
+		relacionUUID, err := uuid.Parse(relacion.ID)
+		if err != nil {
+			log.Printf("⚠️  UUID inválido para relación: %v", err)
+			continue
+		}
+
+		// Encontrar códigos usando los UUIDs normalizados
+		partidaCodigo, partidaExists := partidaNormToCode[relacion.PartidaID]
+		recursoCodigo, recursoExists := recursoNormToCode[relacion.RecursoID]
+		
+		if !partidaExists || !recursoExists {
+			log.Printf("⚠️  No se encontraron códigos para la relación")
+			continue
+		}
+		
+		// Obtener UUIDs reales usando los códigos
+		partidaRealUUID, partidaRealExists := partidasRealMap[partidaCodigo]
+		recursoRealUUID, recursoRealExists := recursosRealMap[recursoCodigo]
+		
+		if !partidaRealExists || !recursoRealExists {
+			log.Printf("⚠️  No se encontraron UUIDs reales para partida %s o recurso %s", partidaCodigo, recursoCodigo)
+			continue
+		}
+
+		err = s.insertRelacionTx(tx, relacionUUID, relacion, partidaRealUUID, recursoRealUUID)
+		if err != nil {
+			log.Printf("⚠️  Error insertando relación: %v", err)
+			continue
+		}
+		relacionesInsertadas++
+	}
+	log.Printf("✅ Relaciones insertadas: %d/%d", relacionesInsertadas, len(data.Relaciones))
+
+	log.Printf("🎉 Migración completada exitosamente")
+	return nil
+}
+
+func (s *NormalizedMigrationService) insertProyectoWithUserTx(tx *sql.Tx, id uuid.UUID, proyecto models.ProyectoNormalizado, usuarioID uuid.UUID) error {
+	query := `
+		INSERT INTO proyectos (id, nombre, descripcion, moneda, usuario_id)
+		VALUES ($1, $2, $3, $4, $5)
+		ON CONFLICT (id) DO UPDATE SET
+			nombre = EXCLUDED.nombre,
+			descripcion = EXCLUDED.descripcion,
+			moneda = EXCLUDED.moneda,
+			usuario_id = EXCLUDED.usuario_id,
+			updated_at = CURRENT_TIMESTAMP
+	`
+
+	log.Printf("🔍 Ejecutando inserción de proyecto con usuario - ID: %s, Nombre: %s, Usuario: %s", id.String(), proyecto.Nombre, usuarioID.String())
+	result, err := tx.Exec(query, id, proyecto.Nombre, proyecto.Descripcion, proyecto.Moneda, usuarioID)
+	if err != nil {
+		log.Printf("❌ Error ejecutando inserción de proyecto: %v", err)
+		return err
+	}
+	
+	rowsAffected, _ := result.RowsAffected()
+	log.Printf("✅ Proyecto insertado/actualizado con usuario - Filas afectadas: %d", rowsAffected)
+	return nil
+}

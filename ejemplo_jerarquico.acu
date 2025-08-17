@@ -1,0 +1,95 @@
+@presupuesto{viaNaranjal,
+  nombre = "Creacion de la infraestructura vial y peatonal de la av. prolongacion naranjal, tramo av canta callao",
+  cliente = "Programa de gobierno regional de lima metropolitana", 
+  lugar = "Lima - Lima - San Martin de Porres",
+  moneda = "PEN"
+}
+
+@subpresupuesto{obras_civiles,
+  nombre = "pavimentacion"
+}
+
+@titulo{1,
+  nombre = "Obras provisionales, trabajos preliminares, seguridad y salud en obra"
+}
+
+@titulo{2, 
+  nombre = "Obras provisionales"
+}
+
+@titulo{3,
+  nombre = "Construcciones provisionales"
+}
+
+@partida{excavacion,
+  descripcion = "EXCAVACIÓN MANUAL EN TERRENO NORMAL",
+  unidad = "m3",
+  rendimiento = 8.0,
+  mano_obra = {
+    {codigo = "470101", desc = "OPERARIO", unidad = "hh", cantidad = 1.0, precio = 25.00, cuadrilla = 1.0},
+    {codigo = "470102", desc = "OFICIAL", unidad = "hh", cantidad = 0.5, precio = 22.41}
+  },
+  materiales = {
+    {codigo = "020101", desc = "AGUA", unidad = "m3", cantidad = 0.2, precio = 8.00}
+  }
+}
+
+@partida{relleno,
+  descripcion = "RELLENO COMPACTADO CON MATERIAL PROPIO",
+  unidad = "m3", 
+  rendimiento = 6.0,
+  mano_obra = {
+    {codigo = "470101", desc = "OPERARIO", unidad = "hh", cantidad = 0.8, precio = 25.00, cuadrilla = 1.0},
+    {codigo = "470102", desc = "OFICIAL", unidad = "hh", cantidad = 1.0, precio = 22.41}
+  }
+}
+
+@titulo{3,
+  nombre = "Instalaciones temporales"
+}
+
+@partida{agua_provisional,
+  descripcion = "INSTALACION DE AGUA PROVISIONAL",
+  unidad = "pto",
+  rendimiento = 1.0,
+  mano_obra = {
+    {codigo = "470101", desc = "OPERARIO", unidad = "hh", cantidad = 8.0, precio = 25.00, cuadrilla = 1.0}
+  },
+  materiales = {
+    {codigo = "020101", desc = "AGUA", unidad = "m3", cantidad = 1.0, precio = 8.00},
+    {codigo = "020102", desc = "TUBERIA PVC", unidad = "m", cantidad = 10.0, precio = 5.50}
+  }
+}
+
+@titulo{2,
+  nombre = "Seguridad y salud"
+}
+
+@partida{senalizacion,
+  descripcion = "SEÑALIZACIÓN DE OBRA",
+  unidad = "und",
+  rendimiento = 1.0,
+  materiales = {
+    {codigo = "020201", desc = "SEÑAL DE OBRA", unidad = "und", cantidad = 1.0, precio = 45.00}
+  }
+}
+
+@titulo{1,
+  nombre = "Movimiento de tierras"
+}
+
+@titulo{2,
+  nombre = "Excavaciones"
+}
+
+@partida{excavacion_masiva,
+  descripcion = "EXCAVACIÓN MASIVA CON MAQUINARIA",
+  unidad = "m3",
+  rendimiento = 50.0,
+  equipos = {
+    {codigo = "380101", desc = "EXCAVADORA", unidad = "hm", cantidad = 0.2, precio = 180.00}
+  },
+  mano_obra = {
+    {codigo = "470101", desc = "OPERARIO", unidad = "hh", cantidad = 0.1, precio = 25.00}
+  }
+}
