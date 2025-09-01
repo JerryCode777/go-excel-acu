@@ -66,10 +66,11 @@ func (s *NormalizationService) NormalizeFromJSON(archivoJSON string) (*models.No
 
 		// Verificar si la partida ya existe (por código)
 		if _, exists := partidasMap[partidaJSON.Codigo]; exists {
-			fmt.Printf("⚠️  Partida duplicada omitida: %s\n", partidaJSON.Codigo)
+			fmt.Printf("⚠️  Partida duplicada omitida: %s (ya existe)\n", partidaJSON.Codigo)
 			continue
 		}
 
+		fmt.Printf("✅ Procesando partida válida: %s - %s\n", partidaJSON.Codigo, partidaJSON.Descripcion)
 		partidasMap[partidaJSON.Codigo] = partida
 
 		// Procesar recursos de cada tipo
@@ -197,8 +198,9 @@ func (s *NormalizationService) NormalizeFromJSONData(partidasJSON []legacy.Parti
 	var relaciones []models.RelacionNormalizada
 
 	// 3. Procesar cada partida
-	for _, partidaJSON := range partidasJSON {
+	for i, partidaJSON := range partidasJSON {
 		if partidaJSON.Codigo == "" || partidaJSON.Descripcion == "" {
+			fmt.Printf("⚠️  Partida %d omitida por campos vacíos - Codigo: '%s', Descripcion: '%s'\n", i+1, partidaJSON.Codigo, partidaJSON.Descripcion)
 			continue
 		}
 
@@ -215,10 +217,11 @@ func (s *NormalizationService) NormalizeFromJSONData(partidasJSON []legacy.Parti
 
 		// Verificar si la partida ya existe (por código)
 		if _, exists := partidasMap[partidaJSON.Codigo]; exists {
-			fmt.Printf("⚠️  Partida duplicada omitida: %s\n", partidaJSON.Codigo)
+			fmt.Printf("⚠️  Partida duplicada omitida: %s (ya existe)\n", partidaJSON.Codigo)
 			continue
 		}
 
+		fmt.Printf("✅ Procesando partida válida: %s - %s\n", partidaJSON.Codigo, partidaJSON.Descripcion)
 		partidasMap[partidaJSON.Codigo] = partida
 
 		// Procesar recursos de cada tipo
